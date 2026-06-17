@@ -2,7 +2,7 @@
 # Never commit real tunnel IDs, credentials, or public hostnames.
 
 tunnel: EXAMPLE_TUNNEL_NAME
-credentials-file: /opt/apps/example/cloudflared/EXAMPLE_TUNNEL_NAME.json
+credentials-file: /opt/apps/example/tunnel/EXAMPLE_TUNNEL_NAME.json
 
 ingress:
   - hostname: demo.example.com
