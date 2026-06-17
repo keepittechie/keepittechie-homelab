@@ -20,7 +20,7 @@ For the storage and monitoring reading path, see [Storage and Monitoring](storag
 Proxmox VMs
   |
   +-- Local VM disks for OS and app runtime
-  +-- NAS shares for media, files, and selected backup targets
+  +-- NAS shares supporting media, files, and selected backup targets
   +-- ZFS datasets for Linux storage learning and selected workloads
   +-- PBS backups for VM and container recovery
 ```
@@ -51,7 +51,7 @@ App data needs its own thinking. A VM backup may not be enough if a database is 
 
 ## NAS Shares
 
-NAS shares provide common storage for clients and services. They are useful for media and backup targets, but they should be documented carefully.
+NAS shares provide common storage for clients and services. They are useful as media storage and backup targets, but they should be documented carefully.
 
 | Share | Purpose | Example Path | Public Boundary |
 |---|---|---|---|

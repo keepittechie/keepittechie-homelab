@@ -43,6 +43,13 @@ grafana.home.example.com
 - [ ] No real credentials or private exports are included.
 - [ ] Links were checked where practical.
 - [ ] The service matrix or roadmap was updated if the change affects them.
+- [ ] Screenshots follow the screenshot policy or are not included.
+
+Use the [pull request template](.github/pull_request_template.md) when opening changes. For safety-sensitive updates, review the [Pre-Publish Review Checklist](docs/pre-publish-review.md) and [Screenshot Policy](docs/screenshots-policy.md).
+
+## Issues
+
+Use the issue templates for documentation improvements, safety reviews, and sanitized config example requests. Keep issue content public-safe and avoid posting private config, screenshots, or operational details.
 
 ## Tone
 

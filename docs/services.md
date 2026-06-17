@@ -20,7 +20,7 @@ This page maps the homelab services by role and exposure level. Each service als
 
 | Service | Purpose | Default Exposure |
 |---|---|---|
-| Grafana | Dashboards for metrics and logs | Private |
+| Grafana | Metrics and log dashboards | Private |
 | Prometheus | Metrics collection | Private |
 | Node Exporter | Host metrics | Private |
 | cAdvisor | Container metrics | Private |

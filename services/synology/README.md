@@ -111,4 +111,4 @@ Example storage usage map:
 
 - Add a sanitized snapshot policy example.
 - Add a restore test using fake demo files.
-- Add a storage dependency table for media and app services.
+- Add a storage dependency table covering media and app services.
