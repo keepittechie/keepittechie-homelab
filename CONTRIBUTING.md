@@ -1,6 +1,6 @@
 # Contributing
 
-This is primarily a personal homelab documentation repo for KeepItTechie, but public contributions are welcome when they make the material clearer, safer, or easier for viewers to learn from.
+This is a public documentation repo for the KeepItTechie homelab. Contributions are welcome when they make the material clearer, safer, or easier for viewers to learn from.
 
 ## Good Contributions
 

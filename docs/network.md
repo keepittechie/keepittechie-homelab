@@ -38,14 +38,14 @@ Pi-hole handles DNS filtering and local records. pfSense remains the network pol
 ## Example Internal Records
 
 ```text
-10.10.0.1    firewall.home.example.com
-10.10.0.6    pihole1.home.example.com pontus.home.example.com
-10.10.0.7    pihole2.home.example.com priapus.home.example.com
-10.10.0.8    proxy.home.example.com zelus.home.example.com
-10.10.0.50   proxmox.home.example.com
-10.10.0.55   plex.home.example.com apollo.home.example.com
-10.10.0.58   grafana.home.example.com wiki.home.example.com apps.home.example.com
-10.10.0.60   ai.home.example.com hephaestus.home.example.com
+10.10.0.x    firewall.home.example.com
+10.10.0.x    pihole1.home.example.com pontus.home.example.com
+10.10.0.x    pihole2.home.example.com priapus.home.example.com
+10.10.0.x    proxy.home.example.com zelus.home.example.com
+10.10.0.x    proxmox.home.example.com
+10.10.0.x    plex.home.example.com apollo.home.example.com
+10.10.0.x    grafana.home.example.com wiki.home.example.com apps.home.example.com
+10.10.0.x    ai.home.example.com hephaestus.home.example.com
 ```
 
 These are sanitized examples, not a live zone file.
