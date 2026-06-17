@@ -1,0 +1,19 @@
+name: Docs Quality
+
+on:
+  pull_request:
+  push:
+
+jobs:
+  docs-quality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check Markdown links
+        run: python3 scripts/check_markdown_links.py
+      - name: Check diagram structure
+        run: python3 scripts/check_diagrams.py
+      - name: Run public-safety scan
+        run: python3 scripts/public_safety_scan.py
+      - name: Check whitespace in diff
+        run: git diff --check
