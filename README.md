@@ -1,74 +1,103 @@
 # KeepItTechie Homelab
 
-A public, viewer-friendly breakdown of the KeepItTechie homelab: networking, virtualization, storage, monitoring, media services, local AI, backups, and self-hosted apps.
+This repo is the public, viewer-friendly breakdown of the KeepItTechie homelab. It documents the architecture, service roles, and learning path behind the lab without turning the repo into a private config dump.
 
-This repo is designed to be both documentation and a learning resource. It shows the *architecture and reasoning* behind the lab without publishing secrets, API keys, public tunnel tokens, passwords, private certificates, or sensitive internal details.
+KeepItTechie focuses on Linux, open source, self-hosting, server administration, automation, local AI, and practical homelab learning. This repo supports that same teaching style: explain what each piece does, where it fits, why it exists, and what viewers can learn from it.
 
-## Table of Contents
+## Start Here
 
-- [Homelab Overview](docs/overview.md)
-- [Hardware](docs/hardware.md)
-- [Network Design](docs/network.md)
-- [Service Map](docs/services.md)
-- [Storage and Backups](docs/storage-and-backups.md)
-- [Monitoring](services/monitoring/README.md)
-- [Local AI Stack](services/local-ai/README.md)
-- [Security Notes](docs/security-notes.md)
-- [Content Map for YouTube](docs/content-map.md)
+| Area | Link | What It Covers |
+|---|---|---|
+| Overview | [docs/overview.md](docs/overview.md) | Big-picture layout and design goals |
+| Hardware | [docs/hardware.md](docs/hardware.md) | Compute, network, storage, and backup hardware |
+| Network | [docs/network.md](docs/network.md) | pfSense, DNS, segmentation, and access patterns |
+| Services | [docs/services.md](docs/services.md) | Service map and public/private boundaries |
+| Storage and Backups | [docs/storage-and-backups.md](docs/storage-and-backups.md) | Synology, ZFS, PBS, and restore thinking |
+| Security | [docs/security-notes.md](docs/security-notes.md) | Public repo safety and exposure rules |
+| Content Map | [docs/content-map.md](docs/content-map.md) | YouTube episode ideas tied to the lab |
 
-## Core Design Goals
+## Lab At A Glance
 
-- Teach Linux, networking, and self-hosting through real infrastructure.
-- Keep important services local-first.
-- Separate public-facing services from private admin services.
-- Use DNS names instead of memorizing IP addresses.
-- Document every service well enough to rebuild it later.
-- Avoid exposing secrets or sensitive configuration.
-
-## Lab Summary
-
-| Area | Stack |
+| Layer | Stack |
 |---|---|
-| Firewall / Routing | pfSense |
-| DNS | Pi-hole primary and secondary |
+| Firewall / Router | pfSense |
+| DNS | Two Pi-hole VMs |
 | Virtualization | Proxmox |
-| Storage | Synology NAS, ZFS storage server, Proxmox Backup Server |
-| Reverse Proxy | NGINX reverse proxy, Cloudflare Tunnel for selected public services |
-| Monitoring | Grafana, Prometheus, exporters, Loki/Promtail |
+| Storage | Synology NAS and Rocky Linux ZFS storage server |
+| VM Backups | Proxmox Backup Server |
+| Reverse Proxy | NGINX reverse proxy |
+| Selected Public Access | Cloudflare Tunnel |
+| Monitoring | Grafana, Prometheus, exporters, Loki, Promtail |
 | Media | Plex, Servarr stack, Tautulli, Tdarr |
-| Local AI | GPU server, llama.cpp / OpenAI-compatible local endpoint, Open WebUI |
-| Apps | Wiki.js, Nextcloud, FinanceHQ, CareerFill, Glance dashboard |
-| Automation | AWX / Ansible control node |
+| Local AI | NVIDIA RTX A2000 12GB server, llama.cpp-compatible API, Open WebUI |
+| Docs / Dashboard | Wiki.js and Glance |
+| Personal Apps | FinanceHQ and CareerFill |
+| Automation | AWX and Ansible control node |
+
+## Example Sanitized Topology
+
+```text
+Internet
+  |
+Cloudflare Tunnel for selected public apps
+  |
+pfSense firewall
+  |
+10.10.0.0/24 lab LAN
+  |
+  +-- proxmox.home.example.com
+  |   +-- pihole1.home.example.com
+  |   +-- pihole2.home.example.com
+  |   +-- proxy.home.example.com
+  |   +-- grafana.home.example.com
+  |   +-- ai.home.example.com
+  |
+  +-- nas.home.example.com
+  +-- zfs.home.example.com
+  +-- pbs.home.example.com
+```
+
+The names above are examples. They show the shape of the lab without publishing the live private records.
+
+## Documentation Philosophy
+
+- Document the architecture and reasoning, not raw private exports.
+- Show enough detail for viewers to learn and rebuild similar patterns.
+- Prefer sanitized examples over copied production configuration.
+- Keep admin surfaces private unless there is a clear reason to publish a service.
+- Treat restore notes as seriously as install notes.
+- Keep the repo useful even when the real lab changes.
 
 ## Public Safety Rules
 
 This repo should never contain:
 
-- Real passwords
-- API keys
-- Cloudflare tunnel tokens
-- VPN keys
-- Private SSL certificates
-- Full firewall exports with secrets
-- `.env` files
-- Public IP addresses unless intentionally shared
-- Backup encryption keys
+- Real passwords or recovery codes
+- API keys, service account credentials, or tunnel credentials
+- SSH private keys, VPN keys, or backup encryption keys
+- Private certificates or certificate authority keys
+- Full pfSense, switch, NAS, or app exports with secrets
+- Real public IP addresses
+- Raw `.env` files
+- Financial data, job application data, private messages, or personal records
 
-Use `.env.example`, sanitized YAML, and documentation instead.
+Use `.env.example`, sanitized YAML, Markdown explanations, and placeholders such as `REPLACE_ME`.
 
-## Suggested Repo Workflow
+## Repo Layout
 
-```bash
-git clone git@github.com:keepittechie/homelab.git
-cd homelab
+| Path | Purpose |
+|---|---|
+| `docs/` | Main viewer-facing documentation |
+| `services/` | Per-service breakdowns |
+| `inventory/sanitized/` | Safe example inventory |
+| `inventory/private.example/` | Pattern for private inventory that should stay untracked |
+| `diagrams/` | Sanitized diagrams and diagram notes |
+| `templates/` | Reusable documentation templates |
 
-# Add documentation and sanitized configs only
-git status
-git add .
-git commit -m "Initial KeepItTechie homelab documentation"
-git push
-```
+## Suggested Workflow
+
+Before committing, review `git status` and run a sensitive-string scan for keys, credential assignments, tunnel credentials, and private key headers. If the scan finds anything sensitive, sanitize it before committing.
 
 ## Status
 
-This repo is a living document. The goal is not perfection on day one - the goal is to make the lab easier to explain, rebuild, and teach from.
+This is a living public reference for the KeepItTechie homelab. It is intentionally documentation-first: enough structure to teach from, without exposing the private operational details that belong in a private notes repo, password manager, or internal Wiki.js admin space.

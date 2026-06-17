@@ -1,34 +1,163 @@
 # Sanitized inventory example
-# Replace values with safe public examples.
+# This is documentation-only. Replace values with safe examples before sharing.
+
+site:
+  name: keepittechie-homelab
+  domain: home.example.com
+  example_subnet: 10.10.0.0/24
 
 network:
   firewall:
-    name: firewall
-    role: pfSense
-    dns: firewall.home.example.com
+    name: pfsense
+    role: firewall_router
+    platform: pfSense
+    dns:
+      - firewall.home.example.com
+    example_ip: 10.10.0.1
+  switch:
+    name: switch1
+    role: managed_switch
+    platform: managed_switch
+    dns:
+      - switch1.home.example.com
+    example_ip: 10.10.0.2
 
 dns:
   primary:
-    name: pihole1
-    role: DNS filtering
-    dns: pihole1.home.example.com
+    name: pontus
+    role: dns_filtering
+    platform: Pi-hole
+    runtime: Proxmox VM
+    dns:
+      - pontus.home.example.com
+      - pihole1.home.example.com
+    example_ip: 10.10.0.6
   secondary:
-    name: pihole2
-    role: DNS redundancy
-    dns: pihole2.home.example.com
+    name: priapus
+    role: dns_redundancy
+    platform: Pi-hole
+    runtime: Proxmox VM
+    dns:
+      - priapus.home.example.com
+      - pihole2.home.example.com
+    example_ip: 10.10.0.7
 
 virtualization:
   proxmox:
     name: proxmox
-    role: VM host
-    dns: proxmox.home.example.com
+    role: hypervisor
+    platform: Proxmox VE
+    dns:
+      - proxmox.home.example.com
+    example_ip: 10.10.0.50
 
 storage:
-  nas:
-    name: nas
-    role: shared storage
-    dns: nas.home.example.com
+  synology:
+    name: synology
+    role: nas
+    platform: Synology DSM
+    dns:
+      - nas.home.example.com
+      - synology.home.example.com
+    example_ip: 10.10.0.4
   zfs:
-    name: zfs-storage
-    role: ZFS storage server
-    dns: zfs.home.example.com
+    name: bison
+    role: zfs_storage
+    platform: Rocky Linux
+    dns:
+      - bison.home.example.com
+      - zfs.home.example.com
+    example_ip: 10.10.0.5
+  backup:
+    name: chronos
+    role: vm_backup
+    platform: Proxmox Backup Server
+    dns:
+      - pbs.home.example.com
+    example_ip: 10.10.0.10
+
+app_hosts:
+  proxy_automation:
+    name: zelus
+    role:
+      - reverse_proxy
+      - automation
+    runtime: Linux VM
+    dns:
+      - zelus.home.example.com
+      - proxy.home.example.com
+      - awx.home.example.com
+    example_ip: 10.10.0.8
+  docker_apps:
+    name: heimdall
+    role:
+      - docker_apps
+      - monitoring
+      - documentation
+      - dashboard
+    runtime: Linux VM
+    dns:
+      - heimdall.home.example.com
+      - grafana.home.example.com
+      - wiki.home.example.com
+      - dashboard.home.example.com
+    example_ip: 10.10.0.58
+  media:
+    name: apollo
+    role:
+      - plex
+      - media
+    runtime: Linux VM
+    dns:
+      - apollo.home.example.com
+      - plex.home.example.com
+      - tautulli.home.example.com
+    example_ip: 10.10.0.55
+  media_automation:
+    name: dionysus
+    role:
+      - servarr
+      - download_client
+      - media_requests
+    runtime: Linux VM
+    dns:
+      - dionysus.home.example.com
+      - radarr.home.example.com
+      - sonarr.home.example.com
+      - prowlarr.home.example.com
+      - requests.home.example.com
+    example_ip: 10.10.0.59
+  gpu_ai:
+    name: hephaestus
+    role:
+      - local_ai
+      - tdarr
+      - gpu_workloads
+    runtime: Linux GPU host
+    gpu: NVIDIA RTX A2000 12GB
+    dns:
+      - hephaestus.home.example.com
+      - ai.home.example.com
+      - openwebui.home.example.com
+      - tdarr.home.example.com
+    example_ip: 10.10.0.60
+
+service_aliases:
+  private_only:
+    - firewall.home.example.com
+    - proxmox.home.example.com
+    - pbs.home.example.com
+    - grafana.home.example.com
+    - prometheus.home.example.com
+    - awx.home.example.com
+    - finance.home.example.com
+    - career.home.example.com
+  limited_or_review_required:
+    - wiki.home.example.com
+    - nextcloud.home.example.com
+    - plex.home.example.com
+
+notes:
+  - Keep real private inventory under inventory/private/ and out of Git.
+  - Do not copy production DNS exports directly into this file.
+  - Use this file to teach structure, not to publish the live network.
