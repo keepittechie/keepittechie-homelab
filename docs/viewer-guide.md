@@ -5,14 +5,15 @@ This guide explains how viewers can use the KeepItTechie homelab repo as a learn
 ## Recommended Path
 
 1. Start with the [Homelab Overview](overview.md).
-2. Open the [diagram index](../diagrams/README.md).
-3. Read the [service matrix](service-matrix.md) to understand what runs where.
-4. Keep the [Glossary](glossary.md) open for unfamiliar terms.
-5. Review [How To Read Service Pages](how-to-read-service-pages.md).
-6. Pick one service area to study.
-7. Compare the service README with the matching [sanitized examples](../examples/README.md).
-8. Use the [Security Notes](security-notes.md) before adapting any pattern.
-9. Build safely in a lab before using a pattern for important services.
+2. Tour the [Current Setup](current-setup.md).
+3. Open the [diagram index](../diagrams/README.md).
+4. Read the [service matrix](service-matrix.md) to understand what runs where.
+5. Keep the [Glossary](glossary.md) open for unfamiliar terms.
+6. Review [How To Read Service Pages](how-to-read-service-pages.md).
+7. Pick one service area to study.
+8. Compare the service README with the matching [sanitized examples](../examples/README.md).
+9. Use the [Security Notes](security-notes.md) before adapting any pattern.
+10. Build safely in a lab before using a pattern for important services.
 
 ## Good First Topics
 
@@ -44,5 +45,6 @@ The goal is to learn the pattern, not copy a private deployment line for line.
 ## Related Docs
 
 - [Documentation Index](docs-index.md)
+- [Current Setup](current-setup.md)
 - [Glossary](glossary.md)
 - [How To Read Service Pages](how-to-read-service-pages.md)
