@@ -4,7 +4,7 @@ The KeepItTechie homelab is a practical Linux and self-hosting environment. It i
 
 The goal is not to make a perfect enterprise network at home. The goal is to build a lab that is understandable, repairable, teachable, and safe enough to expose only the services that truly need public access.
 
-For a guided reading path, start with the [Viewer Guide](viewer-guide.md). To tour what is running in the lab, read [Current Setup](current-setup.md). New to the terms used here? Keep the [Glossary](glossary.md) nearby. For the visual version of this page, see the [Mermaid homelab overview](../diagrams/homelab-overview.md). For all public-safe architecture diagrams, use the [diagram index](../diagrams/README.md). For the first service deep dives, start with [Core Infrastructure](core-infrastructure.md). For storage, backups, and visibility, read [Storage and Monitoring](storage-monitoring.md). For application, media, local AI, dashboard, documentation, and automation services, read [Apps and AI](apps-and-ai.md). For a quick service-by-service comparison, see the [service matrix](service-matrix.md).
+For a guided reading path, start with the [Viewer Guide](viewer-guide.md). To tour what is running in the lab, read [Current Setup](current-setup.md). For hardware roles, see [Hardware](hardware.md). For a sanitized role view, see [Public-Safe Inventory](inventory-public.md). New to the terms used here? Keep the [Glossary](glossary.md) nearby. For the visual version of this page, see the [Mermaid homelab overview](../diagrams/homelab-overview.md). For all public-safe architecture diagrams, use the [diagram index](../diagrams/README.md). For the first service deep dives, start with [Core Infrastructure](core-infrastructure.md). For storage, backups, and visibility, read [Storage and Monitoring](storage-monitoring.md). For application, media, local AI, dashboard, documentation, and automation services, read [Apps and AI](apps-and-ai.md). For a quick service-by-service comparison, see the [service matrix](service-matrix.md).
 
 ## Design Goals
 
@@ -92,6 +92,9 @@ The simplest rule: admin tools stay private, viewer-facing or intentionally shar
 
 - [Viewer Guide](viewer-guide.md)
 - [Current Setup](current-setup.md)
+- [Hardware](hardware.md)
+- [Public-Safe Inventory](inventory-public.md)
+- [Service Catalog](service-catalog.md)
 - [Documentation Index](docs-index.md)
 - [Glossary](glossary.md)
 - [Core Infrastructure](core-infrastructure.md)

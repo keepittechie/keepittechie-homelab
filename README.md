@@ -20,11 +20,13 @@ Current documentation baseline: [v0.1.0](docs/releases/v0.1.0.md). See the [chan
 | Current tour | [Current Setup](docs/current-setup.md) | Tour what is running and why |
 | New terms | [Glossary](docs/glossary.md) | Learn common homelab vocabulary |
 | Big picture | [Homelab Overview](docs/overview.md) | Understand the purpose and layout |
+| Hardware roles | [Hardware](docs/hardware.md) | Understand hardware categories without private details |
 | Core stack | [Core Infrastructure](docs/core-infrastructure.md) | Read the first deep dives in order |
 | Storage and monitoring | [Storage and Monitoring](docs/storage-monitoring.md) | Understand storage, backups, restore proof, and visibility |
 | Apps and AI | [Apps and AI](docs/apps-and-ai.md) | Explore local AI, media, dashboards, docs, personal apps, and automation |
 | Visual map | [Diagrams](diagrams/README.md) | See sanitized architecture and service flows |
 | Config examples | [Sanitized Examples](examples/README.md) | Learn common patterns without exposing private config |
+| Friendly catalog | [Service Catalog](docs/service-catalog.md) | Browse services by category |
 | Service list | [Service Matrix](docs/service-matrix.md) | Compare access level, host role, and backup priority |
 | Security | [Security Notes](docs/security-notes.md) | Learn what stays private |
 | Pre-publish review | [Pre-Publish Review](docs/pre-publish-review.md) | Run a public-safe review before merging |
@@ -38,7 +40,7 @@ Current documentation baseline: [v0.1.0](docs/releases/v0.1.0.md). See the [chan
 | Area | Main Docs | Service Docs |
 |---|---|---|
 | Network | [Core Infrastructure](docs/core-infrastructure.md), [Network Design](docs/network.md) | [pfSense](services/pfsense/README.md), [Pi-hole](services/pihole/README.md), [Reverse Proxy](services/reverse-proxy/README.md), [Cloudflare Tunnel](services/cloudflare-tunnel/README.md) |
-| Virtualization | [Core Infrastructure](docs/core-infrastructure.md), [Hardware](docs/hardware.md), [Service Matrix](docs/service-matrix.md) | [Proxmox](services/proxmox/README.md) |
+| Virtualization | [Core Infrastructure](docs/core-infrastructure.md), [Hardware](docs/hardware.md), [Public-Safe Inventory](docs/inventory-public.md), [Service Matrix](docs/service-matrix.md) | [Proxmox](services/proxmox/README.md) |
 | Storage and backups | [Storage and Monitoring](docs/storage-monitoring.md), [Storage and Backups](docs/storage-and-backups.md) | [Synology](services/synology/README.md), [ZFS Storage](services/zfs-storage/README.md), [Proxmox Backup Server](services/proxmox-backup-server/README.md) |
 | Observability | [Storage and Monitoring](docs/storage-monitoring.md), [Service Matrix](docs/service-matrix.md) | [Monitoring](services/monitoring/README.md) |
 | Media | [Apps and AI](docs/apps-and-ai.md), [Service Matrix](docs/service-matrix.md) | [Media Stack](services/media-stack/README.md) |
