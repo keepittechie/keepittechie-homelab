@@ -4,7 +4,7 @@ The KeepItTechie homelab is a practical Linux and self-hosting environment. It i
 
 The goal is not to make a perfect enterprise network at home. The goal is to build a lab that is understandable, repairable, teachable, and safe enough to expose only the services that truly need public access.
 
-For the visual version of this page, see the [Mermaid homelab overview](../diagrams/homelab-overview.md). For the first service deep dives, start with [Core Infrastructure](core-infrastructure.md). For storage, backups, and visibility, read [Storage and Monitoring](storage-monitoring.md). For application, media, local AI, dashboard, documentation, and automation services, read [Apps and AI](apps-and-ai.md). For a quick service-by-service comparison, see the [service matrix](service-matrix.md).
+For the visual version of this page, see the [Mermaid homelab overview](../diagrams/homelab-overview.md). For all public-safe architecture diagrams, use the [diagram index](../diagrams/README.md). For the first service deep dives, start with [Core Infrastructure](core-infrastructure.md). For storage, backups, and visibility, read [Storage and Monitoring](storage-monitoring.md). For application, media, local AI, dashboard, documentation, and automation services, read [Apps and AI](apps-and-ai.md). For a quick service-by-service comparison, see the [service matrix](service-matrix.md).
 
 ## Design Goals
 
@@ -93,6 +93,7 @@ The simplest rule: admin tools stay private, viewer-facing or intentionally shar
 - [Core Infrastructure](core-infrastructure.md)
 - [Storage and Monitoring](storage-monitoring.md)
 - [Apps and AI](apps-and-ai.md)
+- [Public-Safe Diagrams](../diagrams/README.md)
 - [Service Matrix](service-matrix.md)
 - [Documentation Roadmap](roadmap.md)
 - [Maintenance Checklist](maintenance-checklist.md)

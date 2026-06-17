@@ -14,7 +14,7 @@ The focus is practical: what each service does, why it exists, where it fits, ho
 | Core stack | [Core Infrastructure](docs/core-infrastructure.md) | Read the first deep dives in order |
 | Storage and monitoring | [Storage and Monitoring](docs/storage-monitoring.md) | Understand storage, backups, restore proof, and visibility |
 | Apps and AI | [Apps and AI](docs/apps-and-ai.md) | Explore local AI, media, dashboards, docs, personal apps, and automation |
-| Visual map | [Architecture Diagram](diagrams/homelab-overview.md) | See the sanitized service flow |
+| Visual map | [Diagrams](diagrams/README.md) | See sanitized architecture and service flows |
 | Service list | [Service Matrix](docs/service-matrix.md) | Compare access level, host role, and backup priority |
 | Security | [Security Notes](docs/security-notes.md) | Learn what stays private |
 | Pre-publish review | [Pre-Publish Review](docs/pre-publish-review.md) | Check public safety before merging |
@@ -40,7 +40,7 @@ The focus is practical: what each service does, why it exists, where it fits, ho
 The sanitized high-level architecture is documented here:
 
 - [Mermaid homelab overview](diagrams/homelab-overview.md)
-- [Diagram index and placeholders](diagrams/README.md)
+- [Diagram index](diagrams/README.md)
 
 At a high level, the flow is:
 
@@ -56,6 +56,17 @@ Internet
 
 All names and networks in public examples use sanitized values such as `home.example.com` and `10.10.0.0/24`.
 
+## Diagrams
+
+| Diagram | Use It To Understand |
+|---|---|
+| [Homelab Overview](diagrams/homelab-overview.md) | The full sanitized architecture |
+| [DNS Flow](diagrams/dns-flow.md) | pfSense DHCP, Pi-hole, local records, and upstream DNS |
+| [Backup Flow](diagrams/backup-flow.md) | VM backups, app data, ZFS snapshots, and restore testing |
+| [Reverse Proxy Flow](diagrams/reverse-proxy-flow.md) | Internal HTTPS and selected public access |
+| [Local AI Flow](diagrams/local-ai-flow.md) | Open WebUI, local API endpoint, llama.cpp, model storage, and GPU runtime |
+| [Monitoring Flow](diagrams/monitoring-flow.md) | Exporters, Prometheus, Loki, Grafana, alerts, and review loops |
+
 ## What This Repo Is / Is Not
 
 | This Repo Is | This Repo Is Not |
@@ -69,7 +80,7 @@ All names and networks in public examples use sanitized values such as `home.exa
 ## How To Use This Repo
 
 1. Start with [docs/overview.md](docs/overview.md).
-2. Open the [architecture diagram](diagrams/homelab-overview.md).
+2. Open the [diagram index](diagrams/README.md).
 3. Use the [service matrix](docs/service-matrix.md) to understand what runs where.
 4. Read the service README for the area you want to learn.
 5. Check [docs/security-notes.md](docs/security-notes.md) before copying any pattern into your own public repo.
@@ -112,7 +123,7 @@ Use `.env.example`, sanitized YAML, diagrams, and Markdown explanations instead.
 
 ## Contributing
 
-This is mainly a personal homelab documentation repo, but typo fixes, diagram improvements, sanitized examples, and beginner-friendly documentation improvements are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
+This is mainly a public documentation repo for the KeepItTechie homelab, but typo fixes, diagram improvements, sanitized examples, and beginner-friendly documentation improvements are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 

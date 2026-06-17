@@ -4,6 +4,8 @@ This page is the beginner-friendly entry point for the application, media, dashb
 
 These services sit on top of the core infrastructure, storage, backups, monitoring, and reverse proxy layers. They are the part viewers are most likely to recognize from daily use, but they also carry the most private data.
 
+For a visual reference, see the [local AI flow diagram](../diagrams/local-ai-flow.md).
+
 ## Recommended Reading Order
 
 | Step | Topic | Link | Why Start Here |
@@ -63,5 +65,6 @@ Do not document:
 
 - [Core Infrastructure](core-infrastructure.md)
 - [Storage and Monitoring](storage-monitoring.md)
+- [Public-Safe Diagrams](../diagrams/README.md)
 - [Service Matrix](service-matrix.md)
 - [Pre-Publish Review Checklist](pre-publish-review.md)

@@ -2,6 +2,8 @@
 
 The network is built around pfSense, internal DNS, readable service names, and conservative exposure. The public examples in this repo use `10.10.0.0/24` and `home.example.com`.
 
+For visual references, see the [DNS flow diagram](../diagrams/dns-flow.md) and [reverse proxy flow diagram](../diagrams/reverse-proxy-flow.md).
+
 ## Core Flow
 
 ```text

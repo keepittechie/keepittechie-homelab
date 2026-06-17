@@ -4,6 +4,8 @@ This page is the beginner-friendly entry point for the services that make the re
 
 Core infrastructure means the services that provide network access, DNS, virtualization, backups, internal web routing, and controlled public exposure. If these pieces are unclear, every app on top of them becomes harder to explain and troubleshoot.
 
+For visual references, start with the [homelab overview diagram](../diagrams/homelab-overview.md), then review the [DNS flow](../diagrams/dns-flow.md) and [reverse proxy flow](../diagrams/reverse-proxy-flow.md).
+
 ## Recommended Reading Order
 
 | Step | Service | Why Start Here |
@@ -71,5 +73,6 @@ Do not document:
 
 - [Storage and Monitoring](storage-monitoring.md)
 - [Apps and AI](apps-and-ai.md)
+- [Public-Safe Diagrams](../diagrams/README.md)
 - [Service Matrix](service-matrix.md)
 - [Pre-Publish Review Checklist](pre-publish-review.md)

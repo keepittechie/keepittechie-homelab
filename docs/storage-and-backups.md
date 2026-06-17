@@ -2,7 +2,7 @@
 
 Storage in the homelab has two jobs: support daily services and make recovery possible when something breaks. This page explains the public-safe architecture without publishing private shares, keys, raw exports, or live backup details.
 
-For the storage and monitoring reading path, see [Storage and Monitoring](storage-monitoring.md).
+For the storage and monitoring reading path, see [Storage and Monitoring](storage-monitoring.md). For the visual version of the backup model, see the [backup flow diagram](../diagrams/backup-flow.md).
 
 ## Storage Layers
 
