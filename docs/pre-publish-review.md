@@ -4,6 +4,7 @@ Use this checklist before publishing, merging, or sharing updates from the publi
 
 ## Safety Review
 
+- [ ] Run `python3 scripts/public_safety_scan.py`.
 - [ ] Run secret-pattern scan.
 - [ ] Run private domain scan.
 - [ ] Run private IP scan.
@@ -15,6 +16,9 @@ Use this checklist before publishing, merging, or sharing updates from the publi
 
 ## Documentation Review
 
+- [ ] Run `python3 scripts/check_markdown_links.py`.
+- [ ] Run `python3 scripts/check_diagrams.py`.
+- [ ] Run `git diff --check`.
 - [ ] README links work.
 - [ ] Service matrix is current.
 - [ ] Roadmap reflects current status.
@@ -30,6 +34,7 @@ Use this checklist before publishing, merging, or sharing updates from the publi
 ## GitHub Review
 
 - [ ] GitHub Actions pass.
+- [ ] Docs Quality workflow passes.
 - [ ] Pull request diff reviewed.
 - [ ] Pull request checklist is complete.
 - [ ] No unexpected binary files were added.

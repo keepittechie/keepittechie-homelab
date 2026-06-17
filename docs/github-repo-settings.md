@@ -57,9 +57,16 @@ docs: add sanitized reverse proxy example
 
 ## GitHub Actions Checks
 
-The basic secret scan should remain enabled for pull requests and pushes. It is intentionally simple and may catch false positives, but that is useful for a public repo where safety matters more than convenience.
+The basic secret scan and Docs Quality workflow should remain enabled for pull requests and pushes. They are intentionally simple and may catch false positives, but that is useful for a public repo where safety matters more than convenience.
 
 When a false positive appears, prefer changing the example wording or placeholder path before weakening the scan.
+
+The Docs Quality workflow runs:
+
+- Markdown link checking.
+- Mermaid diagram structure checking.
+- Public-safety pattern scanning.
+- `git diff --check`.
 
 ## Public Repo Safety Note
 

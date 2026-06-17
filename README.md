@@ -138,6 +138,10 @@ Use `.env.example`, sanitized YAML, diagrams, and Markdown explanations instead.
 
 Screenshots need the same review as config snippets. See the [Screenshot Policy](docs/screenshots-policy.md) before adding images.
 
+## Quality Checks
+
+Pull requests run lightweight documentation checks for Markdown links, diagram structure, public-safety patterns, and whitespace. The same checks can be run locally from [scripts/README.md](scripts/README.md).
+
 ## Repo Layout
 
 | Path | Purpose |
@@ -148,6 +152,7 @@ Screenshots need the same review as config snippets. See the [Screenshot Policy]
 | `examples/` | Sanitized configuration examples and templates |
 | `inventory/sanitized/` | Safe example inventory |
 | `inventory/private.example/` | Pattern for private inventory that should stay untracked |
+| `scripts/` | Lightweight documentation quality and public-safety checks |
 | `templates/` | Reusable documentation templates |
 
 ## Contributing

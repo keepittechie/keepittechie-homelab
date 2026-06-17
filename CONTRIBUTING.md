@@ -42,10 +42,24 @@ grafana.home.example.com
 - [ ] Examples are sanitized.
 - [ ] No real credentials or private exports are included.
 - [ ] Links were checked where practical.
+- [ ] Local docs checks were run when practical.
 - [ ] The service matrix or roadmap was updated if the change affects them.
 - [ ] Screenshots follow the screenshot policy or are not included.
 
 Use the [pull request template](.github/pull_request_template.md) when opening changes. For safety-sensitive updates, review the [Pre-Publish Review Checklist](docs/pre-publish-review.md) and [Screenshot Policy](docs/screenshots-policy.md).
+
+## Local Checks
+
+Run the lightweight checks before opening a pull request when practical:
+
+```bash
+python3 scripts/check_markdown_links.py
+python3 scripts/check_diagrams.py
+python3 scripts/public_safety_scan.py
+git diff --check
+```
+
+These checks are guardrails. They do not replace manual review for screenshots, examples, or security-sensitive docs.
 
 ## Issues
 
