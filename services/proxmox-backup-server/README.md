@@ -6,7 +6,7 @@ Proxmox Backup Server, or PBS, is the main VM and container backup target for th
 
 ## Why This Matters
 
-Backups are only useful if they can be restored. PBS matters because it moves the lab from "I hope I can rebuild this" to "I have a recovery path I can test."
+Backups are only useful if they can be restored. PBS matters because it moves the lab from hope-based recovery to a recovery path that can be tested.
 
 It also teaches viewers that a backup system needs its own documentation, retention policy, and security boundary.
 
