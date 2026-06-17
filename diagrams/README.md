@@ -1,78 +1,22 @@
 # Diagrams
 
-Store public-safe diagrams here. Diagrams should teach the architecture without exposing live DNS zones, public IPs, raw firewall rules, or private credentials.
+This folder contains public-safe Mermaid diagrams for the KeepItTechie homelab. The diagrams explain architecture patterns without exposing live DNS zones, exact host addresses, public IP addresses, private credentials, screenshots, or raw config exports.
 
-Start with the GitHub-rendered [Mermaid homelab overview](homelab-overview.md).
+## Diagram Index
 
-## Recommended Files
+| Diagram | Purpose | Best Starting Point For | File |
+|---|---|---|---|
+| Homelab Overview | Shows the full high-level lab flow from internet access to apps, storage, monitoring, and local AI | Viewers who want the big picture first | [homelab-overview.md](homelab-overview.md) |
+| DNS Flow | Shows how clients use pfSense DHCP, Pi-hole, local records, blocking, and upstream DNS | Viewers learning internal DNS and service names | [dns-flow.md](dns-flow.md) |
+| Backup Flow | Shows VM backups, app data, NAS targets, ZFS snapshots, and restore verification | Viewers learning backup design and restore proof | [backup-flow.md](backup-flow.md) |
+| Reverse Proxy Flow | Shows internal HTTPS routing and selected public access through a tunnel | Viewers learning service aliases, TLS, and public/private boundaries | [reverse-proxy-flow.md](reverse-proxy-flow.md) |
+| Local AI Flow | Shows Open WebUI, a local OpenAI-compatible endpoint, llama.cpp, model storage, and GPU runtime | Viewers learning local-first AI on Linux | [local-ai-flow.md](local-ai-flow.md) |
+| Monitoring Flow | Shows exporters, Prometheus, Loki, Grafana, generic alerts, and the review loop | Viewers learning observability basics | [monitoring-flow.md](monitoring-flow.md) |
 
-| File | Purpose |
-|---|---|
-| `network-overview.drawio` | Internet, pfSense, LAN, Proxmox, storage, and clients |
-| `homelab-overview.md` | GitHub-rendered Mermaid architecture placeholder |
-| `dns-flow.drawio` | Client to Pi-hole to upstream resolver flow |
-| `reverse-proxy-flow.drawio` | Service alias to reverse proxy to backend |
-| `backup-flow.drawio` | Proxmox to PBS plus app-aware backup notes |
-| `monitoring-flow.drawio` | Exporters to Prometheus/Loki to Grafana |
-| `local-ai-stack.drawio` | Open WebUI to local AI endpoint to GPU server |
+## Public-Safe Diagram Rules
 
-Export PNG or SVG versions only after reviewing them for private information.
-
-## Simple Network Placeholder
-
-```text
-Internet
-  |
-Cloudflare Tunnel for selected public services
-  |
-pfSense firewall
-  |
-10.10.0.0/24 lab LAN
-  |
-  +-- Proxmox host
-  |   +-- pihole1.home.example.com
-  |   +-- pihole2.home.example.com
-  |   +-- proxy.home.example.com
-  |   +-- grafana.home.example.com
-  |   +-- wiki.home.example.com
-  |   +-- ai.home.example.com
-  |
-  +-- nas.home.example.com
-  +-- zfs.home.example.com
-  +-- pbs.home.example.com
-```
-
-## Reverse Proxy Placeholder
-
-```text
-grafana.home.example.com
-wiki.home.example.com
-nextcloud.home.example.com
-        |
-        v
-proxy.home.example.com
-        |
-        +-- monitoring app backend
-        +-- documentation app backend
-        +-- file sync app backend
-```
-
-## Backup Placeholder
-
-```text
-Proxmox guests
-  |
-  +-- scheduled VM backups -> pbs.home.example.com
-  |
-  +-- app database dumps -> private backup target
-  |
-  +-- config in Git where public-safe
-```
-
-## Diagram Safety Checklist
-
-- Use `home.example.com`, not the live private domain.
-- Use `10.10.0.0/24` examples, not full private exports.
-- Remove public IPs, account IDs, tokens, and QR codes.
-- Crop screenshots so they do not show private bookmarks or admin details.
-- Prefer role labels when exact host details do not help the viewer.
+- Use `home.example.com`, not a live private domain.
+- Use `10.10.0.0/24` for network examples, not exact host addresses.
+- Use role labels when exact host details do not help viewers learn the design.
+- Do not add screenshots, raw exports, private certificate paths, tunnel identifiers, usernames, email addresses, or credential material.
+- Review diagrams before publishing to confirm they show architecture, not private infrastructure details.

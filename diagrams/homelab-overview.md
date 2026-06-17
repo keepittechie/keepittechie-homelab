@@ -1,65 +1,69 @@
 # Homelab Overview Diagram
 
-This diagram is a public-safe architecture placeholder for the KeepItTechie homelab. It shows service roles and traffic flow without exposing real public domains, real public IPs, private credentials, or raw exports.
+This diagram shows the public-safe high-level architecture of the KeepItTechie homelab. It focuses on service roles and traffic flow without exposing real public domains, real public IP addresses, exact host addresses, credentials, or raw exports.
+
+## Diagram
 
 ```mermaid
 flowchart TD
-    internet[Internet] --> edge[Cloudflare Tunnel / VPN]
-    edge --> firewall[pfSense Firewall]
-    firewall --> lan[VLANs / LAN<br/>10.10.0.0/24 example]
+    Internet[Internet] --> Access[Cloudflare Tunnel / VPN]
+    Access --> Firewall[pfSense Firewall]
+    Firewall --> Networks[LAN / VLANs<br/>10.10.0.0/24 example]
 
-    lan --> dns[DNS Layer<br/>Pi-hole Primary + Secondary]
-    lan --> proxmox[Proxmox Virtualization]
-    lan --> storage[Storage Layer]
-    lan --> monitoring[Monitoring Layer]
+    Networks --> DNS[DNS Layer<br/>Pi-hole Primary + Secondary]
+    Networks --> Virt[Virtualization Layer<br/>Proxmox]
+    Networks --> Storage[Storage Layer]
+    Networks --> Monitoring[Monitoring Layer]
+    Networks --> Clients[Admin Workstations<br/>and Client Devices]
 
-    dns --> pihole1[pihole1.home.example.com]
-    dns --> pihole2[pihole2.home.example.com]
+    DNS --> LocalRecords[Local DNS Records<br/>home.example.com]
+    DNS --> Filtering[DNS Filtering]
 
-    proxmox --> docker[Docker / App Hosts]
-    proxmox --> media[Media Stack]
-    proxmox --> ai[Local AI]
-    proxmox --> personal[Personal Apps]
-    proxmox --> automation[AWX / Ansible]
+    Virt --> Docker[Docker / App Hosts]
+    Virt --> Media[Media Services]
+    Virt --> AI[Local AI Layer]
+    Virt --> Apps[Personal Apps]
+    Virt --> Docs[Documentation]
+    Virt --> Automation[Automation Layer]
 
-    docker --> proxy[NGINX Reverse Proxy<br/>proxy.home.example.com]
-    docker --> wiki[Wiki.js]
-    docker --> dashboard[Glance or Homepage Dashboard]
+    Docker --> Proxy[NGINX Reverse Proxy<br/>proxy.home.example.com]
+    Docker --> Dashboard[Dashboard<br/>dashboard.home.example.com]
 
-    storage --> nas[Synology NAS]
-    storage --> zfs[Rocky Linux ZFS Storage]
-    storage --> pbs[Proxmox Backup Server]
+    Storage --> NAS[Synology NAS<br/>nas.home.example.com]
+    Storage --> ZFS[Linux ZFS Storage]
+    Storage --> PBS[Proxmox Backup Server]
 
-    monitoring --> grafana[Grafana<br/>grafana.home.example.com]
-    monitoring --> prometheus[Prometheus]
-    monitoring --> loki[Loki + Promtail]
-    monitoring --> exporters[Node Exporter / cAdvisor / Blackbox]
+    Monitoring --> Grafana[Grafana<br/>grafana.home.example.com]
+    Monitoring --> Metrics[Prometheus + Exporters]
+    Monitoring --> Logs[Loki + Promtail]
 
-    media --> plex[Plex]
-    media --> servarr[Servarr Stack]
-    media --> tdarr[Tdarr]
+    Media --> Plex[Plex]
+    Media --> AutomationApps[Servarr-style Apps]
+    Media --> Transcode[Tdarr / Transcode Jobs]
 
-    ai --> openwebui[Open WebUI]
-    ai --> llama[llama.cpp-compatible endpoint]
+    AI --> WebUI[Open WebUI<br/>ai.home.example.com]
+    AI --> Endpoint[OpenAI-Compatible API]
+    AI --> Models[Local Model Storage]
 
-    personal --> finance[FinanceHQ]
-    personal --> career[CareerFill]
+    Apps --> Finance[FinanceHQ]
+    Apps --> Career[CareerFill]
 
-    proxy --> selected[Selected Public Services Only]
-    pbs --> restore[Restore Tests]
+    Docs --> Wiki[Wiki.js]
+    Automation --> AWX[AWX / Ansible]
+
+    Proxy --> InternalWeb[Private Internal Web Apps]
+    Access --> SelectedPublic[Selected Public Apps Only]
 ```
 
-## Reading The Diagram
+## How to Read This
 
-- Internet access is treated as controlled and intentional.
-- pfSense remains the network policy point.
-- Pi-hole provides internal DNS and filtering.
-- Proxmox hosts most lab workloads.
-- Storage, monitoring, media, AI, and personal apps are separated by role.
-- Public access is limited to selected services, not admin tools.
+Start at the top and follow traffic inward. Internet access reaches the lab only through controlled paths such as a tunnel or VPN. pfSense is the network policy point, Pi-hole handles internal DNS, and Proxmox hosts most workloads.
+
+The lower layers show service categories rather than exact machine details. This keeps the diagram useful for learning while avoiding a public map of private infrastructure.
 
 ## Public-Safe Notes
 
-- Example DNS names use `home.example.com`.
-- Example network references use `10.10.0.0/24`.
-- Exact live hostnames, public domains, public IPs, and private credentials are intentionally omitted.
+- DNS names use examples such as `home.example.com`, `proxy.home.example.com`, and `grafana.home.example.com`.
+- Network examples use `10.10.0.0/24` instead of exact host addresses.
+- Real public domains, public IP addresses, account IDs, credentials, certificate paths, and production exports are intentionally omitted.
+- Role labels are used when exact host identity does not help viewers understand the architecture.

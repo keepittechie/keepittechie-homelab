@@ -4,6 +4,8 @@ This page is the beginner-friendly entry point for storage, backups, and monitor
 
 Storage keeps services running and data available. Backups make recovery possible. Monitoring tells you when something is unhealthy before the outage becomes a mystery.
 
+For visual references, see the [backup flow diagram](../diagrams/backup-flow.md) and [monitoring flow diagram](../diagrams/monitoring-flow.md).
+
 ## Recommended Reading Order
 
 | Step | Topic | Link | Why Start Here |
@@ -68,5 +70,6 @@ Do not document:
 
 - [Core Infrastructure](core-infrastructure.md)
 - [Apps and AI](apps-and-ai.md)
+- [Public-Safe Diagrams](../diagrams/README.md)
 - [Service Matrix](service-matrix.md)
 - [Pre-Publish Review Checklist](pre-publish-review.md)
