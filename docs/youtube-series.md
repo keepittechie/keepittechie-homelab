@@ -1,11 +1,18 @@
 # YouTube Companion Series
 
-This plan turns the public homelab repo into a companion resource for KeepItTechie videos. Each episode should connect a real lab pattern to a practical lesson viewers can reuse.
+This page maps the homelab documentation to potential KeepItTechie video topics.
 
-| Episode | Goal | What Viewers Learn | Repo Files To Reference | Safe Demo Ideas |
+Each episode outline includes:
+
+- Goal
+- What viewers learn
+- Repo references
+- Safe demo ideas
+
+| Episode | Goal | What Viewers Learn | Repo References | Safe Demo Ideas |
 |---|---|---|---|---|
 | 1. Full Homelab Tour | Explain the full lab at a high level | How firewall, DNS, virtualization, storage, monitoring, media, AI, and apps fit together | `README.md`, `docs/overview.md`, `diagrams/homelab-overview.md` | Walk through the Mermaid diagram and sanitized service matrix |
-| 2. How My pfSense Network Is Structured | Teach the network control plane | Routing, DHCP, firewall policy, and why admin tools stay private | `docs/network.md`, `services/pfsense/README.md` | Use fake VLANs and `10.10.0.0/24` examples |
+| 2. How the pfSense Network Is Structured | Teach the network control plane | Routing, DHCP, firewall policy, and why admin tools stay private | `docs/network.md`, `services/pfsense/README.md` | Use fake VLANs and `10.10.0.0/24` examples |
 | 3. Pi-hole and Internal DNS | Show why local DNS matters | Primary/secondary DNS, service aliases, and troubleshooting name resolution | `services/pihole/README.md`, `inventory/sanitized/hosts.example.yml` | Add a fake `grafana.home.example.com` record |
 | 4. Proxmox VM Layout | Explain VM role separation | Why virtualization helps with isolation, testing, and rebuilds | `services/proxmox/README.md`, `docs/hardware.md` | Show a sanitized VM role table |
 | 5. Proxmox Backup Server | Show backup thinking | Retention, verification, and restore testing | `services/proxmox-backup-server/README.md`, `docs/storage-and-backups.md` | Restore a disposable demo VM or walk through a sanitized checklist |
