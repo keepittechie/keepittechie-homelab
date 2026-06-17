@@ -1,10 +1,14 @@
-# Glance Dashboard
+# Glance / Homepage Dashboard
 
 ## Purpose
 
-Glance is the homelab dashboard: a quick place to see important links, service groups, status widgets, and daily operational shortcuts.
+The dashboard is the homelab start page. It groups service links, status widgets, documentation shortcuts, and daily operational views into one place.
 
-## Where It Fits
+## Why This Matters
+
+A dashboard makes the lab easier to use, but it can also reveal a lot about private infrastructure. The learning goal is to show how to organize services without publishing sensitive admin links or live internal details.
+
+## Where It Fits in the Homelab
 
 ```text
 Admin browser
@@ -13,66 +17,96 @@ dashboard.home.example.com
   |
 Dashboard app
   |
-Links to services, docs, monitoring, and media tools
+Links to services, docs, monitoring, and workflows
 ```
 
-The dashboard is not the source of truth for infrastructure, but it is a useful daily entry point.
+The dashboard is a navigation layer. It is not the source of truth for infrastructure.
 
 ## Host / Runtime
 
 | Field | Value |
 |---|---|
-| Runtime | Container or app VM |
+| Runtime | App VM or container |
 | Example DNS | `dashboard.home.example.com` |
 | Public access | No |
-| Similar current grouping source | Homepage/Glance-style dashboard config |
-| Primary audience | Lab admin |
+| Primary audience | Homelab admin |
+| Data type | Links, groups, widgets, health checks |
 
-## Key Dependencies
+## Storage / Data Layout
 
-- Pi-hole DNS records
-- Reverse proxy route
-- Service URLs
-- Optional widgets or health checks
-- Icons or small static assets
+Example layout:
+
+| Data | Example Path | Backup Need | Notes |
+|---|---|---|---|
+| Dashboard config | `/opt/apps/example/dashboard` | High | Remove private URLs before sharing |
+| Icons/assets | `/mnt/storage/appdata/dashboard/assets` | Medium | Safe if they contain no private data |
+| Widget settings | `/mnt/storage/appdata/dashboard/widgets` | High | May reference private services |
+| Backups | `/mnt/storage/backups/dashboard` | Medium | Keep private configs private |
 
 ## Network / DNS
 
-Dashboard links should use service aliases instead of raw IPs:
+Example:
 
 ```text
-grafana.home.example.com
-pihole1.home.example.com
-proxmox.home.example.com
-wiki.home.example.com
-plex.home.example.com
+dashboard.home.example.com -> proxy.home.example.com
 ```
 
-Internal admin links should not be exposed publicly just because they appear on a dashboard.
+Dashboard links should use service aliases, not raw backend addresses. Public examples should use `home.example.com` names only.
 
-## Backup Notes
+## Key Responsibilities
+
+- Group common service links.
+- Surface health checks where useful.
+- Link documentation and dashboards.
+- Keep admin workflows easy to find.
+- Avoid exposing sensitive services publicly.
+- Provide a safe pattern viewers can adapt.
+
+## Example Public-Safe Configuration
+
+Sanitized dashboard grouping:
+
+| Group | Example Services | Purpose | Public Notes |
+|---|---|---|---|
+| Core Infrastructure | pfSense, Pi-hole, Proxmox, PBS | Admin entry points | Keep private |
+| Monitoring | Grafana, Prometheus, Loki | Visibility and troubleshooting | Do not publish live dashboards |
+| Media | Plex, Tautulli, Tdarr | Media workflows | Keep user data private |
+| Documentation | Wiki.js, GitHub repo | Notes and public docs | Separate public/private links |
+| Apps | FinanceHQ, CareerFill | Personal workflows | Private only |
+
+## Backup and Restore Notes
 
 - Back up dashboard configuration.
-- Keep widget credentials in private runtime files.
-- Keep icons and non-secret assets versioned if useful.
-- Sanitize any dashboard config before publishing examples.
+- Keep widget credentials and private URLs out of public examples.
+- Store public-safe examples separately from live config.
+- Test that important links still work after restore.
+- Rebuild is usually easy if the service list is documented.
 
 ## Security Notes
 
-- Do not publish a dashboard full of private admin links.
-- Keep widget credentials out of Git.
-- Avoid screenshots showing real internal domains, personal bookmarks, or account data.
-- Treat the dashboard as private operational visibility.
+- Do not publish a dashboard full of admin links.
+- Do not include private URLs, credentials, or personal bookmarks in screenshots.
+- Keep health check endpoints private if they reveal service status.
+- Avoid public widgets that expose infrastructure state.
+- Treat dashboard config as sensitive if it references private services.
+
+## Common Mistakes to Avoid
+
+- Treating the dashboard as harmless because it is "just links."
+- Publishing screenshots without redaction.
+- Mixing public bookmarks with private admin shortcuts.
+- Storing widget credentials in public examples.
+- Letting stale links hide real service changes.
 
 ## What Viewers Can Learn
 
-- How a dashboard improves homelab usability.
+- How a dashboard improves daily homelab use.
 - How to group services by workflow.
-- Why links, monitoring, and documentation belong near each other.
-- How to share dashboard ideas without publishing private URLs.
+- Why dashboard config should be sanitized before publishing.
+- How health checks and documentation links help operations.
 
 ## Future Improvements
 
-- Add a sanitized dashboard group example.
-- Add a dashboard-to-service inventory mapping.
-- Decide whether the public docs should use "Glance" as the canonical dashboard name if the implementation changes.
+- Add a sanitized dashboard example file.
+- Add a dashboard-to-service matrix.
+- Add screenshot guidance for public videos.

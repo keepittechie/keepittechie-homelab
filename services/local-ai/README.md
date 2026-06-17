@@ -2,75 +2,130 @@
 
 ## Purpose
 
-The local AI stack supports private AI experimentation, Linux-first AI workflows, local inference, and tool integrations without sending every request to a hosted provider.
+The local AI stack provides private, Linux-first AI experimentation using a GPU server, local model storage, an OpenAI-compatible inference endpoint, and Open WebUI.
 
-## Where It Fits
+## Why This Matters
+
+Local AI is useful for privacy, control, learning, and content creation. It lets viewers understand how models run, why GPU memory matters, how local APIs can mimic hosted AI APIs, and where self-hosted AI fits into a practical homelab.
+
+For KeepItTechie, this stack also supports videos about Linux GPU setup, local-first tools, automation, and practical AI workflows without treating every prompt as cloud-bound.
+
+## Where It Fits in the Homelab
 
 ```text
-Local tools and web UI
+Local tools and browser UI
   |
-OpenAI-compatible local endpoint
+openwebui.home.example.com
   |
-GPU server
+ai.home.example.com
   |
-local models
+GPU server and local model storage
 ```
 
-The stack is useful for learning how models run, how GPU memory affects choices, and how local AI can connect to real admin workflows.
+The AI stack is an internal service. It can support other tools, but it should not be exposed publicly without strong authentication, rate limiting, and resource controls.
 
 ## Host / Runtime
 
 | Field | Value |
 |---|---|
-| Example host | `hephaestus` |
-| GPU | NVIDIA RTX A2000 12GB |
-| Runtime | Linux GPU server / VM workloads |
+| Runtime | Linux GPU server or GPU-capable VM |
+| GPU role | Local inference and AI experiments |
 | Example DNS | `ai.home.example.com`, `openwebui.home.example.com` |
 | Public access | No |
+| Primary users | Admin tools, local workflows, content experiments |
 
-## Key Dependencies
+## Storage / Data Layout
 
-- NVIDIA driver stack
-- CUDA-capable runtime where needed
-- Local model storage
-- llama.cpp-style OpenAI-compatible endpoint
-- Open WebUI
-- Reverse proxy for internal-only access
+Example layout:
+
+| Data | Example Path | Backup Need | Notes |
+|---|---|---|---|
+| Model files | `/mnt/storage/appdata/models` | Low to medium | Large files may be easier to redownload |
+| Open WebUI data | `/mnt/storage/appdata/openwebui` | High | Contains app state and settings |
+| API service config | `/opt/apps/example/local-ai` | High | Keep credentials private |
+| Experiment outputs | `/mnt/storage/appdata/ai-output` | Case by case | Sanitize before sharing |
 
 ## Network / DNS
 
-Local AI endpoints should stay private unless strong authentication, rate limiting, and resource controls are in place.
-
-Example:
+Example internal names:
 
 ```text
 openwebui.home.example.com -> proxy.home.example.com
 ai.home.example.com        -> proxy.home.example.com
 ```
 
-## Backup Notes
+Example sanitized API base URL:
 
-- Back up Open WebUI configuration if conversations, users, or settings matter.
-- Document model locations, but do not commit large model files.
-- Keep generated personal data out of public examples.
+```text
+https://ai.home.example.com/v1
+```
+
+Do not publish a real unauthenticated endpoint.
+
+## Key Responsibilities
+
+- Run local models for private experimentation.
+- Provide an OpenAI-compatible API shape through a local endpoint.
+- Provide a browser UI through Open WebUI.
+- Keep model and prompt workflows internal.
+- Support KeepItTechie demos around Linux, GPUs, and local-first AI.
+- Track GPU, CPU, memory, and disk usage.
+
+## Example Public-Safe Configuration
+
+Sanitized component map:
+
+| Component | Role | Access Level | Public Notes |
+|---|---|---|---|
+| GPU server | Runs inference workloads | Private LAN | Do not expose management access |
+| llama.cpp-compatible endpoint | Local API for model calls | Internal Only | Use placeholder URLs in docs |
+| Open WebUI | Web UI for local AI | Private LAN | Do not publish real chats |
+| Model storage | Stores local model files | Internal Only | Do not commit model files |
+| Monitoring | Tracks GPU and service health | Private LAN | Sanitize dashboards before screenshots |
+
+Example request shape for teaching:
+
+```text
+POST https://ai.home.example.com/v1/chat/completions
+Authorization: Bearer REPLACE_WITH_PRIVATE_VALUE
+```
+
+The example shows the API pattern only. Do not commit real credentials.
+
+## Backup and Restore Notes
+
+- Back up Open WebUI state if users, settings, or conversations matter.
+- Document model names and sources without storing large models in Git.
+- Back up service configuration privately.
 - Rebuild notes may be more useful than full binary backups for model runners.
+- Treat prompts and outputs as sensitive if they include personal or operational context.
 
 ## Security Notes
 
-- Do not publish unauthenticated model endpoints.
-- Treat local AI prompts and outputs as potentially sensitive.
-- Keep API-style credentials out of Git.
-- Monitor GPU and disk usage so model workloads do not break unrelated services.
+- Do not expose local AI endpoints publicly without strong controls.
+- Keep API credentials private.
+- Do not publish real prompts, chats, or generated private data.
+- Monitor resource usage so AI workloads do not starve other services.
+- Keep model download sources and licenses documented where appropriate.
+
+## Common Mistakes to Avoid
+
+- Publishing an unauthenticated AI endpoint.
+- Assuming local prompts are safe to share publicly.
+- Filling storage with models without documenting what is actually used.
+- Ignoring GPU and memory monitoring.
+- Treating local AI as a magic service instead of a normal app with backups and logs.
 
 ## What Viewers Can Learn
 
-- How local inference differs from hosted AI APIs.
-- Why VRAM matters.
-- How OpenAI-compatible endpoints make local tools easier to integrate.
-- How to keep AI workflows local-first and privacy-aware.
+- How local inference differs from hosted AI.
+- Why GPU memory and model size matter.
+- How OpenAI-compatible APIs make local tools easier to integrate.
+- How local AI fits into Linux and self-hosting workflows.
+- How to keep AI experiments private and controlled.
 
 ## Future Improvements
 
-- Add a sanitized model inventory format.
-- Add GPU monitoring examples.
-- Add a private-versus-public AI endpoint decision checklist.
+- Add a sanitized model inventory template.
+- Add GPU monitoring dashboard ideas.
+- Add a local AI demo checklist for KeepItTechie videos.
