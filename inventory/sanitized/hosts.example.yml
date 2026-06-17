@@ -1,0 +1,34 @@
+# Sanitized inventory example
+# Replace values with safe public examples.
+
+network:
+  firewall:
+    name: firewall
+    role: pfSense
+    dns: firewall.home.example.com
+
+dns:
+  primary:
+    name: pihole1
+    role: DNS filtering
+    dns: pihole1.home.example.com
+  secondary:
+    name: pihole2
+    role: DNS redundancy
+    dns: pihole2.home.example.com
+
+virtualization:
+  proxmox:
+    name: proxmox
+    role: VM host
+    dns: proxmox.home.example.com
+
+storage:
+  nas:
+    name: nas
+    role: shared storage
+    dns: nas.home.example.com
+  zfs:
+    name: zfs-storage
+    role: ZFS storage server
+    dns: zfs.home.example.com
