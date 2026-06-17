@@ -4,7 +4,7 @@ This page is the beginner-friendly entry point for the services that make the re
 
 Core infrastructure means the services that provide network access, DNS, virtualization, backups, internal web routing, and controlled public exposure. If these pieces are unclear, every app on top of them becomes harder to explain and troubleshoot.
 
-For visual references, start with the [homelab overview diagram](../diagrams/homelab-overview.md), then review the [DNS flow](../diagrams/dns-flow.md) and [reverse proxy flow](../diagrams/reverse-proxy-flow.md).
+For visual references, start with the [homelab overview diagram](../diagrams/homelab-overview.md), then review the [DNS flow](../diagrams/dns-flow.md) and [reverse proxy flow](../diagrams/reverse-proxy-flow.md). For unfamiliar terms, use the [Glossary](glossary.md).
 
 ## Recommended Reading Order
 
@@ -14,7 +14,7 @@ For visual references, start with the [homelab overview diagram](../diagrams/hom
 | 2 | [Pi-hole](../services/pihole/README.md) | Understand internal DNS, local service names, and DNS filtering |
 | 3 | [Proxmox](../services/proxmox/README.md) | Understand where the VMs and containers run |
 | 4 | [Proxmox Backup Server](../services/proxmox-backup-server/README.md) | Understand how VM recovery is planned |
-| 5 | [Reverse Proxy](../services/reverse-proxy/README.md) | Understand internal HTTPS and service aliases |
+| 5 | [Reverse Proxy](../services/reverse-proxy/README.md) | Understand internal HTTPS and service identities |
 | 6 | [Cloudflare Tunnel](../services/cloudflare-tunnel/README.md) | Understand selected public access and why most admin tools stay private |
 
 ## Core Stack Summary
@@ -73,6 +73,8 @@ Do not document:
 
 - [Storage and Monitoring](storage-monitoring.md)
 - [Apps and AI](apps-and-ai.md)
+- [Glossary](glossary.md)
+- [How To Read Service Pages](how-to-read-service-pages.md)
 - [Public-Safe Diagrams](../diagrams/README.md)
 - [Service Matrix](service-matrix.md)
 - [Pre-Publish Review Checklist](pre-publish-review.md)

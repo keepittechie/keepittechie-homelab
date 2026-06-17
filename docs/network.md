@@ -2,7 +2,7 @@
 
 The network is built around pfSense, internal DNS, readable service names, and conservative exposure. The public examples in this repo use `10.10.0.0/24` and `home.example.com`.
 
-For visual references, see the [DNS flow diagram](../diagrams/dns-flow.md) and [reverse proxy flow diagram](../diagrams/reverse-proxy-flow.md).
+For visual references, see the [DNS flow diagram](../diagrams/dns-flow.md) and [reverse proxy flow diagram](../diagrams/reverse-proxy-flow.md). For terms such as LAN, VLAN, DNS, DHCP, service identity, and machine identity, use the [Glossary](glossary.md).
 
 ## Core Flow
 
@@ -30,10 +30,10 @@ Grafana container or VM backend
 
 | Record Type | Example | Purpose |
 |---|---|---|
-| Host identity | `pontus.home.example.com` | Names the VM or physical host |
-| Service alias | `pihole1.home.example.com` | Names the service role |
-| Reverse proxy alias | `grafana.home.example.com` | Gives users a clean service URL |
-| Storage alias | `nas.home.example.com` | Keeps storage access readable |
+| Machine identity | `pontus.home.example.com` | Names the VM or physical host |
+| Service identity | `pihole1.home.example.com` | Names the service role |
+| Reverse proxy identity | `grafana.home.example.com` | Gives users a clean service URL |
+| Storage identity | `nas.home.example.com` | Keeps storage access readable |
 
 Pi-hole handles DNS filtering and local records. pfSense remains the network policy point and can hand out DNS settings through DHCP.
 

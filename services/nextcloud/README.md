@@ -81,7 +81,7 @@ Example operational checklist:
 - Back up configuration privately.
 - Document whether external storage is included.
 - Test restores before relying on the service for critical files.
-- Record restore evidence with sanitized notes.
+- Record restore test evidence with sanitized notes.
 
 ## Security Notes
 

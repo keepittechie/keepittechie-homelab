@@ -58,7 +58,7 @@ What can viewers reuse in their own lab?
 | Pi-hole | Add a local DNS record and resolve a service name |
 | Proxmox | Clone or restore a test VM |
 | PBS | Restore a VM into an isolated test network |
-| Reverse proxy | Add a new internal service alias |
+| Reverse proxy | Add a new internal service identity |
 | Monitoring | Build a simple dashboard from node metrics |
 | Loki / Promtail | Trace a service issue through logs |
 | Media stack | Explain how each app has a different role |

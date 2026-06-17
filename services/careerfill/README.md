@@ -72,7 +72,7 @@ Public-safe boundary table:
 | Workflow categories | Recruiter messages | Do not publish emails or names |
 | Backup strategy | Job application records | Use fake applications |
 | Local AI pattern | Prompt history with real context | Use generic prompt examples |
-| Lessons learned | Interview notes | Keep private notes out of Git |
+| Lessons learned | Interview notes | Keep sensitive notes out of Git |
 
 ## Backup and Restore Notes
 

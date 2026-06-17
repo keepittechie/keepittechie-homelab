@@ -11,7 +11,7 @@ DNS is one of the first services viewers should understand in a homelab. Clean D
 Pi-hole also makes it easier to teach the difference between:
 
 - A machine hostname.
-- A service alias.
+- A service identity.
 - A DNS resolver.
 - An upstream DNS provider.
 

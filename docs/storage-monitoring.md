@@ -4,7 +4,7 @@ This page is the beginner-friendly entry point for storage, backups, and monitor
 
 Storage keeps services running and data available. Backups make recovery possible. Monitoring tells you when something is unhealthy before the outage becomes a mystery.
 
-For visual references, see the [backup flow diagram](../diagrams/backup-flow.md) and [monitoring flow diagram](../diagrams/monitoring-flow.md).
+For visual references, see the [backup flow diagram](../diagrams/backup-flow.md) and [monitoring flow diagram](../diagrams/monitoring-flow.md). For unfamiliar terms such as dataset, snapshot, scrub, metrics, and logs, use the [Glossary](glossary.md).
 
 ## Recommended Reading Order
 
@@ -35,7 +35,7 @@ Apps and VMs
   +-- store files on NAS or ZFS where appropriate
   +-- back up VMs to Proxmox Backup Server
   +-- export metrics and logs to monitoring stack
-  +-- document restore evidence in public-safe notes
+  +-- document restore test evidence in public-safe notes
 ```
 
 ## Beginner Mental Model
@@ -70,6 +70,8 @@ Do not document:
 
 - [Core Infrastructure](core-infrastructure.md)
 - [Apps and AI](apps-and-ai.md)
+- [Glossary](glossary.md)
+- [How To Read Service Pages](how-to-read-service-pages.md)
 - [Public-Safe Diagrams](../diagrams/README.md)
 - [Service Matrix](service-matrix.md)
 - [Pre-Publish Review Checklist](pre-publish-review.md)

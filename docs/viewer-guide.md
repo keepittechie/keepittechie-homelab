@@ -7,10 +7,12 @@ This guide explains how viewers can use the KeepItTechie homelab repo as a learn
 1. Start with the [Homelab Overview](overview.md).
 2. Open the [diagram index](../diagrams/README.md).
 3. Read the [service matrix](service-matrix.md) to understand what runs where.
-4. Pick one service area to study.
-5. Compare the service README with the matching [sanitized examples](../examples/README.md).
-6. Use the [Security Notes](security-notes.md) before adapting any pattern.
-7. Build safely in a lab before using a pattern for important services.
+4. Keep the [Glossary](glossary.md) open for unfamiliar terms.
+5. Review [How To Read Service Pages](how-to-read-service-pages.md).
+6. Pick one service area to study.
+7. Compare the service README with the matching [sanitized examples](../examples/README.md).
+8. Use the [Security Notes](security-notes.md) before adapting any pattern.
+9. Build safely in a lab before using a pattern for important services.
 
 ## Good First Topics
 
@@ -38,3 +40,9 @@ The examples are templates for learning. They are not production config dumps.
 Public documentation should explain the design without exposing private infrastructure. Use sanitized names such as `home.example.com`, broad network examples such as `10.10.0.0/24`, and fake data for screenshots or demos.
 
 The goal is to learn the pattern, not copy a private deployment line for line.
+
+## Related Docs
+
+- [Documentation Index](docs-index.md)
+- [Glossary](glossary.md)
+- [How To Read Service Pages](how-to-read-service-pages.md)

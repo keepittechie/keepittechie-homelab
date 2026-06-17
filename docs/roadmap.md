@@ -48,7 +48,7 @@ Completed foundation work now covers the public-safe base docs, navigation, arch
 ## Phase 4: Backup and Restore Proof
 
 - [ ] Document one successful Proxmox Backup Server restore test.
-- [x] Add a public-safe restore evidence template.
+- [x] Add a public-safe restore test evidence template.
 - [ ] Add app-aware backup notes for Wiki.js, Nextcloud, FinanceHQ, and CareerFill.
 - [ ] Add a sanitized restore checklist for the media stack.
 - [ ] Add storage rollback examples for NAS snapshots and ZFS snapshots.

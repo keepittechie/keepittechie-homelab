@@ -33,7 +33,7 @@ This page maps the homelab services by role and exposure level. Each service als
 
 See [services/monitoring/README.md](../services/monitoring/README.md).
 
-## App And Learning Services
+## App and Learning Services
 
 | Service | Purpose | Default Exposure | Service Docs |
 |---|---|---|---|
