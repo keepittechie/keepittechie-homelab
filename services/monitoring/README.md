@@ -2,7 +2,7 @@
 
 ## Purpose
 
-The monitoring stack provides visibility into host health, container health, service availability, logs, and performance trends. It helps answer: "What is broken, where should I look, and is this normal?"
+The monitoring stack provides visibility into host health, container health, service availability, logs, and performance trends. It helps answer what is broken, where to look first, and whether current behavior is normal.
 
 ## Why This Matters
 

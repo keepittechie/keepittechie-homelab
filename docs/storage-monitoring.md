@@ -41,10 +41,10 @@ Apps and VMs
 | Question | Where To Look |
 |---|---|
 | Where do shared files and media live? | Synology NAS |
-| Where do I learn Linux storage deeply? | ZFS Storage Server |
+| Where can Linux storage concepts be learned deeply? | ZFS Storage Server |
 | Where do VM backups go? | Proxmox Backup Server |
-| How do I know storage is filling up? | Grafana and exporters |
-| How do I prove backups work? | Restore test evidence |
+| How is storage growth monitored? | Grafana and exporters |
+| How are backups proven to work? | Restore test evidence |
 
 ## Public-Safe Documentation Boundary
 
@@ -63,3 +63,10 @@ Do not document:
 - Disk serial numbers.
 - Real files, account names, or private share paths.
 - Logs that contain private data.
+
+## Related Docs
+
+- [Core Infrastructure](core-infrastructure.md)
+- [Apps and AI](apps-and-ai.md)
+- [Service Matrix](service-matrix.md)
+- [Pre-Publish Review Checklist](pre-publish-review.md)
