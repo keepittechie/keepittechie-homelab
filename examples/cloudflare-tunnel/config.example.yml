@@ -1,0 +1,18 @@
+# Sanitized Cloudflare Tunnel config example.
+# Never commit real tunnel IDs, credentials, or public hostnames.
+
+tunnel: EXAMPLE_TUNNEL_NAME
+credentials-file: /opt/apps/example/cloudflared/EXAMPLE_TUNNEL_NAME.json
+
+ingress:
+  - hostname: demo.example.com
+    service: https://proxy.home.example.com
+    originRequest:
+      noTLSVerify: false
+
+  - hostname: docs.example.com
+    service: https://proxy.home.example.com
+    originRequest:
+      noTLSVerify: false
+
+  - service: http_status:404

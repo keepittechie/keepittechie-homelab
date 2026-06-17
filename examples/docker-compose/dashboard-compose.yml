@@ -1,0 +1,24 @@
+# Sanitized dashboard-style Docker Compose example.
+# Do not put real widget credentials, private URLs, or API keys in this file.
+
+services:
+  dashboard:
+    image: example/dashboard:latest
+    container_name: example-dashboard
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    volumes:
+      - dashboard_config:/config
+    environment:
+      DASHBOARD_BASE_URL: "https://dashboard.home.example.com"
+      DASHBOARD_TITLE: "Example Homelab"
+    networks:
+      - internal
+
+volumes:
+  dashboard_config:
+
+networks:
+  internal:
+    driver: bridge

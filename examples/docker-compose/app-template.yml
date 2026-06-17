@@ -1,0 +1,38 @@
+# Generic self-hosted app Docker Compose template.
+# Keep real .env files private. Commit only sanitized examples.
+
+services:
+  app:
+    image: example/app:latest
+    container_name: example-app
+    restart: unless-stopped
+    env_file:
+      - .env
+    depends_on:
+      - app-db
+    volumes:
+      - app_data:/app/data
+      - /mnt/storage/appdata/example:/app/config
+    networks:
+      - app-internal
+
+  app-db:
+    image: postgres:16-alpine
+    container_name: example-app-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: "${POSTGRES_DB:-app_db}"
+      POSTGRES_USER: "${POSTGRES_USER:-app_user}"
+      POSTGRES_PASSWORD: "${POSTGRES_PASSWORD:-CHANGE_ME}"
+    volumes:
+      - app_db:/var/lib/postgresql/data
+    networks:
+      - app-internal
+
+volumes:
+  app_data:
+  app_db:
+
+networks:
+  app-internal:
+    driver: bridge

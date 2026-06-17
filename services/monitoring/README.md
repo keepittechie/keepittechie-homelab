@@ -126,6 +126,12 @@ Public-safe dashboard ideas:
 - Why private monitoring is safer than public dashboards.
 - How monitoring supports backup and restore confidence.
 
+## Related Sanitized Examples
+
+- [Prometheus scrape config](../../examples/prometheus/prometheus.yml)
+- [Prometheus example notes](../../examples/prometheus/README.md)
+- [Monitoring flow diagram](../../diagrams/monitoring-flow.md)
+
 ## Future Improvements
 
 - Add a sanitized dashboard inventory.

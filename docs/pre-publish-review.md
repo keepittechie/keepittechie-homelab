@@ -9,6 +9,7 @@ Use this checklist before publishing, merging, or sharing updates from the publi
 - [ ] Run private IP scan.
 - [ ] Review screenshots for sensitive data.
 - [ ] Review config snippets for secrets.
+- [ ] Confirm files under `examples/` use sanitized placeholders only.
 - [ ] Confirm no private `.env` files are tracked.
 - [ ] Confirm no raw firewall/router/NAS exports are tracked.
 
