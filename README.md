@@ -1,12 +1,15 @@
 # KeepItTechie Homelab
 
 ![Docs](https://img.shields.io/badge/docs-public--safe-blue)
+![Version](https://img.shields.io/badge/docs-v0.1.0-blue)
 ![License](https://img.shields.io/badge/license-CC%20BY%204.0-green)
 ![Homelab](https://img.shields.io/badge/homelab-linux%20%7C%20self--hosted-lightgrey)
 
 This repo documents the KeepItTechie homelab as a public-safe learning resource for Linux, open source services, self-hosting, automation, storage, monitoring, media workflows, and local AI.
 
 It is written for viewers who want to understand the architecture, study practical service patterns, and reuse the ideas in their own labs without needing access to private configs.
+
+Current documentation baseline: [v0.1.0](docs/releases/v0.1.0.md). See the [changelog](CHANGELOG.md) for release history.
 
 ## Start Here
 
@@ -25,6 +28,7 @@ It is written for viewers who want to understand the architecture, study practic
 | Security | [Security Notes](docs/security-notes.md) | Learn what stays private |
 | Pre-publish review | [Pre-Publish Review](docs/pre-publish-review.md) | Run a public-safe review before merging |
 | Screenshot policy | [Screenshot Policy](docs/screenshots-policy.md) | Review images before publishing |
+| Release notes | [v0.1.0 Release Notes](docs/releases/v0.1.0.md) | See the first public documentation baseline |
 | Roadmap | [Documentation Roadmap](docs/roadmap.md) | See what is done and what is planned |
 | Video plan | [YouTube Companion Series](docs/youtube-series.md) | Connect repo docs to video episodes |
 
@@ -163,6 +167,7 @@ This is mainly a public documentation repo for the KeepItTechie homelab, but typ
 - [Pull request template](.github/pull_request_template.md)
 - [Issue templates](.github/ISSUE_TEMPLATE/)
 - [GitHub repo settings guide](docs/github-repo-settings.md)
+- [Release checklist](docs/release-checklist.md)
 
 ## License
 

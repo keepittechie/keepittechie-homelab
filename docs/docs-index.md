@@ -84,6 +84,16 @@ Use this page when the README is too high-level and a more complete map of the r
 | [Contributing](../CONTRIBUTING.md) | Contribution guidance |
 | [GitHub Repo Settings](github-repo-settings.md) | Suggested public repo settings |
 
+## Release and Maintenance
+
+| Page | Purpose |
+|---|---|
+| [Changelog](../CHANGELOG.md) | Release history for public documentation milestones |
+| [v0.1.0 Release Notes](releases/v0.1.0.md) | First public documentation baseline |
+| [Release Checklist](release-checklist.md) | Checklist for future documentation releases |
+| [Pre-Publish Review](pre-publish-review.md) | Public-safe review before publishing or merging |
+| [Local Quality Scripts](../scripts/README.md) | How to run documentation quality checks locally |
+
 ## Planning and Roadmap
 
 | Page | Purpose |
