@@ -2,7 +2,7 @@
 
 This matrix gives viewers a quick way to understand what each service does, where it runs, how it should be accessed, and how carefully it should be backed up. It is intentionally sanitized for public GitHub.
 
-For the first deep-dive reading path, start with [Core Infrastructure](core-infrastructure.md). For storage, backups, and visibility, read [Storage and Monitoring](storage-monitoring.md). For application, media, local AI, dashboard, documentation, and automation services, read [Apps and AI](apps-and-ai.md).
+For the first deep-dive reading path, start with [Core Infrastructure](core-infrastructure.md). For a friendlier grouped list, use the [Service Catalog](service-catalog.md). For a sanitized role view, use [Public-Safe Inventory](inventory-public.md). For storage, backups, and visibility, read [Storage and Monitoring](storage-monitoring.md). For application, media, local AI, dashboard, documentation, and automation services, read [Apps and AI](apps-and-ai.md).
 
 | Service | Category | Runs On | Access Level | Backup Priority | Public Repo Notes |
 |---|---|---|---|---|---|
@@ -49,3 +49,4 @@ For the first deep-dive reading path, start with [Core Infrastructure](core-infr
 - Use the core infrastructure deep dives for the network, DNS, virtualization, backup, proxy, and tunnel layers.
 - Use the storage and monitoring guide for NAS, ZFS, PBS restore test evidence, and Grafana/Prometheus/Loki visibility.
 - Use the apps and AI guide for local AI, media, documentation, dashboards, personal apps, and automation.
+- Use the service catalog when a less dense service overview is easier to read.
