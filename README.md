@@ -17,6 +17,7 @@ Current documentation baseline: [v0.1.0](docs/releases/v0.1.0.md). See the [chan
 |---|---|---|
 | Full docs map | [Documentation Index](docs/docs-index.md) | Find every major guide by topic |
 | Viewer path | [Viewer Guide](docs/viewer-guide.md) | Follow the recommended learning path |
+| Current tour | [Current Setup](docs/current-setup.md) | Tour what is running and why |
 | New terms | [Glossary](docs/glossary.md) | Learn common homelab vocabulary |
 | Big picture | [Homelab Overview](docs/overview.md) | Understand the purpose and layout |
 | Core stack | [Core Infrastructure](docs/core-infrastructure.md) | Read the first deep dives in order |
@@ -106,13 +107,14 @@ Short version: this repo teaches architecture and patterns. It is not a live bac
 ## How To Use This Repo
 
 1. Start with [docs/overview.md](docs/overview.md).
-2. Open the [diagram index](diagrams/README.md).
-3. Use the [service matrix](docs/service-matrix.md) to understand what runs where.
-4. Use [how to read service pages](docs/how-to-read-service-pages.md) before opening a service deep dive.
-5. Read the service README for the area you want to learn.
-6. Review the [sanitized examples](examples/README.md) for safe config patterns.
-7. Check [docs/security-notes.md](docs/security-notes.md) before copying any pattern into your own public repo.
-8. Use [docs/pre-publish-review.md](docs/pre-publish-review.md) before publishing or merging changes.
+2. Tour the [current setup](docs/current-setup.md).
+3. Open the [diagram index](diagrams/README.md).
+4. Use the [service matrix](docs/service-matrix.md) to understand what runs where.
+5. Use [how to read service pages](docs/how-to-read-service-pages.md) before opening a service deep dive.
+6. Read the service README for the area you want to learn.
+7. Review the [sanitized examples](examples/README.md) for safe config patterns.
+8. Check [docs/security-notes.md](docs/security-notes.md) before copying any pattern into your own public repo.
+9. Use [docs/pre-publish-review.md](docs/pre-publish-review.md) before publishing or merging changes.
 
 For a beginner-friendly walkthrough, use the [Viewer Guide](docs/viewer-guide.md). For deeper navigation, use the [Documentation Index](docs/docs-index.md) and [Glossary](docs/glossary.md).
 
