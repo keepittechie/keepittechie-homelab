@@ -1,15 +1,18 @@
 # KeepItTechie Homelab
 
-Welcome to the public companion repo for the KeepItTechie homelab.
+![Docs](https://img.shields.io/badge/docs-public--safe-blue)
+![License](https://img.shields.io/badge/license-CC%20BY%204.0-green)
+![Homelab](https://img.shields.io/badge/homelab-linux%20%7C%20self--hosted-lightgrey)
 
-This repo explains how the KeepItTechie homelab is organized for Linux learning, open source services, self-hosting, automation, storage, monitoring, media workflows, and local AI. It is written for viewers who want to understand the architecture and reuse the ideas in their own lab without needing access to private configs.
+This repo documents the KeepItTechie homelab as a public-safe learning resource for Linux, open source services, self-hosting, automation, storage, monitoring, media workflows, and local AI.
 
-The focus is practical: what each service does, why it exists, where it fits, how it is protected, and what you can learn from it.
+It is written for viewers who want to understand the architecture, study practical service patterns, and reuse the ideas in their own labs without needing access to private configs.
 
 ## Start Here
 
 | Start With | Link | Why |
 |---|---|---|
+| Viewer path | [Viewer Guide](docs/viewer-guide.md) | Follow the recommended learning path |
 | Big picture | [Homelab Overview](docs/overview.md) | Understand the purpose and layout |
 | Core stack | [Core Infrastructure](docs/core-infrastructure.md) | Read the first deep dives in order |
 | Storage and monitoring | [Storage and Monitoring](docs/storage-monitoring.md) | Understand storage, backups, restore proof, and visibility |
@@ -19,6 +22,7 @@ The focus is practical: what each service does, why it exists, where it fits, ho
 | Service list | [Service Matrix](docs/service-matrix.md) | Compare access level, host role, and backup priority |
 | Security | [Security Notes](docs/security-notes.md) | Learn what stays private |
 | Pre-publish review | [Pre-Publish Review](docs/pre-publish-review.md) | Check public safety before merging |
+| Screenshot policy | [Screenshot Policy](docs/screenshots-policy.md) | Review images before publishing |
 | Roadmap | [Documentation Roadmap](docs/roadmap.md) | See what is done and what is planned |
 | Video plan | [YouTube Companion Series](docs/youtube-series.md) | Connect repo docs to video episodes |
 
@@ -91,6 +95,8 @@ All names and networks in public examples use sanitized values such as `home.exa
 | A rebuild and documentation aid | A full backup of the lab |
 | A place for safe examples | A place for real secrets, keys, or private data |
 
+Short version: this repo teaches architecture and patterns. It is not a live backup, inventory export, credential store, or screenshot dump.
+
 ## How To Use This Repo
 
 1. Start with [docs/overview.md](docs/overview.md).
@@ -100,6 +106,8 @@ All names and networks in public examples use sanitized values such as `home.exa
 5. Review the [sanitized examples](examples/README.md) for safe config patterns.
 6. Check [docs/security-notes.md](docs/security-notes.md) before copying any pattern into your own public repo.
 7. Use [docs/pre-publish-review.md](docs/pre-publish-review.md) before publishing or merging changes.
+
+For a beginner-friendly walkthrough, use the [Viewer Guide](docs/viewer-guide.md).
 
 ## YouTube Companion Series
 
@@ -125,6 +133,8 @@ This repo should never contain:
 
 Use `.env.example`, sanitized YAML, diagrams, and Markdown explanations instead.
 
+Screenshots need the same review as config snippets. See the [Screenshot Policy](docs/screenshots-policy.md) before adding images.
+
 ## Repo Layout
 
 | Path | Purpose |
@@ -139,7 +149,12 @@ Use `.env.example`, sanitized YAML, diagrams, and Markdown explanations instead.
 
 ## Contributing
 
-This is mainly a public documentation repo for the KeepItTechie homelab, but typo fixes, diagram improvements, sanitized examples, and beginner-friendly documentation improvements are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
+This is mainly a public documentation repo for the KeepItTechie homelab, but typo fixes, diagram improvements, sanitized examples, and beginner-friendly documentation improvements are welcome.
+
+- [Contributing guide](CONTRIBUTING.md)
+- [Pull request template](.github/pull_request_template.md)
+- [Issue templates](.github/ISSUE_TEMPLATE/)
+- [GitHub repo settings guide](docs/github-repo-settings.md)
 
 ## License
 
