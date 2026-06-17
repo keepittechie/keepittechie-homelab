@@ -111,6 +111,12 @@ pfSense DHCP options
 - How DNS aliases make reverse proxying easier.
 - How to document DNS publicly without leaking the real zone.
 
+## Related Sanitized Examples
+
+- [Pi-hole local DNS CSV](../../examples/pihole/local-dns-records.example.csv)
+- [Pi-hole example notes](../../examples/pihole/README.md)
+- [DNS flow diagram](../../diagrams/dns-flow.md)
+
 ## Future Improvements
 
 - Add a sanitized Pi-hole restore walkthrough.

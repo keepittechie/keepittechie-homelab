@@ -105,6 +105,12 @@ Sanitized dashboard grouping:
 - Why dashboard config should be sanitized before publishing.
 - How health checks and documentation links help operations.
 
+## Related Sanitized Examples
+
+- [Dashboard Docker Compose example](../../examples/docker-compose/dashboard-compose.yml)
+- [Docker Compose example notes](../../examples/docker-compose/README.md)
+- [Environment file placeholders](../../examples/env/README.md)
+
 ## Future Improvements
 
 - Add a sanitized dashboard example file.

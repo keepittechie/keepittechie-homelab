@@ -1,0 +1,6 @@
+hostname,ip,purpose
+proxy.home.example.com,10.10.0.10,Reverse proxy
+grafana.home.example.com,10.10.0.20,Monitoring dashboard
+nas.home.example.com,10.10.0.30,Storage
+ai.home.example.com,10.10.0.40,Local AI endpoint
+pihole1.home.example.com,10.10.0.50,Primary DNS resolver

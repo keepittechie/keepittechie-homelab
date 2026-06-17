@@ -109,6 +109,12 @@ This is a placeholder. Do not copy live certificate paths, real backend names, o
 - Why private reverse proxy access is different from public access.
 - How to document routes safely.
 
+## Related Sanitized Examples
+
+- [NGINX reverse proxy server block](../../examples/nginx/reverse-proxy-site.conf)
+- [NGINX example notes](../../examples/nginx/README.md)
+- [Reverse proxy flow diagram](../../diagrams/reverse-proxy-flow.md)
+
 ## Future Improvements
 
 - Add a sanitized route inventory.

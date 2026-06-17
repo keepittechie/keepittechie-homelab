@@ -102,6 +102,12 @@ Sanitized service exposure table:
 - Why public access needs both routing and authentication thinking.
 - How to explain tunnel architecture without leaking credentials.
 
+## Related Sanitized Examples
+
+- [Cloudflare Tunnel config shape](../../examples/cloudflare-tunnel/config.example.yml)
+- [Cloudflare Tunnel example notes](../../examples/cloudflare-tunnel/README.md)
+- [Reverse proxy flow diagram](../../diagrams/reverse-proxy-flow.md)
+
 ## Future Improvements
 
 - Add a public-service review checklist.
