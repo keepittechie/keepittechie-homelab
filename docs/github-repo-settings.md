@@ -68,12 +68,21 @@ The Docs Quality workflow runs:
 - Public-safety pattern scanning.
 - `git diff --check`.
 
+## Recommended Release Process
+
+- Use a release-focused pull request when documenting meaningful milestones.
+- Squash merge release PRs to keep history readable.
+- Tag meaningful documentation milestones after merge, such as `v0.1.0`.
+- Keep release notes public-safe and viewer-facing.
+- Do not attach archives that include private configs, screenshots, logs, raw exports, or runtime files.
+
 ## Public Repo Safety Note
 
 The repo should document architecture, teaching patterns, and sanitized examples. It should not contain live service URLs, exact private host addresses, private screenshots, credentials, raw exports, or private operational runbooks.
 
 Related docs:
 
+- [Release Checklist](release-checklist.md)
 - [Pre-Publish Review Checklist](pre-publish-review.md)
 - [Screenshot Policy](screenshots-policy.md)
 - [Contributing Guide](../CONTRIBUTING.md)

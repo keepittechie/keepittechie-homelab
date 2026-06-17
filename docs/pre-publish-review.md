@@ -39,8 +39,18 @@ Use this checklist before publishing, merging, or sharing updates from the publi
 - [ ] Pull request checklist is complete.
 - [ ] No unexpected binary files were added.
 
+## Release Readiness
+
+- [ ] `CHANGELOG.md` is updated.
+- [ ] Release notes are updated under `docs/releases/`.
+- [ ] Docs quality scripts pass.
+- [ ] Public-safety scan passes.
+- [ ] README version and release links are current.
+- [ ] Release checklist is reviewed for release-focused PRs.
+
 Related docs:
 
 - [GitHub Repo Settings Guide](github-repo-settings.md)
+- [Release Checklist](release-checklist.md)
 - [Screenshot Policy](screenshots-policy.md)
 - [Contributing Guide](../CONTRIBUTING.md)
