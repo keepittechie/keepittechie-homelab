@@ -4,7 +4,7 @@
 site:
   name: keepittechie-homelab
   domain: home.example.com
-  example_subnet: 10.10.0.0/24
+  example_subnet: "10.10.0.0/24"
 
 network:
   firewall:
@@ -13,14 +13,14 @@ network:
     platform: pfSense
     dns:
       - firewall.home.example.com
-    example_ip: 10.10.0.1
+    example_ip: "10.10.0.x"
   switch:
     name: switch1
     role: managed_switch
     platform: managed_switch
     dns:
       - switch1.home.example.com
-    example_ip: 10.10.0.2
+    example_ip: "10.10.0.x"
 
 dns:
   primary:
@@ -31,7 +31,7 @@ dns:
     dns:
       - pontus.home.example.com
       - pihole1.home.example.com
-    example_ip: 10.10.0.6
+    example_ip: "10.10.0.x"
   secondary:
     name: priapus
     role: dns_redundancy
@@ -40,7 +40,7 @@ dns:
     dns:
       - priapus.home.example.com
       - pihole2.home.example.com
-    example_ip: 10.10.0.7
+    example_ip: "10.10.0.x"
 
 virtualization:
   proxmox:
@@ -49,7 +49,7 @@ virtualization:
     platform: Proxmox VE
     dns:
       - proxmox.home.example.com
-    example_ip: 10.10.0.50
+    example_ip: "10.10.0.x"
 
 storage:
   synology:
@@ -59,7 +59,7 @@ storage:
     dns:
       - nas.home.example.com
       - synology.home.example.com
-    example_ip: 10.10.0.4
+    example_ip: "10.10.0.x"
   zfs:
     name: bison
     role: zfs_storage
@@ -67,14 +67,14 @@ storage:
     dns:
       - bison.home.example.com
       - zfs.home.example.com
-    example_ip: 10.10.0.5
+    example_ip: "10.10.0.x"
   backup:
     name: chronos
     role: vm_backup
     platform: Proxmox Backup Server
     dns:
       - pbs.home.example.com
-    example_ip: 10.10.0.10
+    example_ip: "10.10.0.x"
 
 app_hosts:
   proxy_automation:
@@ -87,7 +87,7 @@ app_hosts:
       - zelus.home.example.com
       - proxy.home.example.com
       - awx.home.example.com
-    example_ip: 10.10.0.8
+    example_ip: "10.10.0.x"
   docker_apps:
     name: heimdall
     role:
@@ -101,7 +101,7 @@ app_hosts:
       - grafana.home.example.com
       - wiki.home.example.com
       - dashboard.home.example.com
-    example_ip: 10.10.0.58
+    example_ip: "10.10.0.x"
   media:
     name: apollo
     role:
@@ -112,7 +112,7 @@ app_hosts:
       - apollo.home.example.com
       - plex.home.example.com
       - tautulli.home.example.com
-    example_ip: 10.10.0.55
+    example_ip: "10.10.0.x"
   media_automation:
     name: dionysus
     role:
@@ -126,7 +126,7 @@ app_hosts:
       - sonarr.home.example.com
       - prowlarr.home.example.com
       - requests.home.example.com
-    example_ip: 10.10.0.59
+    example_ip: "10.10.0.x"
   gpu_ai:
     name: hephaestus
     role:
@@ -140,7 +140,7 @@ app_hosts:
       - ai.home.example.com
       - openwebui.home.example.com
       - tdarr.home.example.com
-    example_ip: 10.10.0.60
+    example_ip: "10.10.0.x"
 
 service_aliases:
   private_only:

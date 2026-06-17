@@ -2,21 +2,32 @@
 
 ## Purpose
 
-Cloudflare Tunnel provides controlled public access for selected services without opening broad inbound firewall rules. In this lab, it is treated as an exception path for approved public services, not a default path for admin tools.
+Cloudflare Tunnel provides selected public access to approved services without opening broad inbound ports on the firewall. In this homelab, it is used as a controlled publishing path, not as a shortcut to expose admin tools.
 
-## Where It Fits
+## Why This Matters
+
+Most homelab services should remain private. A tunnel can make a service reachable from the internet, but that does not automatically make the service safe to publish.
+
+This is a useful place to teach the difference between:
+
+- Internal access.
+- VPN access.
+- Public access.
+- Public access with additional authentication and policy.
+
+## Where It Fits in the Homelab
 
 ```text
 Public user
   |
-Cloudflare
+Cloudflare edge
   |
-Tunnel connector in the homelab
+Tunnel connector
   |
 Reverse proxy or approved backend
 ```
 
-The tunnel should point only to services that have been intentionally reviewed for public access.
+The tunnel should point to selected services only. The default for admin tools should be private access.
 
 ## Host / Runtime
 
@@ -26,55 +37,73 @@ The tunnel should point only to services that have been intentionally reviewed f
 | Typical pairing | Reverse proxy |
 | Example internal DNS | `proxy.home.example.com` |
 | Public access | Selected services only |
-| Admin access | Private dashboard and private credentials |
-
-## Key Dependencies
-
-- Cloudflare account and DNS zone
-- Reverse proxy routes
-- Service authentication
-- pfSense egress access
-- Private tunnel credentials stored outside Git
+| Credentials | Stored privately outside Git |
 
 ## Network / DNS
 
-Public hostnames should map to intentionally published services. Internal-only services should continue to use `home.example.com` and stay private.
+Public hostnames belong in private tunnel configuration, not in this public repo unless they are intentionally shared branding. Internal docs should use examples like:
 
-Example public-safe policy:
+```text
+public.example.com -> tunnel -> proxy.home.example.com -> approved service
+```
 
-| Service Type | Tunnel? |
-|---|---|
-| Public docs | Maybe |
-| Portfolio or channel site | Maybe |
-| pfSense | No |
-| Proxmox | No |
-| Pi-hole admin | No |
-| Grafana | Usually no |
-| FinanceHQ / CareerFill | No |
+Private services should continue using `home.example.com` examples.
 
-## Backup Notes
+## Key Responsibilities
 
-- Store tunnel configuration and credentials privately.
-- Keep a sanitized list of published service categories in this repo.
-- Document why each public service is exposed.
-- Keep recovery notes for recreating the tunnel in a private runbook.
+- Provide outbound tunnel connectivity for selected public services.
+- Avoid broad inbound firewall exposure.
+- Keep public service decisions documented.
+- Support access policy and authentication where appropriate.
+- Keep tunnel credentials private.
+
+## Example Public-Safe Configuration
+
+Sanitized service exposure table:
+
+| Service | Public? | Access Control | Notes |
+|---|---|---|---|
+| Public docs site | Yes, if intended | App auth or public read-only content | Review pages before publishing |
+| Wiki.js public namespace | Limited | Namespace permissions | Private admin pages stay private |
+| Nextcloud | Limited | Strong user auth and hardening | Review carefully before publishing |
+| Grafana | No by default | VPN or trusted LAN | Dashboards can leak infrastructure |
+| Proxmox | No | VPN only | Hypervisor admin interface |
+| pfSense | No | VPN only | Firewall admin interface |
+| FinanceHQ | No | Private LAN | Sensitive personal data |
+| CareerFill | No | Private LAN | Sensitive career data |
+
+## Backup and Restore Notes
+
+- Keep tunnel configuration in a private backup location.
+- Document public service intent in sanitized form.
+- Keep recovery notes for recreating routes in private runbooks.
+- Do not commit connector credentials or generated config files.
 
 ## Security Notes
 
 - Never commit tunnel credentials.
-- Do not publish admin interfaces through the tunnel.
-- Put strong authentication in front of anything user-specific.
-- Review public services after major app upgrades.
+- Do not publish admin tools through the tunnel.
+- Require strong authentication for user-specific apps.
+- Review public routes after app upgrades.
+- Treat the tunnel as internet exposure, not just convenience.
+
+## Common Mistakes to Avoid
+
+- Publishing dashboards because they are useful internally.
+- Assuming a tunnel replaces app authentication.
+- Forgetting to remove stale public routes.
+- Copying tunnel config into a public repo.
+- Exposing services that were designed only for trusted LAN access.
 
 ## What Viewers Can Learn
 
-- How to publish a service without opening a general inbound port.
-- Why public access should be deliberate and documented.
-- How tunnels, DNS, reverse proxies, and authentication fit together.
-- Why "reachable from the internet" is a security decision, not a convenience setting.
+- How selected public access can work without broad inbound port forwards.
+- Why exposure decisions should be documented.
+- Why public access needs both routing and authentication thinking.
+- How to explain tunnel architecture without leaking credentials.
 
 ## Future Improvements
 
-- Add a sanitized public-service decision checklist.
-- Add a diagram showing tunnel traffic flow.
-- Document an example private-only service that should not be tunneled.
+- Add a public-service review checklist.
+- Add a sanitized tunnel traffic diagram.
+- Add example private-only and public-approved route categories.

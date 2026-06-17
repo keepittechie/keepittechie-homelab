@@ -1,6 +1,6 @@
 # Repo Maintenance Checklist
 
-Use this checklist before publishing updates to the public repo.
+Use this checklist for ongoing repo maintenance. For a final review before publishing or merging, use the [Pre-Publish Review Checklist](pre-publish-review.md).
 
 ## Before Each Commit
 

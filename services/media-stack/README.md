@@ -2,79 +2,114 @@
 
 ## Purpose
 
-The media stack handles streaming, library management, request workflows, monitoring, and media processing. It is a real-world example of multiple self-hosted services working together.
+The media stack handles media streaming, library management, request workflows, analytics, and media processing. It is a practical example of several self-hosted services working together around shared storage.
 
-## Where It Fits
+## Why This Matters
+
+Media stacks are popular homelab projects because they combine storage, networking, permissions, automation, metadata, and user-facing apps. They also teach a key lesson: the media files, app databases, and automation dashboards all have different security and backup needs.
+
+## Where It Fits in the Homelab
 
 ```text
 Media storage
   |
-Plex, Servarr apps, Tautulli, Tdarr
+Plex, Servarr-style apps, Tautulli, Tdarr
   |
-Users and admin dashboards
+media.home.example.com and private admin dashboards
 ```
 
-The stack is split by role so streaming, automation, analytics, and transcoding are easier to reason about.
+Plex may be limited-public depending on the design, but automation dashboards and download clients should stay private.
 
 ## Host / Runtime
 
-| Component | Example Runtime | Example DNS |
-|---|---|---|
-| Plex | Media VM, example `apollo` | `plex.home.example.com` |
-| Radarr / Sonarr / Prowlarr | Media automation VM, example `dionysus` | `radarr.home.example.com` |
-| Transmission | Media automation VM | `transmission.home.example.com` |
-| Jellyseerr | Request workflow | `requests.home.example.com` |
-| Tautulli | Plex analytics | `tautulli.home.example.com` |
-| Tdarr | GPU or worker-capable VM, example `hephaestus` | `tdarr.home.example.com` |
+| Field | Value |
+|---|---|
+| Runtime | Media VM, app VM, or containers |
+| Example DNS | `media.home.example.com` |
+| Storage dependency | NAS or ZFS-backed media paths |
+| Public access | Limited for user-facing media only |
+| Admin access | Private LAN or VPN |
 
-## Key Dependencies
+## Storage / Data Layout
 
-- NAS or storage server paths
-- Reverse proxy for internal URLs
-- DNS records
-- Media app databases and config directories
-- GPU support where transcoding or processing needs it
+Example layout:
+
+| Data | Example Path | Backup Need | Notes |
+|---|---|---|---|
+| Media files | `/mnt/storage/media` | Medium | Large files may use a separate backup strategy |
+| App config | `/mnt/storage/appdata/media` | High | Small but important |
+| Metadata | `/mnt/storage/appdata/plex` | High | Rebuilding metadata can take time |
+| Transcode/cache | `/mnt/storage/appdata/transcode` | Low | Often disposable |
+| Backup exports | `/mnt/storage/backups/media` | High | Keep private |
 
 ## Network / DNS
-
-Most automation dashboards should stay private. Plex may have limited external access depending on the desired user model, but the admin and automation interfaces should not be broadly exposed.
 
 Example internal aliases:
 
 ```text
+media.home.example.com
 plex.home.example.com
-radarr.home.example.com
-sonarr.home.example.com
-prowlarr.home.example.com
-transmission.home.example.com
-requests.home.example.com
 tautulli.home.example.com
 tdarr.home.example.com
 ```
 
-## Backup Notes
+Automation dashboards should remain private even if the user-facing media app has limited public access.
 
-- Back up application configuration and databases.
+## Key Responsibilities
+
+- Stream media through Plex or a similar front end.
+- Organize media through Servarr-style automation.
+- Track usage and health with Tautulli.
+- Process or transcode media with Tdarr.
+- Depend on well-documented storage paths.
+- Keep automation and admin dashboards private.
+
+## Example Public-Safe Configuration
+
+Sanitized service map:
+
+| Service | Purpose | Access Level | Data Dependency | Public Notes |
+|---|---|---|---|---|
+| Plex | Media streaming | Limited Public | `/mnt/storage/media` and app metadata | Keep users and libraries private |
+| Servarr-style apps | Library automation | Private LAN | Media paths and app config | Do not expose dashboards |
+| Tautulli | Media analytics | Private LAN | Plex history and metadata | Screenshots can reveal users |
+| Tdarr | Media processing | Private LAN | Media files and transcode cache | GPU acceleration can be generic |
+| Download client | Retrieval workflow | Private LAN | Temporary and completed media paths | Keep private |
+
+## Backup and Restore Notes
+
+- Back up app configuration and databases.
+- Back up Plex metadata if history and library state matter.
 - Keep media files separate from app config backups.
-- Back up Plex metadata if watch history and library state matter.
-- Document storage mount assumptions for restore.
+- Document storage mount assumptions.
+- Test restoring a single app config before relying on the full stack.
 
 ## Security Notes
 
 - Do not expose automation dashboards publicly.
 - Keep download clients private.
-- Use strong authentication for any media service with remote access.
-- Do not publish real library paths, usernames, or API credentials.
+- Do not publish real media library paths, user names, or watch history.
+- Use strong authentication for any limited-public media access.
+- Keep storage permissions narrow and understandable.
+
+## Common Mistakes to Avoid
+
+- Mixing media files and app config without a clear backup plan.
+- Giving every container broad access to all storage.
+- Publishing dashboards that reveal users or library contents.
+- Ignoring storage path consistency across apps.
+- Treating GPU acceleration as required before the basic stack is stable.
 
 ## What Viewers Can Learn
 
-- How a multi-service app stack is organized.
-- Why storage paths and permissions matter.
-- Why each app has a distinct role.
-- How to document app dependencies before something breaks.
+- How multi-app stacks depend on storage design.
+- Why each media service has a distinct role.
+- How app data and media files need different backup strategies.
+- Why private dashboards should stay private.
+- How to explain GPU acceleration without exposing hardware details.
 
 ## Future Improvements
 
 - Add a sanitized media data-flow diagram.
 - Add restore notes for Plex metadata.
-- Add a table separating app config from media files.
+- Add a public-safe storage permission example.

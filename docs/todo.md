@@ -1,6 +1,8 @@
-# Homelab Documentation TODO
+# Future Documentation Candidates
 
-## Confirm and Fill In
+This page tracks public-safe documentation ideas that may be added later. Items should use sanitized examples and avoid private configs, raw exports, real credentials, or sensitive internal details.
+
+## Candidate Details To Add
 
 - [ ] VLAN IDs and network segmentation
 - [ ] Firewall rule examples

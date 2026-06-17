@@ -2,7 +2,7 @@
 
 Welcome to the public companion repo for the KeepItTechie homelab.
 
-This repo explains how my real-world homelab is organized for Linux learning, open source services, self-hosting, automation, storage, monitoring, media workflows, and local AI. It is written for viewers who want to understand the architecture and reuse the ideas in their own lab without needing access to my private configs.
+This repo explains how the KeepItTechie homelab is organized for Linux learning, open source services, self-hosting, automation, storage, monitoring, media workflows, and local AI. It is written for viewers who want to understand the architecture and reuse the ideas in their own lab without needing access to private configs.
 
 The focus is practical: what each service does, why it exists, where it fits, how it is protected, and what you can learn from it.
 
@@ -11,9 +11,13 @@ The focus is practical: what each service does, why it exists, where it fits, ho
 | Start With | Link | Why |
 |---|---|---|
 | Big picture | [Homelab Overview](docs/overview.md) | Understand the purpose and layout |
+| Core stack | [Core Infrastructure](docs/core-infrastructure.md) | Read the first deep dives in order |
+| Storage and monitoring | [Storage and Monitoring](docs/storage-monitoring.md) | Understand storage, backups, restore proof, and visibility |
+| Apps and AI | [Apps and AI](docs/apps-and-ai.md) | Explore local AI, media, dashboards, docs, personal apps, and automation |
 | Visual map | [Architecture Diagram](diagrams/homelab-overview.md) | See the sanitized service flow |
 | Service list | [Service Matrix](docs/service-matrix.md) | Compare access level, host role, and backup priority |
 | Security | [Security Notes](docs/security-notes.md) | Learn what stays private |
+| Pre-publish review | [Pre-Publish Review](docs/pre-publish-review.md) | Check public safety before merging |
 | Roadmap | [Documentation Roadmap](docs/roadmap.md) | See what is done and what is planned |
 | Video plan | [YouTube Companion Series](docs/youtube-series.md) | Connect repo docs to video episodes |
 
@@ -21,15 +25,15 @@ The focus is practical: what each service does, why it exists, where it fits, ho
 
 | Area | Main Docs | Service Docs |
 |---|---|---|
-| Network | [Network Design](docs/network.md) | [pfSense](services/pfsense/README.md), [Pi-hole](services/pihole/README.md), [Reverse Proxy](services/reverse-proxy/README.md), [Cloudflare Tunnel](services/cloudflare-tunnel/README.md) |
-| Virtualization | [Hardware](docs/hardware.md), [Service Matrix](docs/service-matrix.md) | [Proxmox](services/proxmox/README.md) |
-| Storage and backups | [Storage and Backups](docs/storage-and-backups.md) | [Synology](services/synology/README.md), [ZFS Storage](services/zfs-storage/README.md), [Proxmox Backup Server](services/proxmox-backup-server/README.md) |
-| Observability | [Service Matrix](docs/service-matrix.md) | [Monitoring](services/monitoring/README.md) |
-| Media | [Service Matrix](docs/service-matrix.md) | [Media Stack](services/media-stack/README.md) |
-| Local AI | [Content Map](docs/content-map.md) | [Local AI](services/local-ai/README.md) |
-| Documentation and dashboard | [Diagrams](diagrams/README.md) | [Wiki.js](services/wiki/README.md), [Glance Dashboard](services/glance/README.md) |
-| Personal apps | [Security Notes](docs/security-notes.md) | [FinanceHQ](services/financehq/README.md), [CareerFill](services/careerfill/README.md) |
-| Automation | [Maintenance Checklist](docs/maintenance-checklist.md) | [AWX / Ansible](services/automation-awx/README.md) |
+| Network | [Core Infrastructure](docs/core-infrastructure.md), [Network Design](docs/network.md) | [pfSense](services/pfsense/README.md), [Pi-hole](services/pihole/README.md), [Reverse Proxy](services/reverse-proxy/README.md), [Cloudflare Tunnel](services/cloudflare-tunnel/README.md) |
+| Virtualization | [Core Infrastructure](docs/core-infrastructure.md), [Hardware](docs/hardware.md), [Service Matrix](docs/service-matrix.md) | [Proxmox](services/proxmox/README.md) |
+| Storage and backups | [Storage and Monitoring](docs/storage-monitoring.md), [Storage and Backups](docs/storage-and-backups.md) | [Synology](services/synology/README.md), [ZFS Storage](services/zfs-storage/README.md), [Proxmox Backup Server](services/proxmox-backup-server/README.md) |
+| Observability | [Storage and Monitoring](docs/storage-monitoring.md), [Service Matrix](docs/service-matrix.md) | [Monitoring](services/monitoring/README.md) |
+| Media | [Apps and AI](docs/apps-and-ai.md), [Service Matrix](docs/service-matrix.md) | [Media Stack](services/media-stack/README.md) |
+| Local AI | [Apps and AI](docs/apps-and-ai.md), [Content Map](docs/content-map.md) | [Local AI](services/local-ai/README.md) |
+| Documentation and dashboard | [Apps and AI](docs/apps-and-ai.md), [Diagrams](diagrams/README.md) | [Wiki.js](services/wiki/README.md), [Glance Dashboard](services/glance/README.md) |
+| Personal apps | [Apps and AI](docs/apps-and-ai.md), [Security Notes](docs/security-notes.md) | [FinanceHQ](services/financehq/README.md), [CareerFill](services/careerfill/README.md) |
+| Automation | [Apps and AI](docs/apps-and-ai.md), [Maintenance Checklist](docs/maintenance-checklist.md) | [AWX / Ansible](services/automation-awx/README.md) |
 
 ## Current Architecture
 
@@ -69,7 +73,7 @@ All names and networks in public examples use sanitized values such as `home.exa
 3. Use the [service matrix](docs/service-matrix.md) to understand what runs where.
 4. Read the service README for the area you want to learn.
 5. Check [docs/security-notes.md](docs/security-notes.md) before copying any pattern into your own public repo.
-6. Use [docs/maintenance-checklist.md](docs/maintenance-checklist.md) before publishing changes.
+6. Use [docs/pre-publish-review.md](docs/pre-publish-review.md) before publishing or merging changes.
 
 ## YouTube Companion Series
 

@@ -2,9 +2,15 @@
 
 ## Purpose
 
-Wiki.js is the lab knowledge base. It is used for documentation, runbooks, notes, and content planning while keeping public pages separate from private admin material.
+Wiki.js is the documentation hub for the homelab. It can hold public learning pages, private runbooks, troubleshooting notes, content planning, and operational references.
 
-## Where It Fits
+## Why This Matters
+
+A homelab becomes easier to maintain when the decisions are written down. Wiki.js helps separate quick operational notes from polished public GitHub documentation.
+
+The important public lesson is that documentation needs boundaries: public pages can teach patterns, while private namespaces can hold details that should not appear in GitHub.
+
+## Where It Fits in the Homelab
 
 ```text
 Browser
@@ -13,28 +19,31 @@ wiki.home.example.com
   |
 Reverse proxy
   |
-Wiki.js app and database
+Wiki.js app, database, and uploads
 ```
 
-This public GitHub repo is the viewer-friendly version of the lab. Wiki.js can hold deeper private operational notes that should not be copied here.
+Wiki.js complements this repository. This repo is public-safe and viewer-facing. Wiki.js can contain deeper private operational notes.
 
 ## Host / Runtime
 
 | Field | Value |
 |---|---|
-| Runtime | Docker app or VM-hosted service |
-| Example host | `heimdall` or app VM |
+| Runtime | App VM or container |
 | Example DNS | `wiki.home.example.com` |
-| Public access | Partial, depending on namespace |
-| Database | Private app database |
+| Public access | Namespace-dependent |
+| Primary data | Pages, uploads, metadata, auth settings |
+| Admin access | Private or authenticated |
 
-## Key Dependencies
+## Storage / Data Layout
 
-- Reverse proxy
-- App database
-- Authentication provider or local accounts
-- Backup process for content and uploads
-- Clear public/private namespace rules
+Example layout:
+
+| Data | Example Path | Backup Need | Notes |
+|---|---|---|---|
+| Database | `/mnt/storage/appdata/wiki/db` | High | Contains page metadata and content |
+| Uploads | `/mnt/storage/appdata/wiki/uploads` | High | May contain screenshots or files |
+| Config | `/opt/apps/example/wiki` | High | Keep private settings out of Git |
+| Public exports | `/mnt/storage/backups/wiki-public` | Medium | Review before publishing |
 
 ## Network / DNS
 
@@ -44,31 +53,61 @@ Example:
 wiki.home.example.com -> proxy.home.example.com
 ```
 
-Private admin pages should require authentication. Public pages should be reviewed before publishing.
+Private admin pages should require authentication. Public pages should be reviewed before publishing or linking from videos.
 
-## Backup Notes
+## Key Responsibilities
 
-- Back up the Wiki.js database.
-- Back up uploaded assets.
-- Keep private admin exports out of this public repo.
-- Document page ownership and public/private boundaries.
+- Host homelab documentation.
+- Separate public and private content.
+- Preserve runbooks and troubleshooting notes.
+- Support content planning for KeepItTechie.
+- Keep private operational details out of public repos.
+- Provide a searchable knowledge base for the lab.
+
+## Example Public-Safe Configuration
+
+Sanitized namespace model:
+
+| Namespace | Audience | Access Level | Notes |
+|---|---|---|---|
+| `/public` | Viewers and public readers | Limited Public | Review before publishing |
+| `/homelab` | Internal learning notes | Private LAN | Sanitize before copying to GitHub |
+| `/admin` | Operator runbooks | Private LAN or VPN | Never publish raw admin notes |
+| `/content` | Video planning | Private | May include unpublished ideas |
+
+## Backup and Restore Notes
+
+- Back up the database and uploads together.
+- Back up configuration privately.
+- Test restoring pages and uploaded assets.
+- Keep private namespace exports out of public Git.
+- Review public exports for sensitive screenshots and links.
 
 ## Security Notes
 
 - Do not allow anonymous access to private namespaces.
-- Review screenshots and copied notes for secrets.
-- Keep auth credentials private.
-- Avoid copying raw operational notes directly into public docs.
+- Do not copy raw private runbooks into public docs.
+- Review screenshots for hostnames, paths, and account data.
+- Keep auth settings and credentials private.
+- Treat docs as operational data, not just text.
+
+## Common Mistakes to Avoid
+
+- Mixing private admin notes with public tutorials.
+- Forgetting to back up uploads.
+- Publishing screenshots that reveal private data.
+- Treating the wiki as a replacement for Git when versioned docs are needed.
+- Letting stale runbooks stay unmarked.
 
 ## What Viewers Can Learn
 
-- Why a homelab needs documentation.
+- Why documentation is part of operations.
 - How public docs and private runbooks can coexist.
-- How to turn messy notes into teachable material.
-- Why documentation is part of operations, not an afterthought.
+- How to turn internal notes into safe teaching material.
+- Why backups matter for documentation platforms.
 
 ## Future Improvements
 
 - Add a sanitized content tree.
-- Add a public/private page review checklist.
-- Add backup and restore steps for Wiki.js.
+- Add public/private review checklist examples.
+- Add a Wiki.js restore checklist.
