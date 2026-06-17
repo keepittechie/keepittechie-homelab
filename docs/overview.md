@@ -4,7 +4,7 @@ The KeepItTechie homelab is a practical Linux and self-hosting environment. It i
 
 The goal is not to make a perfect enterprise network at home. The goal is to build a lab that is understandable, repairable, teachable, and safe enough to expose only the services that truly need public access.
 
-For a guided reading path, start with the [Viewer Guide](viewer-guide.md). For the visual version of this page, see the [Mermaid homelab overview](../diagrams/homelab-overview.md). For all public-safe architecture diagrams, use the [diagram index](../diagrams/README.md). For the first service deep dives, start with [Core Infrastructure](core-infrastructure.md). For storage, backups, and visibility, read [Storage and Monitoring](storage-monitoring.md). For application, media, local AI, dashboard, documentation, and automation services, read [Apps and AI](apps-and-ai.md). For a quick service-by-service comparison, see the [service matrix](service-matrix.md).
+For a guided reading path, start with the [Viewer Guide](viewer-guide.md). New to the terms used here? Keep the [Glossary](glossary.md) nearby. For the visual version of this page, see the [Mermaid homelab overview](../diagrams/homelab-overview.md). For all public-safe architecture diagrams, use the [diagram index](../diagrams/README.md). For the first service deep dives, start with [Core Infrastructure](core-infrastructure.md). For storage, backups, and visibility, read [Storage and Monitoring](storage-monitoring.md). For application, media, local AI, dashboard, documentation, and automation services, read [Apps and AI](apps-and-ai.md). For a quick service-by-service comparison, see the [service matrix](service-matrix.md).
 
 ## Design Goals
 
@@ -63,14 +63,14 @@ Internal LAN / lab networks
 
 ## Hostname Pattern
 
-The real lab uses memorable hostnames for machines and service aliases for workloads. Public docs use sanitized examples:
+The real lab uses memorable machine identities and service identities for workloads. Public docs use sanitized examples:
 
 ```text
-pontus.home.example.com       # example primary Pi-hole VM
-priapus.home.example.com      # example secondary Pi-hole VM
-proxy.home.example.com        # example reverse proxy alias
-grafana.home.example.com      # example service alias
-ai.home.example.com           # example local AI endpoint alias
+pontus.home.example.com       # example machine identity for a Pi-hole VM
+priapus.home.example.com      # example machine identity for a secondary Pi-hole VM
+proxy.home.example.com        # example service identity for the reverse proxy
+grafana.home.example.com      # example service identity
+ai.home.example.com           # example service identity for local AI
 ```
 
 This keeps the idea visible without publishing the live DNS zone.
@@ -91,6 +91,8 @@ The simplest rule: admin tools stay private, viewer-facing or intentionally shar
 ## Related Docs
 
 - [Viewer Guide](viewer-guide.md)
+- [Documentation Index](docs-index.md)
+- [Glossary](glossary.md)
 - [Core Infrastructure](core-infrastructure.md)
 - [Storage and Monitoring](storage-monitoring.md)
 - [Apps and AI](apps-and-ai.md)

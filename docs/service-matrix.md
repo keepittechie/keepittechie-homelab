@@ -47,5 +47,5 @@ For the first deep-dive reading path, start with [Core Infrastructure](core-infr
 - Update it whenever a service moves hosts or changes exposure level.
 - Treat backup priority as a documentation priority too: critical services need clear restore notes.
 - Use the core infrastructure deep dives for the network, DNS, virtualization, backup, proxy, and tunnel layers.
-- Use the storage and monitoring guide for NAS, ZFS, PBS restore evidence, and Grafana/Prometheus/Loki visibility.
+- Use the storage and monitoring guide for NAS, ZFS, PBS restore test evidence, and Grafana/Prometheus/Loki visibility.
 - Use the apps and AI guide for local AI, media, documentation, dashboards, personal apps, and automation.

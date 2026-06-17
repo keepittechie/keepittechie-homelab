@@ -2,7 +2,7 @@
 
 Storage in the homelab has two jobs: support daily services and make recovery possible when something breaks. This page explains the public-safe architecture without publishing private shares, keys, raw exports, or live backup details.
 
-For the storage and monitoring reading path, see [Storage and Monitoring](storage-monitoring.md). For the visual version of the backup model, see the [backup flow diagram](../diagrams/backup-flow.md).
+For the storage and monitoring reading path, see [Storage and Monitoring](storage-monitoring.md). For the visual version of the backup model, see the [backup flow diagram](../diagrams/backup-flow.md). For terms such as NAS, ZFS, dataset, snapshot, scrub, backup, and restore test, use the [Glossary](glossary.md).
 
 ## Storage Layers
 
@@ -72,7 +72,7 @@ ZFS snapshots are useful rollback points. They are fast and practical, but they 
 
 ## PBS Restore Testing
 
-Backups should produce evidence. A restore test does not need to expose private data; it just needs to prove that the recovery path works.
+Backups should produce restore test evidence. A restore test does not need to expose private data; it just needs to prove that the recovery path works.
 
 1. Pick a safe VM or test target.
 2. Restore from PBS into an isolated environment.
@@ -125,5 +125,5 @@ Do not publish:
 - Why backups should be tested.
 - How PBS, NAS storage, and ZFS snapshots solve different problems.
 - Why app-aware backups matter.
-- How to document restore evidence without exposing the live lab.
+- How to document restore test evidence without exposing the live lab.
 - How to think about storage as part of operations, not just capacity.

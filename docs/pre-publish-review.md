@@ -18,6 +18,10 @@ Use this checklist before publishing, merging, or sharing updates from the publi
 - [ ] README links work.
 - [ ] Service matrix is current.
 - [ ] Roadmap reflects current status.
+- [ ] Documentation index is updated.
+- [ ] New docs are linked from the right index page.
+- [ ] Glossary terms were reviewed for new beginner-facing terms.
+- [ ] Service page structure remains consistent.
 - [ ] Diagrams are sanitized.
 - [ ] License section is present.
 - [ ] Public-facing language review is complete.

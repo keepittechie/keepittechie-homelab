@@ -22,7 +22,7 @@ NGINX reverse proxy
 private backend app
 ```
 
-Pi-hole points service aliases at the proxy. The proxy then routes traffic to the correct backend.
+Pi-hole points service identities at the proxy. The proxy then routes traffic to the correct backend.
 
 ## Host / Runtime
 

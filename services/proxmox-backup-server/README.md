@@ -72,7 +72,7 @@ Example backup/restore checklist:
 - [ ] Confirm retention policy is documented.
 - [ ] Restore into an isolated test target when possible.
 - [ ] Validate DNS, login, app health, and storage mounts.
-- [ ] Record restore evidence in public-safe notes.
+- [ ] Record restore test evidence in public-safe notes.
 
 ## Backup and Restore Notes
 

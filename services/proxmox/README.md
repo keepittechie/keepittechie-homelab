@@ -8,7 +8,7 @@ Proxmox is the virtualization layer for the homelab. It runs the VMs and contain
 
 Virtualization turns a single physical server into a flexible learning platform. Instead of installing every service directly on one OS, Proxmox lets the lab separate workloads by role, test changes safely, back up whole systems, and rebuild services without starting from scratch.
 
-It also teaches a core homelab lesson: the service name users type is not always the same as the machine name that runs it.
+It also teaches a core homelab lesson: the service identity users type is not always the same as the machine identity that runs it.
 
 ## Where It Fits in the Homelab
 
@@ -36,7 +36,7 @@ Proxmox is the platform underneath most lab workloads. pfSense controls network 
 
 ## Network / DNS
 
-Proxmox management should stay private. Guest VMs and service aliases can use separate names:
+Proxmox management should stay private. Guest VMs and service identities can use separate names:
 
 ```text
 machine identity: pontus.home.example.com
@@ -46,7 +46,7 @@ machine identity: zelus.home.example.com
 service identity: proxy.home.example.com
 ```
 
-This distinction helps viewers understand why moving a service does not always require changing the public-facing name users remember.
+This distinction helps viewers understand why moving a service does not always require changing the service identity users remember.
 
 ## Key Responsibilities
 
@@ -94,7 +94,7 @@ The names are examples for documentation. They should not be treated as a live i
 - Treating snapshots as a replacement for backups.
 - Backing up VMs without testing restores.
 - Running unrelated critical services in one overloaded VM.
-- Using service names and machine names interchangeably.
+- Using service identity and machine identity interchangeably.
 - Publishing the full VM inventory when a sanitized role table is enough.
 
 ## What Viewers Can Learn

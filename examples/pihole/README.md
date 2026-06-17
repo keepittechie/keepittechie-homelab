@@ -13,7 +13,7 @@ The included CSV uses intentionally fake host addresses and sanitized names:
 
 - Replace records with real values only in private documentation or private config.
 - Confirm each record has a clear purpose.
-- Keep service aliases separate from machine identity where useful.
+- Keep service identity separate from machine identity where useful.
 
 ## What Should Never Be Committed
 

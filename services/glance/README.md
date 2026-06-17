@@ -51,7 +51,7 @@ Example:
 dashboard.home.example.com -> proxy.home.example.com
 ```
 
-Dashboard links should use service aliases, not raw backend addresses. Public examples should use `home.example.com` names only.
+Dashboard links should use service identities, not raw backend addresses. Public examples should use `home.example.com` names only.
 
 ## Key Responsibilities
 
