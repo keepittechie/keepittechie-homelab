@@ -2,6 +2,8 @@
 
 This repo can support a full KeepItTechie homelab series. Each topic should connect a real lab service to a practical lesson viewers can reuse.
 
+For the more detailed episode-by-episode plan, see [YouTube Companion Series](youtube-series.md).
+
 ## Series Structure
 
 | Episode | Topic | Viewer Takeaway |
@@ -81,3 +83,4 @@ Each video can point viewers to:
 - The sanitized inventory for naming patterns.
 - The diagram notes for topology.
 - The security notes for what not to publish.
+- The [service matrix](service-matrix.md) for access and backup priority.

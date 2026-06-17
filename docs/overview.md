@@ -4,6 +4,8 @@ The KeepItTechie homelab is a practical Linux and self-hosting environment. It i
 
 The goal is not to make a perfect enterprise network at home. The goal is to build a lab that is understandable, repairable, teachable, and safe enough to expose only the services that truly need public access.
 
+For the visual version of this page, see the [Mermaid homelab overview](../diagrams/homelab-overview.md). For a quick service-by-service comparison, see the [service matrix](service-matrix.md).
+
 ## Design Goals
 
 | Goal | How The Lab Supports It |
@@ -85,3 +87,10 @@ This keeps the idea visible without publishing the live DNS zone.
 | Personal apps | Private only unless explicitly hardened |
 
 The simplest rule: admin tools stay private, viewer-facing or intentionally shared apps can be routed through controlled public access.
+
+## Related Docs
+
+- [Service Matrix](service-matrix.md)
+- [Documentation Roadmap](roadmap.md)
+- [Maintenance Checklist](maintenance-checklist.md)
+- [YouTube Companion Series](youtube-series.md)

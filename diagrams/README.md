@@ -2,11 +2,14 @@
 
 Store public-safe diagrams here. Diagrams should teach the architecture without exposing live DNS zones, public IPs, raw firewall rules, or private credentials.
 
+Start with the GitHub-rendered [Mermaid homelab overview](homelab-overview.md).
+
 ## Recommended Files
 
 | File | Purpose |
 |---|---|
 | `network-overview.drawio` | Internet, pfSense, LAN, Proxmox, storage, and clients |
+| `homelab-overview.md` | GitHub-rendered Mermaid architecture placeholder |
 | `dns-flow.drawio` | Client to Pi-hole to upstream resolver flow |
 | `reverse-proxy-flow.drawio` | Service alias to reverse proxy to backend |
 | `backup-flow.drawio` | Proxmox to PBS plus app-aware backup notes |
