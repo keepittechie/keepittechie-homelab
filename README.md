@@ -101,3 +101,9 @@ Before committing, review `git status` and run a sensitive-string scan for keys,
 ## Status
 
 This is a living public reference for the KeepItTechie homelab. It is intentionally documentation-first: enough structure to teach from, without exposing the private operational details that belong in a private notes repo, password manager, or internal Wiki.js admin space.
+
+## License
+
+This homelab documentation is licensed under the [Creative Commons Attribution 4.0 International License](LICENSE).
+
+You are free to share and adapt the material as long as you give appropriate credit to Joshua Lacy / KeepItTechie.
