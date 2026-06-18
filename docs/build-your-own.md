@@ -72,6 +72,7 @@ Focus on:
 
 Related docs:
 
+- [Homelab DNS and Pi-hole Companion](episodes/dns-pihole.md)
 - [Pi-hole](../services/pihole/README.md)
 - [Pi-hole DNS Example](../examples/pihole/README.md)
 

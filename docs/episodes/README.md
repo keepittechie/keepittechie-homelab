@@ -9,8 +9,9 @@ These pages are not private scripts or production notes. They are viewer-facing 
 | Episode | Topic | Companion Page |
 |---|---|---|
 | Full Homelab Tour | High-level lab walkthrough | [Full Homelab Tour](full-homelab-tour.md) |
+| Homelab DNS and Pi-hole | Local DNS, filtering, and service names | [Homelab DNS and Pi-hole](dns-pihole.md) |
 
-Future companion pages can cover DNS, Proxmox, backups, monitoring, local AI, dashboards, self-hosted apps, and automation.
+Future companion pages can cover Proxmox, backups, monitoring, local AI, dashboards, self-hosted apps, and automation.
 
 ## Related Docs
 
