@@ -115,6 +115,8 @@ For a beginner-friendly walkthrough, use the [Viewer Guide](docs/viewer-guide.md
 
 This repo is designed to support KeepItTechie videos. The companion plan is here:
 
+- [Episode Companion Pages](docs/episodes/README.md)
+- [Full Homelab Tour Companion](docs/episodes/full-homelab-tour.md)
 - [YouTube Companion Series](docs/youtube-series.md)
 - [Content Map](docs/content-map.md)
 

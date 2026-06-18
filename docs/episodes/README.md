@@ -1,0 +1,20 @@
+# Episode Companion Pages
+
+This folder collects public-safe companion pages for KeepItTechie homelab videos. Each page gives viewers the repo links, safe demo ideas, and follow-up reading needed to continue learning after a video.
+
+These pages are not private scripts or production notes. They are viewer-facing guides that use sanitized examples and avoid live infrastructure details.
+
+## Episode Index
+
+| Episode | Topic | Companion Page |
+|---|---|---|
+| Full Homelab Tour | High-level lab walkthrough | [Full Homelab Tour](full-homelab-tour.md) |
+
+Future companion pages can cover DNS, Proxmox, backups, monitoring, local AI, dashboards, self-hosted apps, and automation.
+
+## Related Docs
+
+- [YouTube Companion Series](../youtube-series.md)
+- [Current Setup](../current-setup.md)
+- [Build Your Own Homelab](../build-your-own.md)
+- [Documentation Index](../docs-index.md)
