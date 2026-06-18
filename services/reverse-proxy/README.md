@@ -111,7 +111,7 @@ This is a placeholder. Do not copy live certificate paths, real backend names, o
 
 ## Related Sanitized Examples
 
-- [Homelab Reverse Proxy and Internal HTTPS Companion](../../docs/episodes/reverse-proxy.md)
+- [Homelab Reverse Proxy and Internal HTTPS Guide](../../docs/guides/reverse-proxy.md)
 - [NGINX reverse proxy server block](../../examples/nginx/reverse-proxy-site.conf)
 - [NGINX example notes](../../examples/nginx/README.md)
 - [Reverse proxy flow diagram](../../diagrams/reverse-proxy-flow.md)

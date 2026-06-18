@@ -8,7 +8,7 @@ The local AI stack provides private, Linux-first AI experimentation using a GPU 
 
 Local AI is useful for privacy, control, learning, and content creation. It lets viewers understand how models run, why GPU memory matters, how local APIs can mimic hosted AI APIs, and where self-hosted AI fits into a practical homelab.
 
-For KeepItTechie, this stack also supports videos about Linux GPU setup, local-first tools, automation, and practical AI workflows without treating every prompt as cloud-bound.
+For KeepItTechie, this stack also supports Linux GPU setup notes, local-first tools, automation, and practical AI workflows without treating every prompt as cloud-bound.
 
 ## Where It Fits in the Homelab
 
@@ -126,7 +126,7 @@ The example shows the API pattern only. Do not commit real credentials.
 
 ## Related Docs
 
-- [Local AI on Linux Companion](../../docs/episodes/local-ai.md)
+- [Local AI on Linux Guide](../../docs/guides/local-ai.md)
 - [Local AI flow diagram](../../diagrams/local-ai-flow.md)
 - [Apps and AI](../../docs/apps-and-ai.md)
 
@@ -134,4 +134,4 @@ The example shows the API pattern only. Do not commit real credentials.
 
 - Add a sanitized model inventory template.
 - Add GPU monitoring dashboard ideas.
-- Add a local AI demo checklist for KeepItTechie videos.
+- Add a local AI lab checklist with public-safe example prompts.

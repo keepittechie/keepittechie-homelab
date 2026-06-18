@@ -115,4 +115,4 @@ Sanitized dashboard grouping:
 
 - Add a sanitized dashboard example file.
 - Add a dashboard-to-service matrix.
-- Add screenshot guidance for public videos.
+- Add screenshot guidance for public docs.

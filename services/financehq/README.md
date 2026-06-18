@@ -88,7 +88,7 @@ Public-safe boundary table:
 - Do not publish real financial data.
 - Treat logs and imports as sensitive.
 - Do not commit private database paths or dumps.
-- Use fake demo data in videos and docs.
+- Use fake demo data in public docs.
 
 ## Common Mistakes to Avoid
 
