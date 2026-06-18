@@ -120,6 +120,7 @@ This repo is designed to support KeepItTechie videos. The companion plan is here
 - [Homelab DNS and Pi-hole Companion](docs/episodes/dns-pihole.md)
 - [Proxmox VM Layout Companion](docs/episodes/proxmox-vm-layout.md)
 - [Homelab Backups and Restore Testing Companion](docs/episodes/backups-restore.md)
+- [Homelab Monitoring with Grafana and Prometheus Companion](docs/episodes/monitoring-grafana.md)
 - [YouTube Companion Series](docs/youtube-series.md)
 - [Content Map](docs/content-map.md)
 

@@ -81,6 +81,7 @@ Viewers can learn the difference between metrics, logs, dashboards, and service 
 
 Related docs:
 
+- [Homelab Monitoring with Grafana and Prometheus Companion](episodes/monitoring-grafana.md)
 - [Monitoring](../services/monitoring/README.md)
 - [Monitoring Flow Diagram](../diagrams/monitoring-flow.md)
 
