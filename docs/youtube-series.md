@@ -1,8 +1,8 @@
 # YouTube Companion Series
 
-This page maps the homelab documentation to potential KeepItTechie video topics.
+This page maps the homelab documentation to potential KeepItTechie video topics. It is a public companion plan, not a private production schedule.
 
-Each episode outline includes:
+Each topic includes:
 
 - Goal
 - What viewers learn
@@ -31,6 +31,8 @@ Each episode outline includes:
 
 ## Episode Format
 
+Each topic can follow a simple walkthrough format:
+
 ```text
 Problem:
 What pain point does this solve?
@@ -55,5 +57,5 @@ What can viewers try in their own lab?
 
 - Add video links back into this file after episodes are published.
 - Keep raw admin screens, real domains, public IPs, and credentials out of recordings.
-- Use sanitized diagrams and fake data for repeatable demos.
+- Use sanitized diagrams and fake data in repeatable demos.
 - Use `home.example.com` service names and generic paths such as `/mnt/storage/appdata`.

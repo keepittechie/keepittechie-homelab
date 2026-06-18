@@ -1,12 +1,24 @@
 # Viewer Guide
 
-This guide explains how viewers can use the KeepItTechie homelab repo as a learning resource.
+This guide explains how viewers can use the KeepItTechie homelab repo without getting lost in the number of docs. Pick the path that matches what you want to learn.
+
+## Choose a Path
+
+| If You Want To... | Start Here | Why |
+|---|---|---|
+| Tour the current lab | [Current Setup](current-setup.md) | See what is running, why it exists, and how the parts connect |
+| Build something similar | [Build Your Own Homelab](build-your-own.md) | Follow a staged path that starts small |
+| Learn the big picture | [Homelab Overview](overview.md) | Understand the main roles before opening deep dives |
+| Study one service | [Service Catalog](service-catalog.md) | Pick a service by category and jump to its README |
+| Understand diagrams | [Diagram Index](../diagrams/README.md) | Follow network, DNS, backup, proxy, AI, and monitoring flows |
+| Copy a safe pattern | [Sanitized Examples](../examples/README.md) | Learn from templates that use placeholders instead of private values |
+| Decode unfamiliar terms | [Glossary](glossary.md) | Keep short definitions nearby while reading |
 
 ## Recommended Path
 
-1. Start with the [Homelab Overview](overview.md).
-2. Tour the [Current Setup](current-setup.md).
-3. Read [Build Your Own Homelab](build-your-own.md) to see a staged learning path.
+1. Start with the [Current Setup](current-setup.md).
+2. Read [Build Your Own Homelab](build-your-own.md) if you want to build your own version in stages.
+3. Use the [Homelab Overview](overview.md) to understand the main roles.
 4. Review [Hardware](hardware.md) for hardware roles.
 5. Browse the [Service Catalog](service-catalog.md).
 6. Open the [diagram index](../diagrams/README.md).
@@ -38,10 +50,11 @@ The examples are templates for learning. They are not production config dumps.
 - Replace placeholders only in private config.
 - Keep real `.env` files, credentials, certificates, tunnel config, and exports out of Git.
 - Test changes in a lab before relying on them.
+- Change one thing at a time so troubleshooting stays simple.
 
 ## Public-Safe Mindset
 
-Public documentation should explain the design without exposing private infrastructure. Use sanitized names such as `home.example.com`, broad network examples such as `10.10.0.0/24`, and fake data for screenshots or demos.
+Public documentation should explain the design without exposing private infrastructure. Use sanitized names such as `home.example.com`, broad network examples such as `10.10.0.0/24`, and fake data in screenshots or demos.
 
 The goal is to learn the pattern, not copy a private deployment line for line.
 

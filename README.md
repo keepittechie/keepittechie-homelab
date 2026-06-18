@@ -5,9 +5,9 @@
 ![License](https://img.shields.io/badge/license-CC%20BY%204.0-green)
 ![Homelab](https://img.shields.io/badge/homelab-linux%20%7C%20self--hosted-lightgrey)
 
-This repo documents the KeepItTechie homelab as a public-safe learning resource for Linux, open source services, self-hosting, automation, storage, monitoring, media workflows, and local AI.
+This repo is the public-safe tour map for the KeepItTechie homelab. It shows how the lab is put together, why each layer exists, and what viewers can learn from running real Linux and open source services at home.
 
-It is written for viewers who want to understand the architecture, study practical service patterns, and reuse the ideas in their own labs without needing access to private configs.
+Think of it as a teaching repo, not a config dump. The docs explain the patterns behind pfSense, Pi-hole, Proxmox, storage, backups, monitoring, media workflows, local AI, dashboards, and automation without exposing private infrastructure details.
 
 Current documentation baseline: [v0.1.0](docs/releases/v0.1.0.md). See the [changelog](CHANGELOG.md) for release history.
 
@@ -15,28 +15,24 @@ Current documentation baseline: [v0.1.0](docs/releases/v0.1.0.md). See the [chan
 
 | Start With | Link | Why |
 |---|---|---|
-| Full docs map | [Documentation Index](docs/docs-index.md) | Find every major guide by topic |
-| Viewer path | [Viewer Guide](docs/viewer-guide.md) | Follow the recommended learning path |
-| Current tour | [Current Setup](docs/current-setup.md) | Tour what is running and why |
-| Build your own | [Build Your Own Homelab](docs/build-your-own.md) | Learn a staged path for building a safe lab |
-| New terms | [Glossary](docs/glossary.md) | Learn common homelab vocabulary |
+| Tour the lab | [Current Setup](docs/current-setup.md) | See what is running and why it exists |
+| Build in stages | [Build Your Own Homelab](docs/build-your-own.md) | Start small and add one layer at a time |
+| Follow a path | [Viewer Guide](docs/viewer-guide.md) | Choose the best route through the repo |
+| Find everything | [Documentation Index](docs/docs-index.md) | Browse every major guide by topic |
+| Learn the terms | [Glossary](docs/glossary.md) | Look up homelab vocabulary as you read |
+| See the map | [Diagrams](diagrams/README.md) | Follow sanitized architecture and service flows |
+| Study examples | [Sanitized Examples](examples/README.md) | Learn safe config patterns without private values |
+| Browse services | [Service Catalog](docs/service-catalog.md) | Pick a service and learn what it does |
+| Compare services | [Service Matrix](docs/service-matrix.md) | Compare access level, host role, and backup priority |
 | Big picture | [Homelab Overview](docs/overview.md) | Understand the purpose and layout |
-| Hardware roles | [Hardware](docs/hardware.md) | Understand hardware categories without private details |
 | Core stack | [Core Infrastructure](docs/core-infrastructure.md) | Read the first deep dives in order |
 | Storage and monitoring | [Storage and Monitoring](docs/storage-monitoring.md) | Understand storage, backups, restore proof, and visibility |
 | Apps and AI | [Apps and AI](docs/apps-and-ai.md) | Explore local AI, media, dashboards, docs, personal apps, and automation |
-| Visual map | [Diagrams](diagrams/README.md) | See sanitized architecture and service flows |
-| Config examples | [Sanitized Examples](examples/README.md) | Learn common patterns without exposing private config |
-| Friendly catalog | [Service Catalog](docs/service-catalog.md) | Browse services by category |
-| Service list | [Service Matrix](docs/service-matrix.md) | Compare access level, host role, and backup priority |
 | Security | [Security Notes](docs/security-notes.md) | Learn what stays private |
-| Pre-publish review | [Pre-Publish Review](docs/pre-publish-review.md) | Run a public-safe review before merging |
-| Screenshot policy | [Screenshot Policy](docs/screenshots-policy.md) | Review images before publishing |
-| Release notes | [v0.1.0 Release Notes](docs/releases/v0.1.0.md) | See the first public documentation baseline |
-| Roadmap | [Documentation Roadmap](docs/roadmap.md) | See what is done and what is planned |
-| Video plan | [YouTube Companion Series](docs/youtube-series.md) | Connect repo docs to video episodes |
 
 ## Homelab Areas
+
+The lab is easier to understand when it is broken into roles instead of treated like one big stack.
 
 | Area | Main Docs | Service Docs |
 |---|---|---|
@@ -61,7 +57,7 @@ The [examples directory](examples/README.md) contains public-safe templates for 
 - [Cloudflare Tunnel config shape](examples/cloudflare-tunnel/README.md)
 - [Environment file placeholders](examples/env/README.md)
 
-These examples are teaching templates, not production config dumps. Replace placeholder values only in private config and never commit real credentials.
+These examples are teaching templates, not production config dumps. Replace placeholder values only in private config, and never commit real credentials.
 
 ## Current Architecture
 
@@ -105,20 +101,17 @@ All names and networks in public examples use sanitized values such as `home.exa
 | A rebuild and documentation aid | A full backup of the lab |
 | A place for safe examples | A place for real secrets, keys, or private data |
 
-Short version: this repo teaches architecture and patterns. It is not a live backup, inventory export, credential store, or screenshot dump.
+Short version: this repo teaches the lab design. It is not a live backup, inventory export, credential store, or screenshot dump.
 
 ## How To Use This Repo
 
-1. Start with [docs/overview.md](docs/overview.md).
-2. Tour the [current setup](docs/current-setup.md).
-3. Use [Build Your Own Homelab](docs/build-your-own.md) to map the ideas into a staged learning path.
-4. Open the [diagram index](diagrams/README.md).
-5. Use the [service matrix](docs/service-matrix.md) to understand what runs where.
-6. Use [how to read service pages](docs/how-to-read-service-pages.md) before opening a service deep dive.
-7. Read the service README for the area you want to learn.
-8. Review the [sanitized examples](examples/README.md) for safe config patterns.
-9. Check [docs/security-notes.md](docs/security-notes.md) before copying any pattern into your own public repo.
-10. Use [docs/pre-publish-review.md](docs/pre-publish-review.md) before publishing or merging changes.
+1. Tour the [current setup](docs/current-setup.md).
+2. Use [Build Your Own Homelab](docs/build-your-own.md) if you want to build something similar in stages.
+3. Open the [diagram index](diagrams/README.md) to see the flows visually.
+4. Browse the [service catalog](docs/service-catalog.md) or [service matrix](docs/service-matrix.md).
+5. Read the service README for the part of the lab you want to understand.
+6. Compare the docs with the [sanitized examples](examples/README.md).
+7. Check [Security Notes](docs/security-notes.md) before adapting any pattern in a public repo.
 
 For a beginner-friendly walkthrough, use the [Viewer Guide](docs/viewer-guide.md). For deeper navigation, use the [Documentation Index](docs/docs-index.md) and [Glossary](docs/glossary.md).
 
@@ -144,7 +137,7 @@ This repo should never contain:
 - Raw `.env` files
 - Financial data, job application data, private messages, or personal records
 
-Use `.env.example`, sanitized YAML, diagrams, and Markdown explanations instead.
+Use `.env.example`, sanitized YAML, diagrams, and Markdown explanations instead. A good public doc should explain the pattern without leaking the real system.
 
 Screenshots need the same review as config snippets. See the [Screenshot Policy](docs/screenshots-policy.md) before adding images.
 

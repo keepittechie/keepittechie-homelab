@@ -1,12 +1,14 @@
 # Build Your Own Homelab
 
-This page gives viewers a beginner-friendly path for building a homelab inspired by the KeepItTechie setup.
+This page gives viewers a beginner-friendly path for building a homelab inspired by the KeepItTechie setup. The goal is not to clone the lab exactly. The goal is to understand the layers and build something useful one step at a time.
 
 ## Before You Start
 
 A homelab does not need to be expensive or complicated. One spare machine, an old desktop, a mini PC, or a laptop can teach the same core ideas that show up in larger labs.
 
-The goal is learning. Use this repo as a guide to understand patterns, not as a checklist to copy line for line. Start small, document what changes, and keep private data and credentials out of GitHub.
+Start with the hardware already available when possible. The first win is not a perfect rack. The first win is a small service that runs, survives a reboot, has notes, and can be rebuilt.
+
+Use this repo as a guide to understand patterns, not as a checklist to copy line for line. Start small, document what changes, and keep private data and credentials out of GitHub.
 
 Good first rules:
 
@@ -14,11 +16,12 @@ Good first rules:
 - Keep notes while learning.
 - Use sanitized names such as `home.example.com` in public docs.
 - Avoid publishing exact host IPs, private domains, credentials, raw exports, or screenshots with sensitive data.
-- Test backup and restore steps before depending on a service.
+- Add backups before adding too much complexity.
+- Test restore steps before depending on a service.
 
 ## Stage 1: Start With One Machine
 
-Start with a single Linux machine and learn the basics before adding more services.
+Start with a single Linux machine and learn the basics before adding more services. This can be a spare desktop, a laptop, a mini PC, or a VM.
 
 Focus on:
 
@@ -29,7 +32,7 @@ Focus on:
 - Running one simple Docker Compose app.
 - Keeping config and data paths organized.
 
-This stage teaches the foundation that every later service depends on.
+This stage teaches the foundation that every later service depends on. If SSH, updates, users, storage paths, and firewall behavior are confusing, the bigger lab will be confusing too.
 
 Related docs:
 
@@ -48,7 +51,7 @@ Focus on:
 - DNS resolution.
 - Basic troubleshooting with `ping`, `dig`, and `traceroute`.
 
-This stage matters because every service becomes harder to troubleshoot when the network layer is unclear.
+This stage matters because every service becomes harder to troubleshoot when the network layer is unclear. A little networking knowledge saves a lot of guessing later.
 
 Related docs:
 
@@ -103,7 +106,7 @@ Focus on:
 - Media storage layout.
 - ZFS pools, datasets, snapshots, and scrubs if deeper Linux storage learning is the goal.
 
-The KeepItTechie setup documents both a Synology NAS and a Linux ZFS storage server because they teach different lessons.
+The KeepItTechie setup documents both a Synology NAS and a Linux ZFS storage server because they teach different lessons. A NAS is useful for stable shared storage. ZFS is useful for learning how Linux storage works under the hood.
 
 Related docs:
 

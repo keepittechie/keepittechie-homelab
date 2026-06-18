@@ -1,22 +1,22 @@
 # Current Setup
 
-This page gives a high-level tour of the KeepItTechie homelab as documented in this repo.
+This page gives a high-level tour of the KeepItTechie homelab as documented in this repo. It is written like a walkthrough: what each part does, why it exists, and what viewers can take into their own lab.
 
 ## How to Read This Page
 
-This is a public-safe overview, not a live inventory dump. It explains what is running, what each part does, why it exists, and what viewers can learn from it.
+This is a public-safe overview, not a live inventory dump. It explains the shape of the lab without publishing the details that should stay private.
 
 Exact host IPs, private domains, credentials, private certificates, tunnel identifiers, raw config exports, and sensitive app data are intentionally left out. Public examples use sanitized values such as `home.example.com`, `10.10.0.0/24`, `proxy.home.example.com`, `grafana.home.example.com`, and `ai.home.example.com`.
 
 ## Network
 
-The network starts with pfSense as the firewall and router. It handles routing, firewall policy, DHCP, and the boundary between trusted networks, guest or low-trust networks, and selected public access paths.
+The tour starts at the network edge. pfSense is the firewall and router, so it is the part of the lab that decides how traffic moves between the internet, trusted devices, lab services, and lower-trust networks.
 
-Pi-hole provides the internal DNS layer. The lab documents a primary and secondary DNS pattern so clients can keep resolving names during maintenance or failure of one resolver. Internal DNS makes services easier to use because names such as `grafana.home.example.com` are easier to remember than raw addresses.
+Pi-hole provides the internal DNS layer. The lab uses a primary and secondary DNS pattern so clients can keep resolving names during maintenance or failure of one resolver. For beginners, the key thing to understand is that DNS turns a service name such as `grafana.home.example.com` into the place that service lives.
 
 The public docs use `10.10.0.0/24` as an example network and describe VLAN or segmentation concepts without publishing the real network map.
 
-Viewers can learn how routing, firewall policy, DHCP, DNS, and segmentation work together.
+This section teaches how routing, firewall policy, DHCP, DNS, and segmentation work together instead of treating them as separate topics.
 
 Related docs:
 
@@ -28,11 +28,11 @@ Related docs:
 
 ## Virtualization
 
-Proxmox is the virtualization layer. It runs VMs and containers grouped by purpose: DNS, reverse proxying, monitoring, media services, automation, documentation, local AI, and personal apps.
+Once the network is in place, Proxmox becomes the compute layer. It runs VMs and containers grouped by purpose: DNS, reverse proxying, monitoring, media services, automation, documentation, local AI, and personal apps.
 
 The docs separate service identity from machine identity. A service identity is the name users remember, such as `proxy.home.example.com`. A machine identity is the VM or host that runs the service. This makes it easier to move or rebuild a service without changing how people reach it.
 
-Viewers can learn why virtualization is useful in a homelab: isolation, snapshots, backup integration, testing, and cleaner rebuilds.
+This is where viewers can see why virtualization is useful in a homelab: isolation, snapshots, backup integration, testing, and cleaner rebuilds.
 
 Related docs:
 
@@ -41,11 +41,11 @@ Related docs:
 
 ## Storage
 
-Storage is split across a Synology NAS and a Linux ZFS storage server. The NAS handles shared storage concepts such as files, media libraries, and selected backup targets. The ZFS server is a Linux learning platform for pools, datasets, snapshots, scrubs, and storage operations.
+Storage is split across a Synology NAS and a Linux ZFS storage server. The NAS handles shared files, media libraries, and selected backup targets. The ZFS server is the hands-on Linux storage learning box, where pools, datasets, snapshots, scrubs, and storage operations are easier to study directly.
 
 The docs explain media storage, app data, backup storage, and snapshot concepts without publishing private share names, disk serials, raw NAS exports, or full pool output.
 
-Viewers can learn the difference between shared storage, snapshots, and backups.
+The reason this matters is simple: shared storage, snapshots, and backups solve different problems.
 
 Related docs:
 
@@ -56,11 +56,11 @@ Related docs:
 
 ## Backups
 
-Proxmox Backup Server is the VM and container backup target. It stores backups for important workloads and supports retention planning.
+Proxmox Backup Server is the VM and container backup target. It is the part of the lab that turns virtual machines from "easy to create" into "possible to recover."
 
 The backup docs focus on recoverability, not just backup creation. Restore test evidence matters because a backup is only useful if the restore path works.
 
-Viewers can learn how VM backups, app-aware backups, NAS targets, ZFS snapshots, and restore testing solve different problems.
+Viewers can learn how VM backups, app-aware backups, NAS targets, ZFS snapshots, and restore testing fit together without pretending that one tool solves every recovery problem.
 
 Related docs:
 
@@ -70,9 +70,9 @@ Related docs:
 
 ## Monitoring
 
-Monitoring is built around Grafana, Prometheus, exporters, Loki, and Promtail. Node Exporter shows Linux host metrics. cAdvisor shows container metrics. Blackbox Exporter checks service availability from the outside. Loki and Promtail collect logs.
+Monitoring is built around Grafana, Prometheus, exporters, Loki, and Promtail. Node Exporter shows Linux host metrics. cAdvisor shows container metrics. Blackbox Exporter checks service availability. Loki and Promtail collect logs.
 
-Monitoring is treated as visibility, not decoration. The goal is to answer what is healthy, what changed, and where to look first when something breaks.
+Monitoring is treated as visibility, not decoration. The goal is to answer three practical questions: what is healthy, what changed, and where should troubleshooting start?
 
 Viewers can learn the difference between metrics, logs, dashboards, and service checks.
 
@@ -83,7 +83,7 @@ Related docs:
 
 ## Reverse Proxy and Remote Access
 
-NGINX provides internal HTTPS routing through the reverse proxy. Internal DNS points service identities such as `grafana.home.example.com` at the proxy, and the proxy routes traffic to the correct backend app.
+NGINX provides internal HTTPS routing through the reverse proxy. Internal DNS points service identities such as `grafana.home.example.com` at the proxy, and the proxy sends traffic to the correct backend app.
 
 Cloudflare Tunnel is documented as a selected public access path only. It is not a reason to publish every dashboard. Admin tools, monitoring, backup systems, hypervisors, and automation controllers should stay private unless there is a specific hardened access plan.
 
@@ -99,7 +99,7 @@ Related docs:
 
 ## Media
 
-The media stack includes Plex, Servarr-style automation, Tautulli, and Tdarr. Plex handles playback. Servarr-style apps support media workflows. Tautulli adds Plex visibility. Tdarr supports transcode automation.
+The media stack includes Plex, Servarr-style automation, Tautulli, and Tdarr. Plex handles playback, Servarr-style apps organize the workflow, Tautulli adds Plex visibility, and Tdarr supports transcode automation.
 
 Media services depend heavily on storage, metadata, and app state. Automation dashboards should stay private because they can expose libraries, paths, queues, and account details.
 
@@ -113,7 +113,7 @@ Related docs:
 
 The local AI stack uses a GPU server concept, a llama.cpp OpenAI-compatible endpoint, and Open WebUI. This keeps AI experimentation local-first and makes it easier to learn how Linux, GPUs, models, APIs, and private app integrations fit together.
 
-AI endpoints should stay protected. A local endpoint can still expose private prompts, model behavior, app context, or compute resources if it is published carelessly.
+AI endpoints should stay protected. A local endpoint can still expose private prompts, app context, model behavior, or compute resources if it is published carelessly.
 
 Viewers can learn how a local AI service can support private experimentation without depending on a hosted API for every request.
 
