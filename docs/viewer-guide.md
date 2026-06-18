@@ -11,6 +11,7 @@ This guide explains how viewers can use the KeepItTechie homelab repo without ge
 | Learn the big picture | [Homelab Overview](overview.md) | Understand the main roles before opening deep dives |
 | Study one service | [Service Catalog](service-catalog.md) | Pick a service by category and jump to its README |
 | Understand diagrams | [Diagram Index](../diagrams/README.md) | Follow network, DNS, backup, proxy, AI, and monitoring flows |
+| Understand future visuals | [Visual Assets Guide](visual-assets-guide.md) | Learn how screenshots, mockups, and thumbnails should be reviewed |
 | Copy a safe pattern | [Sanitized Examples](../examples/README.md) | Learn from templates that use placeholders instead of private values |
 | Decode unfamiliar terms | [Glossary](glossary.md) | Keep short definitions nearby while reading |
 
@@ -27,8 +28,9 @@ This guide explains how viewers can use the KeepItTechie homelab repo without ge
 9. Review [How To Read Service Pages](how-to-read-service-pages.md).
 10. Pick one service area to study.
 11. Compare the service README with the matching [sanitized examples](../examples/README.md).
-12. Use the [Security Notes](security-notes.md) before adapting any pattern.
-13. Build safely in a lab before using a pattern for important services.
+12. Review the [Visual Assets Guide](visual-assets-guide.md) before adding images or mockups.
+13. Use the [Security Notes](security-notes.md) before adapting any pattern.
+14. Build safely in a lab before using a pattern for important services.
 
 ## Good First Topics
 
@@ -68,3 +70,5 @@ The goal is to learn the pattern, not copy a private deployment line for line.
 - [Service Catalog](service-catalog.md)
 - [Glossary](glossary.md)
 - [How To Read Service Pages](how-to-read-service-pages.md)
+- [Visual Assets Guide](visual-assets-guide.md)
+- [Assets Index](../assets/README.md)

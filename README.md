@@ -22,6 +22,7 @@ Current documentation baseline: [v0.1.0](docs/releases/v0.1.0.md). See the [chan
 | Learn the terms | [Glossary](docs/glossary.md) | Look up homelab vocabulary as you read |
 | See the map | [Diagrams](diagrams/README.md) | Follow sanitized architecture and service flows |
 | Study examples | [Sanitized Examples](examples/README.md) | Learn safe config patterns without private values |
+| Plan visuals | [Visual Assets Guide](docs/visual-assets-guide.md) | Prepare safe diagrams, mockups, thumbnails, and future screenshots |
 | Browse services | [Service Catalog](docs/service-catalog.md) | Pick a service and learn what it does |
 
 The [Documentation Index](docs/docs-index.md) is the deeper table of contents. Use it when you want the service matrix, core infrastructure guide, storage and monitoring guide, apps and AI guide, security notes, release notes, or maintenance docs.
@@ -156,6 +157,7 @@ Pull requests run lightweight documentation checks for Markdown links, diagram s
 | `docs/` | Main viewer-facing documentation |
 | `services/` | Per-service breakdowns |
 | `diagrams/` | Public-safe architecture diagrams and placeholders |
+| `assets/` | Placeholder area for reviewed public-safe visual assets |
 | `examples/` | Sanitized configuration examples and templates |
 | `inventory/sanitized/` | Safe example inventory |
 | `inventory/private.example/` | Pattern for private inventory that should stay untracked |
