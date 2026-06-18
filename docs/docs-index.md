@@ -112,4 +112,5 @@ Use this page when the README is too high-level and a more complete map of the r
 | [Proxmox VM Layout Companion](episodes/proxmox-vm-layout.md) | Episode guide for virtualization and VM organization |
 | [Homelab Backups and Restore Testing Companion](episodes/backups-restore.md) | Episode guide for backup strategy, PBS, and restore verification |
 | [Homelab Monitoring with Grafana and Prometheus Companion](episodes/monitoring-grafana.md) | Episode guide covering metrics, logs, uptime checks, and dashboards |
+| [Homelab Reverse Proxy and Internal HTTPS Companion](episodes/reverse-proxy.md) | Episode guide covering reverse proxying, TLS, and selected public access |
 | [Content Map](content-map.md) | Repo-to-content mapping |

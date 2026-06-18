@@ -175,6 +175,7 @@ Not every dashboard should be public. Hypervisors, backup systems, admin dashboa
 
 Related docs:
 
+- [Homelab Reverse Proxy and Internal HTTPS Companion](episodes/reverse-proxy.md)
 - [Reverse Proxy](../services/reverse-proxy/README.md)
 - [Cloudflare Tunnel](../services/cloudflare-tunnel/README.md)
 - [NGINX Example](../examples/nginx/README.md)
@@ -265,7 +266,7 @@ Related docs:
 | 5 | Storage | [Storage and Monitoring](storage-monitoring.md), [Synology NAS](../services/synology/README.md), [ZFS Storage](../services/zfs-storage/README.md) |
 | 6 | Backups | [Storage and Backups](storage-and-backups.md), [Backup Flow Diagram](../diagrams/backup-flow.md) |
 | 7 | Monitoring | [Monitoring](../services/monitoring/README.md), [Monitoring Companion](episodes/monitoring-grafana.md), [Monitoring Flow Diagram](../diagrams/monitoring-flow.md) |
-| 8 | Reverse proxying | [Reverse Proxy](../services/reverse-proxy/README.md), [NGINX Example](../examples/nginx/README.md) |
+| 8 | Reverse proxying | [Reverse Proxy](../services/reverse-proxy/README.md), [Reverse Proxy Companion](episodes/reverse-proxy.md), [NGINX Example](../examples/nginx/README.md) |
 | 9 | Self-hosted apps | [Apps and AI](apps-and-ai.md), [Service Catalog](service-catalog.md) |
 | 10 | Local AI | [Local AI](../services/local-ai/README.md), [Local AI Flow Diagram](../diagrams/local-ai-flow.md) |
 | 11 | Automation | [AWX / Ansible Automation](../services/automation-awx/README.md), [Sanitized Examples](../examples/README.md) |

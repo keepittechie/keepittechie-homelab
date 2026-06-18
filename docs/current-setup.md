@@ -95,6 +95,7 @@ Viewers can learn the difference between internal reverse proxy access, VPN-styl
 
 Related docs:
 
+- [Homelab Reverse Proxy and Internal HTTPS Companion](episodes/reverse-proxy.md)
 - [Reverse Proxy](../services/reverse-proxy/README.md)
 - [Cloudflare Tunnel](../services/cloudflare-tunnel/README.md)
 - [Reverse Proxy Flow Diagram](../diagrams/reverse-proxy-flow.md)
