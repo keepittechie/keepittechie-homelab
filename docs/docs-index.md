@@ -8,6 +8,7 @@ Use this page when the README is too high-level and a more complete map of the r
 |---|---|
 | [Viewer Guide](viewer-guide.md) | Beginner-friendly path through the repo |
 | [Current Setup](current-setup.md) | Public-safe tour of what is running and why |
+| [Build Your Own Homelab](build-your-own.md) | Staged path for building a beginner-friendly lab |
 | [Homelab Overview](overview.md) | Big-picture design and service roles |
 | [Hardware](hardware.md) | Public-safe hardware roles and learning value |
 | [Public-Safe Inventory](inventory-public.md) | Sanitized role-based inventory view |
