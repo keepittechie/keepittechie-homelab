@@ -13,6 +13,7 @@ These pages are not private scripts or production notes. They are viewer-facing 
 | Proxmox VM Layout | Virtualization and VM organization | [Proxmox VM Layout](proxmox-vm-layout.md) |
 | Homelab Backups and Restore Testing | Backup strategy, PBS, and restore verification | [Homelab Backups and Restore Testing](backups-restore.md) |
 | Homelab Monitoring with Grafana and Prometheus | Metrics, logs, uptime checks, and dashboards | [Homelab Monitoring with Grafana and Prometheus](monitoring-grafana.md) |
+| Homelab Reverse Proxy and Internal HTTPS | Reverse proxy, TLS, and selected public access | [Homelab Reverse Proxy and Internal HTTPS](reverse-proxy.md) |
 
 Future companion pages can cover local AI, dashboards, self-hosted apps, and automation.
 

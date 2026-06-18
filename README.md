@@ -121,6 +121,7 @@ This repo is designed to support KeepItTechie videos. The companion plan is here
 - [Proxmox VM Layout Companion](docs/episodes/proxmox-vm-layout.md)
 - [Homelab Backups and Restore Testing Companion](docs/episodes/backups-restore.md)
 - [Homelab Monitoring with Grafana and Prometheus Companion](docs/episodes/monitoring-grafana.md)
+- [Homelab Reverse Proxy and Internal HTTPS Companion](docs/episodes/reverse-proxy.md)
 - [YouTube Companion Series](docs/youtube-series.md)
 - [Content Map](docs/content-map.md)
 
