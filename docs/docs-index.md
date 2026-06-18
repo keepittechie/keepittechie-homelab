@@ -106,4 +106,6 @@ Use this page when the README is too high-level and a more complete map of the r
 | [Documentation Roadmap](roadmap.md) | Completed phases and future work |
 | [Maintenance Checklist](maintenance-checklist.md) | Ongoing repo maintenance checklist |
 | [YouTube Companion Series](youtube-series.md) | Video topic plan tied to repo docs |
+| [Episode Companion Pages](episodes/README.md) | Viewer-facing pages tied to KeepItTechie videos |
+| [Full Homelab Tour Companion](episodes/full-homelab-tour.md) | First episode guide for the broad lab tour |
 | [Content Map](content-map.md) | Repo-to-content mapping |

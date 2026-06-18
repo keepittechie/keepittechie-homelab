@@ -269,6 +269,7 @@ Related docs:
 ## Related Docs
 
 - [Current Setup](current-setup.md)
+- [Full Homelab Tour Companion](episodes/full-homelab-tour.md)
 - [Viewer Guide](viewer-guide.md)
 - [Documentation Index](docs-index.md)
 - [Glossary](glossary.md)

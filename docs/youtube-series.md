@@ -11,7 +11,7 @@ Each topic includes:
 
 | Episode | Goal | What Viewers Learn | Repo References | Safe Demo Ideas |
 |---|---|---|---|---|
-| 1. Full Homelab Tour | Explain the full lab at a high level | How firewall, DNS, virtualization, storage, monitoring, media, AI, and apps fit together | `README.md`, `docs/overview.md`, `diagrams/homelab-overview.md` | Walk through the Mermaid diagram and sanitized service matrix |
+| 1. Full Homelab Tour | Explain the full lab at a high level | How firewall, DNS, virtualization, storage, monitoring, media, AI, and apps fit together | `README.md`, `docs/episodes/full-homelab-tour.md`, `docs/overview.md`, `diagrams/homelab-overview.md` | Walk through the Mermaid diagram and sanitized service matrix |
 | 2. Building a Homelab in Stages | Give beginners a safe build path | How to start small, add layers, and avoid copying a private setup blindly | `docs/build-your-own.md`, `docs/viewer-guide.md`, `docs/glossary.md` | Walk through stages with sanitized names such as `home.example.com` |
 | 3. How the pfSense Network Is Structured | Teach the network control plane | Routing, DHCP, firewall policy, and why admin tools stay private | `docs/network.md`, `services/pfsense/README.md` | Use fake VLANs and `10.10.0.0/24` examples |
 | 4. Pi-hole and Internal DNS | Show why local DNS matters | Primary/secondary DNS, service identities, and troubleshooting name resolution | `services/pihole/README.md`, `inventory/sanitized/hosts.example.yml` | Add a fake `grafana.home.example.com` record |
@@ -55,6 +55,7 @@ What can viewers try in their own lab?
 
 ## Publishing Notes
 
+- Episode companion pages live in [docs/episodes](episodes/README.md).
 - Add video links back into this file after episodes are published.
 - Keep raw admin screens, real domains, public IPs, and credentials out of recordings.
 - Use sanitized diagrams and fake data in repeatable demos.
