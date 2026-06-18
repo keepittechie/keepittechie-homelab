@@ -6,16 +6,17 @@ This guide explains how viewers can use the KeepItTechie homelab repo as a learn
 
 1. Start with the [Homelab Overview](overview.md).
 2. Tour the [Current Setup](current-setup.md).
-3. Review [Hardware](hardware.md) for hardware roles.
-4. Browse the [Service Catalog](service-catalog.md).
-5. Open the [diagram index](../diagrams/README.md).
-6. Read the [service matrix](service-matrix.md) to understand what runs where.
-7. Keep the [Glossary](glossary.md) open for unfamiliar terms.
-8. Review [How To Read Service Pages](how-to-read-service-pages.md).
-9. Pick one service area to study.
-10. Compare the service README with the matching [sanitized examples](../examples/README.md).
-11. Use the [Security Notes](security-notes.md) before adapting any pattern.
-12. Build safely in a lab before using a pattern for important services.
+3. Read [Build Your Own Homelab](build-your-own.md) to see a staged learning path.
+4. Review [Hardware](hardware.md) for hardware roles.
+5. Browse the [Service Catalog](service-catalog.md).
+6. Open the [diagram index](../diagrams/README.md).
+7. Read the [service matrix](service-matrix.md) to understand what runs where.
+8. Keep the [Glossary](glossary.md) open for unfamiliar terms.
+9. Review [How To Read Service Pages](how-to-read-service-pages.md).
+10. Pick one service area to study.
+11. Compare the service README with the matching [sanitized examples](../examples/README.md).
+12. Use the [Security Notes](security-notes.md) before adapting any pattern.
+13. Build safely in a lab before using a pattern for important services.
 
 ## Good First Topics
 
@@ -48,6 +49,7 @@ The goal is to learn the pattern, not copy a private deployment line for line.
 
 - [Documentation Index](docs-index.md)
 - [Current Setup](current-setup.md)
+- [Build Your Own Homelab](build-your-own.md)
 - [Hardware](hardware.md)
 - [Public-Safe Inventory](inventory-public.md)
 - [Service Catalog](service-catalog.md)
