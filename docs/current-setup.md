@@ -37,6 +37,7 @@ This is where viewers can see why virtualization is useful in a homelab: isolati
 
 Related docs:
 
+- [Proxmox VM Layout Companion](episodes/proxmox-vm-layout.md)
 - [Proxmox](../services/proxmox/README.md)
 - [Core Infrastructure](core-infrastructure.md)
 

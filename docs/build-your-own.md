@@ -92,6 +92,7 @@ Service identity is the name users remember, such as `proxy.home.example.com`. M
 
 Related docs:
 
+- [Proxmox VM Layout Companion](episodes/proxmox-vm-layout.md)
 - [Proxmox](../services/proxmox/README.md)
 - [Core Infrastructure](core-infrastructure.md)
 
