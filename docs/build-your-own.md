@@ -133,6 +133,7 @@ A backup is only useful when the restore path works. Keep a short restore log so
 
 Related docs:
 
+- [Homelab Backups and Restore Testing Companion](episodes/backups-restore.md)
 - [Storage and Backups](storage-and-backups.md)
 - [Proxmox Backup Server](../services/proxmox-backup-server/README.md)
 - [Backup Flow Diagram](../diagrams/backup-flow.md)

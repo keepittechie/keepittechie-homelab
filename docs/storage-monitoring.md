@@ -4,7 +4,7 @@ This page is the beginner-friendly entry point for storage, backups, and monitor
 
 Storage keeps services running and data available. Backups make recovery possible. Monitoring tells you when something is unhealthy before the outage becomes a mystery.
 
-For visual references, see the [backup flow diagram](../diagrams/backup-flow.md) and [monitoring flow diagram](../diagrams/monitoring-flow.md). For unfamiliar terms such as dataset, snapshot, scrub, metrics, and logs, use the [Glossary](glossary.md).
+For visual references, see the [backup flow diagram](../diagrams/backup-flow.md), [monitoring flow diagram](../diagrams/monitoring-flow.md), and [Homelab Backups and Restore Testing companion](episodes/backups-restore.md). For unfamiliar terms such as dataset, snapshot, scrub, metrics, and logs, use the [Glossary](glossary.md).
 
 ## Recommended Reading Order
 
@@ -70,6 +70,7 @@ Do not document:
 
 - [Core Infrastructure](core-infrastructure.md)
 - [Apps and AI](apps-and-ai.md)
+- [Homelab Backups and Restore Testing Companion](episodes/backups-restore.md)
 - [Glossary](glossary.md)
 - [How To Read Service Pages](how-to-read-service-pages.md)
 - [Public-Safe Diagrams](../diagrams/README.md)
