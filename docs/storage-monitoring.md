@@ -4,7 +4,7 @@ This page is the beginner-friendly entry point for storage, backups, and monitor
 
 Storage keeps services running and data available. Backups make recovery possible. Monitoring tells you when something is unhealthy before the outage becomes a mystery.
 
-For visual references, see the [backup flow diagram](../diagrams/backup-flow.md), [monitoring flow diagram](../diagrams/monitoring-flow.md), [Homelab Backups and Restore Testing companion](episodes/backups-restore.md), and [Homelab Monitoring with Grafana and Prometheus companion](episodes/monitoring-grafana.md). For unfamiliar terms such as dataset, snapshot, scrub, metrics, and logs, use the [Glossary](glossary.md).
+For visual references, see the [backup flow diagram](../diagrams/backup-flow.md), [monitoring flow diagram](../diagrams/monitoring-flow.md), [Homelab Backups and Restore Testing guide](guides/backups-restore.md), and [Homelab Monitoring with Grafana and Prometheus guide](guides/monitoring-grafana.md). For unfamiliar terms such as dataset, snapshot, scrub, metrics, and logs, use the [Glossary](glossary.md).
 
 ## Recommended Reading Order
 
@@ -14,7 +14,7 @@ For visual references, see the [backup flow diagram](../diagrams/backup-flow.md)
 | 2 | Synology NAS | [Synology NAS](../services/synology/README.md) | Learn shared storage, media storage, and backup target concepts |
 | 3 | ZFS Storage Server | [ZFS Storage Server](../services/zfs-storage/README.md) | Learn datasets, snapshots, scrubs, and Linux storage |
 | 4 | Proxmox Backup Server | [Proxmox Backup Server](../services/proxmox-backup-server/README.md) | Understand VM backup and restore testing |
-| 5 | Monitoring Stack | [Monitoring](../services/monitoring/README.md), [Monitoring Companion](episodes/monitoring-grafana.md) | Learn how metrics, logs, and dashboards support operations |
+| 5 | Monitoring Stack | [Monitoring](../services/monitoring/README.md), [Monitoring Guide](guides/monitoring-grafana.md) | Learn how metrics, logs, and dashboards support operations |
 
 ## Stack Summary
 
@@ -70,8 +70,8 @@ Do not document:
 
 - [Core Infrastructure](core-infrastructure.md)
 - [Apps and AI](apps-and-ai.md)
-- [Homelab Backups and Restore Testing Companion](episodes/backups-restore.md)
-- [Homelab Monitoring with Grafana and Prometheus Companion](episodes/monitoring-grafana.md)
+- [Homelab Backups and Restore Testing Guide](guides/backups-restore.md)
+- [Homelab Monitoring with Grafana and Prometheus Guide](guides/monitoring-grafana.md)
 - [Glossary](glossary.md)
 - [How To Read Service Pages](how-to-read-service-pages.md)
 - [Public-Safe Diagrams](../diagrams/README.md)

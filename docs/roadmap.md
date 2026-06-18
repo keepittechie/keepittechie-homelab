@@ -53,13 +53,13 @@ Completed foundation work now covers the public-safe base docs, navigation, arch
 - [ ] Add a sanitized restore checklist for the media stack.
 - [ ] Add storage rollback examples for NAS snapshots and ZFS snapshots.
 
-## Phase 5: Video Companion Expansion
+## Phase 5: Guide Expansion
 
-- [ ] Add links to published KeepItTechie videos.
-- [ ] Add per-episode repo references.
-- [ ] Add safe demo scripts or checklists where useful.
-- [ ] Add viewer exercises for DNS, backups, monitoring, and reverse proxying.
-- [ ] Add viewer exercises for local AI, dashboards, documentation, media, and private apps.
+- [ ] Add links to new public-safe guides.
+- [ ] Add topic-based repo references.
+- [ ] Add public-safe checklists where useful.
+- [ ] Add reader exercises for DNS, backups, monitoring, and reverse proxying.
+- [ ] Add reader exercises for local AI, dashboards, documentation, media, and private apps.
 
 ## Phase 6: Sanitized Config Examples
 

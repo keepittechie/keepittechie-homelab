@@ -43,7 +43,7 @@ For the first deep-dive reading path, start with [Core Infrastructure](core-infr
 
 ## How To Use This Matrix
 
-- Start here when deciding whether a service belongs in a video, diagram, or public example.
+- Start here when deciding whether a service belongs in a guide, diagram, or public example.
 - Update it whenever a service moves hosts or changes exposure level.
 - Treat backup priority as a documentation priority too: critical services need clear restore notes.
 - Use the core infrastructure deep dives for the network, DNS, virtualization, backup, proxy, and tunnel layers.

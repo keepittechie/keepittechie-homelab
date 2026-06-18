@@ -102,19 +102,24 @@ Use this page when the README is too high-level and a more complete map of the r
 | [Pre-Publish Review](pre-publish-review.md) | Public-safe review before publishing or merging |
 | [Local Quality Scripts](../scripts/README.md) | How to run documentation quality checks locally |
 
+## Guides and Learning Paths
+
+| Page | Purpose |
+|---|---|
+| [Learning Paths](learning-paths.md) | Practical reading paths through the repo |
+| [Homelab Guides](guides/README.md) | Public-safe topic guides |
+| [Full Homelab Tour Guide](guides/full-homelab-tour.md) | Broad lab walkthrough |
+| [Homelab DNS and Pi-hole Guide](guides/dns-pihole.md) | Local DNS, filtering, and service names |
+| [Proxmox VM Layout Guide](guides/proxmox-vm-layout.md) | Virtualization and VM organization |
+| [Homelab Backups and Restore Testing Guide](guides/backups-restore.md) | Backup strategy, PBS, and restore verification |
+| [Homelab Monitoring with Grafana and Prometheus Guide](guides/monitoring-grafana.md) | Metrics, logs, uptime checks, and dashboards |
+| [Homelab Reverse Proxy and Internal HTTPS Guide](guides/reverse-proxy.md) | Reverse proxying, TLS, and selected public access |
+| [Local AI on Linux Guide](guides/local-ai.md) | Local AI services, endpoints, and privacy boundaries |
+| [Content Map](content-map.md) | Repo topic map |
+
 ## Planning and Roadmap
 
 | Page | Purpose |
 |---|---|
 | [Documentation Roadmap](roadmap.md) | Completed phases and future work |
 | [Maintenance Checklist](maintenance-checklist.md) | Ongoing repo maintenance checklist |
-| [YouTube Companion Series](youtube-series.md) | Video topic plan tied to repo docs |
-| [Episode Companion Pages](episodes/README.md) | Viewer-facing pages tied to KeepItTechie videos |
-| [Full Homelab Tour Companion](episodes/full-homelab-tour.md) | First episode guide for the broad lab tour |
-| [Homelab DNS and Pi-hole Companion](episodes/dns-pihole.md) | Episode guide for local DNS, filtering, and service names |
-| [Proxmox VM Layout Companion](episodes/proxmox-vm-layout.md) | Episode guide for virtualization and VM organization |
-| [Homelab Backups and Restore Testing Companion](episodes/backups-restore.md) | Episode guide for backup strategy, PBS, and restore verification |
-| [Homelab Monitoring with Grafana and Prometheus Companion](episodes/monitoring-grafana.md) | Episode guide covering metrics, logs, uptime checks, and dashboards |
-| [Homelab Reverse Proxy and Internal HTTPS Companion](episodes/reverse-proxy.md) | Episode guide covering reverse proxying, TLS, and selected public access |
-| [Local AI on Linux Companion](episodes/local-ai.md) | Episode guide covering local AI services, endpoints, and privacy boundaries |
-| [Content Map](content-map.md) | Repo-to-content mapping |

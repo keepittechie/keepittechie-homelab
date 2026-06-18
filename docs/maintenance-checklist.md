@@ -17,7 +17,7 @@ Use this checklist for ongoing repo maintenance. For a final review before publi
 - [ ] Update the roadmap when phases are completed or new public docs are planned.
 - [ ] Update diagrams when the architecture changes.
 - [ ] Confirm links still point to existing files.
-- [ ] Add video links after publishing KeepItTechie episodes.
+- [ ] Update learning paths when guides change.
 
 ## Public Safety Review
 

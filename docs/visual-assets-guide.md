@@ -17,7 +17,7 @@ The tradeoff is risk. Images can leak private details that are easy to miss in a
 | Fake/demo dashboard screenshots | Teach layout and signal types without live infrastructure |
 | Cropped screenshots with no private data | Keep attention on one public-safe concept |
 | Mockups made from sanitized examples | Good for planned dashboards, thumbnails, or service maps |
-| Social thumbnails that do not show real configs | Useful for videos without leaking lab details |
+| Social preview images that do not show real configs | Useful for sharing the repo without leaking lab details |
 | Terminal screenshots using fake paths and fake hostnames | Safer than live terminal captures when teaching commands |
 
 ## Risky Visual Types

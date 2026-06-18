@@ -1,14 +1,14 @@
 # Homelab Backups and Restore Testing
 
-This page is a public-safe companion guide for a KeepItTechie video about homelab backups, Proxmox Backup Server, and proving backups through restore testing.
+This guide explains homelab backups, Proxmox Backup Server, and proving backups through restore testing.
 
-## Episode Goal
+## Guide Goal
 
-This episode teaches how to think about backups in a homelab and why a restore test matters more than a "backup completed" message.
+This guide teaches how to think about backups in a homelab and why a restore test matters more than a "backup completed" message.
 
 The focus is practical: protect important services, keep backup targets separate from the systems they protect, and document restore evidence without publishing private infrastructure details.
 
-## What Viewers Will Learn
+## What Readers Will Learn
 
 - Why backups should be planned before adding more services.
 - Why snapshots are helpful but not enough by themselves.
@@ -80,9 +80,9 @@ A simple restore test can look like this:
 
 Do not publish screenshots or command output that reveals hostnames, paths, users, file names, databases, or app data from the live lab.
 
-## Public-Safe Demo Ideas
+## Public-Safe Examples
 
-- Show the [backup flow diagram](../../diagrams/backup-flow.md).
+- Open the [backup flow diagram](../../diagrams/backup-flow.md).
 - Walk through a sanitized restore test evidence table.
 - Explain the difference between a snapshot and a backup with a simple example.
 - Show how a backup target should be separate from the VM host.
@@ -135,20 +135,20 @@ Use a simple table to record proof that a restore path works. Keep the real deta
 
 ## Commands and Examples
 
-These commands are safe examples that viewers can adapt in their own lab. Review command output before sharing it publicly because it can include hostnames, pool names, dataset names, and paths.
+These commands are safe examples that readers can adapt in their own lab. Review command output before sharing it publicly because it can include hostnames, pool names, dataset names, and paths.
 
 ```bash
 # List Proxmox VMs
 qm list
 
-# Check ZFS pool status in a viewer's own lab
+# Check ZFS pool status in a reader's own lab
 zpool status
 
-# List ZFS datasets in a viewer's own lab
+# List ZFS datasets in a reader's own lab
 zfs list
 ```
 
-## After Watching
+## Next Steps
 
 - Read the [Storage and Backups](../storage-and-backups.md) guide.
 - Study the [backup flow diagram](../../diagrams/backup-flow.md).

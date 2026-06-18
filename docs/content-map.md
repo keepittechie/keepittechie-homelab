@@ -1,86 +1,47 @@
-# KeepItTechie Content Map
+# Content Map
 
-This repo can support a full KeepItTechie homelab series. Each topic should connect a real lab service to a practical lesson viewers can reuse.
+This page maps the repo by learning topic. It is meant to help readers connect a homelab area to the docs, diagrams, guides, and sanitized examples that explain it.
 
-For the more detailed episode-by-episode plan, see [YouTube Companion Series](youtube-series.md).
+For guided reading paths, see [Learning Paths](learning-paths.md).
 
-## Series Structure
+## Topic Map
 
-| Episode | Topic | Viewer Takeaway |
+| Topic | Reader Takeaway | Start Here |
 |---|---|---|
-| 1 | Full homelab overview | How the pieces fit together without getting lost in tools |
-| 2 | pfSense firewall design | Basic routing, DHCP, firewall rules, and safe exposure |
-| 3 | Pi-hole DNS pair | Local DNS, redundancy, ad blocking, and service names |
-| 4 | Proxmox virtualization | Why VMs make a homelab easier to test and rebuild |
-| 5 | Proxmox Backup Server | Backups, retention, and restore tests that actually matter |
-| 6 | Synology plus ZFS storage | Appliance NAS vs Linux storage server tradeoffs |
-| 7 | NGINX reverse proxy | Clean internal URLs and service routing |
-| 8 | Cloudflare Tunnel | Publishing selected services without opening everything |
-| 9 | Monitoring stack | Grafana, Prometheus, logs, exporters, and uptime checks |
-| 10 | Media stack | Plex, Servarr, Tautulli, and Tdarr as a real app ecosystem |
-| 11 | Local AI | Running AI locally with a GPU server and Open WebUI |
-| 12 | Wiki.js | Building a documentation habit for the lab |
-| 13 | Glance dashboard | Creating a simple control surface for daily use |
-| 14 | FinanceHQ | Local-first personal apps and privacy-minded design |
-| 15 | CareerFill | Automation for job search workflows |
-| 16 | AWX / Ansible | Turning repeatable admin work into automation |
+| Full homelab overview | How the major pieces fit together without getting lost in tools | [Current Setup](current-setup.md), [Full Homelab Tour Guide](guides/full-homelab-tour.md) |
+| pfSense firewall design | Basic routing, DHCP, firewall policy, and safe exposure boundaries | [Network Design](network.md), [pfSense](../services/pfsense/README.md) |
+| Pi-hole DNS pair | Local DNS, redundancy, filtering, and service names | [Homelab DNS and Pi-hole](guides/dns-pihole.md), [Pi-hole](../services/pihole/README.md) |
+| Proxmox virtualization | Why VMs make a homelab easier to test, group, and rebuild | [Proxmox VM Layout](guides/proxmox-vm-layout.md), [Proxmox](../services/proxmox/README.md) |
+| Proxmox Backup Server | Backups, retention concepts, and restore tests that actually matter | [Backups and Restore Testing](guides/backups-restore.md), [PBS](../services/proxmox-backup-server/README.md) |
+| Synology and ZFS storage | Appliance NAS workflows and Linux storage learning | [Storage and Backups](storage-and-backups.md), [Storage and Monitoring](storage-monitoring.md) |
+| NGINX reverse proxy | Clean internal URLs, TLS concepts, and routing to backend apps | [Reverse Proxy Guide](guides/reverse-proxy.md), [Reverse Proxy](../services/reverse-proxy/README.md) |
+| Cloudflare Tunnel | Selected public access without publishing every internal service | [Cloudflare Tunnel](../services/cloudflare-tunnel/README.md), [Security Notes](security-notes.md) |
+| Monitoring stack | Grafana, Prometheus, logs, exporters, and uptime checks | [Monitoring Guide](guides/monitoring-grafana.md), [Monitoring](../services/monitoring/README.md) |
+| Media stack | Plex, Servarr-style automation, Tautulli, and Tdarr as a multi-app workflow | [Media Stack](../services/media-stack/README.md), [Apps and AI](apps-and-ai.md) |
+| Local AI | Running AI locally with a GPU server concept, Open WebUI, and private endpoints | [Local AI Guide](guides/local-ai.md), [Local AI Stack](../services/local-ai/README.md) |
+| Wiki.js | Building a documentation habit while keeping private notes private | [Wiki.js](../services/wiki/README.md), [Docs Index](docs-index.md) |
+| Glance dashboard | Creating a simple daily control surface without exposing admin links | [Glance](../services/glance/README.md), [Apps and AI](apps-and-ai.md) |
+| FinanceHQ | Local-first personal app patterns with demo data only | [FinanceHQ](../services/financehq/README.md), [Security Notes](security-notes.md) |
+| CareerFill | Career workflow app patterns without publishing job or resume data | [CareerFill](../services/careerfill/README.md), [Security Notes](security-notes.md) |
+| AWX / Ansible | Turning repeatable admin work into safe automation patterns | [AWX / Ansible](../services/automation-awx/README.md), [Sanitized Inventory](../inventory/sanitized/hosts.example.yml) |
 
-## Episode Template
+## How to Use This Map
 
-```text
-Problem:
-What pain point does this solve?
+- Start with the topic that matches the current question.
+- Open the guide first if one exists.
+- Use service docs to understand purpose, placement, network behavior, backups, and security notes.
+- Use diagrams to see the flow visually.
+- Use sanitized examples only as templates, not production config.
 
-Where it fits:
-What depends on it, and what does it depend on?
+## Public-Safe Boundaries
 
-Build:
-What are the main install or configuration steps?
+This map intentionally avoids exact host IPs, live internal domains, raw exports, credentials, screenshots, serial numbers, MAC addresses, financial data, and career data.
 
-Security:
-What should stay private?
+## Related Docs
 
-Demo:
-What does success look like?
-
-Failure mode:
-What breaks when this service is down?
-
-Takeaway:
-What can viewers reuse in their own lab?
-```
-
-## Good Demo Angles
-
-| Service | Demo Idea |
-|---|---|
-| pfSense | Show rule thinking with sanitized networks |
-| Pi-hole | Add a local DNS record and resolve a service name |
-| Proxmox | Clone or restore a test VM |
-| PBS | Restore a VM into an isolated test network |
-| Reverse proxy | Add a new internal service identity |
-| Monitoring | Build a simple dashboard from node metrics |
-| Loki / Promtail | Trace a service issue through logs |
-| Media stack | Explain how each app has a different role |
-| Local AI | Send a request to a local OpenAI-compatible endpoint |
-| Wiki.js | Convert a private runbook idea into a public-safe doc |
-| Glance | Build a dashboard section for core services |
-| AWX | Run a safe read-only homelab check playbook |
-
-## Public Safety For Videos
-
-- Blur real public domains, real public IPs, tokens, and account identifiers.
-- Prefer recreated examples over live admin screens.
-- Avoid showing full firewall exports or full DNS record lists.
-- Use `home.example.com` and `10.10.0.0/24` in slides and diagrams.
-- Keep private Wiki.js admin pages out of public screen recordings.
-
-## Repo Tie-In
-
-Each video can point viewers to:
-
-- The service README for the architecture.
-- The sanitized inventory for naming patterns.
-- The diagram notes for topology.
-- The security notes for what not to publish.
-- The [service matrix](service-matrix.md) for access and backup priority.
+- [Learning Paths](learning-paths.md)
+- [Current Setup](current-setup.md)
+- [Build Your Own Homelab](build-your-own.md)
+- [Service Catalog](service-catalog.md)
+- [Service Matrix](service-matrix.md)
+- [Sanitized Examples](../examples/README.md)

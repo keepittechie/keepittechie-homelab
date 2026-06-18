@@ -5,7 +5,7 @@
 ![License](https://img.shields.io/badge/license-CC%20BY%204.0-green)
 ![Homelab](https://img.shields.io/badge/homelab-linux%20%7C%20self--hosted-lightgrey)
 
-This repo is the public-safe tour map for the KeepItTechie homelab. It shows how the lab is put together, why each layer exists, and what viewers can learn from running real Linux and open source services at home.
+This repo is the public-safe tour map for the KeepItTechie homelab. It shows how the lab is put together, why each layer exists, and what readers can learn from running real Linux and open source services at home.
 
 Think of it as a teaching repo, not a config dump. The docs explain the patterns behind pfSense, Pi-hole, Proxmox, storage, backups, monitoring, media workflows, local AI, dashboards, and automation without exposing private infrastructure details.
 
@@ -38,7 +38,7 @@ The lab is easier to understand when it is broken into roles instead of treated 
 | Storage and backups | [Storage and Monitoring](docs/storage-monitoring.md), [Storage and Backups](docs/storage-and-backups.md) | [Synology](services/synology/README.md), [ZFS Storage](services/zfs-storage/README.md), [Proxmox Backup Server](services/proxmox-backup-server/README.md) |
 | Observability | [Storage and Monitoring](docs/storage-monitoring.md), [Service Matrix](docs/service-matrix.md) | [Monitoring](services/monitoring/README.md) |
 | Media | [Apps and AI](docs/apps-and-ai.md), [Service Matrix](docs/service-matrix.md) | [Media Stack](services/media-stack/README.md) |
-| Local AI | [Apps and AI](docs/apps-and-ai.md), [Content Map](docs/content-map.md) | [Local AI](services/local-ai/README.md) |
+| Local AI | [Apps and AI](docs/apps-and-ai.md), [Learning Paths](docs/learning-paths.md) | [Local AI](services/local-ai/README.md) |
 | Documentation and dashboard | [Apps and AI](docs/apps-and-ai.md), [Diagrams](diagrams/README.md) | [Wiki.js](services/wiki/README.md), [Glance Dashboard](services/glance/README.md) |
 | Personal apps | [Apps and AI](docs/apps-and-ai.md), [Security Notes](docs/security-notes.md) | [FinanceHQ](services/financehq/README.md), [CareerFill](services/careerfill/README.md) |
 | Automation | [Apps and AI](docs/apps-and-ai.md), [Maintenance Checklist](docs/maintenance-checklist.md) | [AWX / Ansible](services/automation-awx/README.md) |
@@ -94,7 +94,7 @@ All names and networks in public examples use sanitized values such as `home.exa
 |---|---|
 | A public learning resource for KeepItTechie viewers | A dump of private production configs |
 | A sanitized architecture guide | A live DNS zone or firewall export |
-| A companion to homelab videos | A credential store |
+| A guide to safe homelab patterns | A credential store |
 | A rebuild and documentation aid | A full backup of the lab |
 | A place for safe examples | A place for real secrets, keys, or private data |
 
@@ -112,22 +112,22 @@ Short version: this repo teaches the lab design. It is not a live backup, invent
 
 For a beginner-friendly walkthrough, use the [Viewer Guide](docs/viewer-guide.md). For deeper navigation, use the [Documentation Index](docs/docs-index.md) and [Glossary](docs/glossary.md).
 
-## YouTube Companion Series
+## Guides and Learning Paths
 
-This repo is designed to support KeepItTechie videos. The companion plan is here:
+Use these pages when you want a guided path through the repo instead of browsing every service one by one:
 
-- [Episode Companion Pages](docs/episodes/README.md)
-- [Full Homelab Tour Companion](docs/episodes/full-homelab-tour.md)
-- [Homelab DNS and Pi-hole Companion](docs/episodes/dns-pihole.md)
-- [Proxmox VM Layout Companion](docs/episodes/proxmox-vm-layout.md)
-- [Homelab Backups and Restore Testing Companion](docs/episodes/backups-restore.md)
-- [Homelab Monitoring with Grafana and Prometheus Companion](docs/episodes/monitoring-grafana.md)
-- [Homelab Reverse Proxy and Internal HTTPS Companion](docs/episodes/reverse-proxy.md)
-- [Local AI on Linux Companion](docs/episodes/local-ai.md)
-- [YouTube Companion Series](docs/youtube-series.md)
+- [Homelab Guides](docs/guides/README.md)
+- [Learning Paths](docs/learning-paths.md)
+- [Full Homelab Tour Guide](docs/guides/full-homelab-tour.md)
+- [Homelab DNS and Pi-hole Guide](docs/guides/dns-pihole.md)
+- [Proxmox VM Layout Guide](docs/guides/proxmox-vm-layout.md)
+- [Homelab Backups and Restore Testing Guide](docs/guides/backups-restore.md)
+- [Homelab Monitoring with Grafana and Prometheus Guide](docs/guides/monitoring-grafana.md)
+- [Homelab Reverse Proxy and Internal HTTPS Guide](docs/guides/reverse-proxy.md)
+- [Local AI on Linux Guide](docs/guides/local-ai.md)
 - [Content Map](docs/content-map.md)
 
-Planned topics include the full homelab tour, pfSense, Pi-hole, Proxmox, Proxmox Backup Server, Synology vs ZFS, reverse proxying, Cloudflare Tunnel, Grafana monitoring, local AI, dashboards, AWX, and local-first personal apps.
+Core guide topics include the full homelab tour, pfSense, Pi-hole, Proxmox, Proxmox Backup Server, Synology vs ZFS, reverse proxying, Cloudflare Tunnel, Grafana monitoring, local AI, dashboards, AWX, and local-first personal apps.
 
 ## Security First
 

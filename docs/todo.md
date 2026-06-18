@@ -20,6 +20,6 @@ This page tracks public-safe documentation ideas that may be added later. Items 
 
 - [ ] Add service badges/status table
 - [ ] Add architecture diagram to README
-- [ ] Add YouTube episode links as videos are published
+- [ ] Add new guide links as public-safe docs are published
 - [ ] Add rebuild notes per service
 - [ ] Add sanitized Compose examples where safe

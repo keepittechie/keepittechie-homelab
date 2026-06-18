@@ -20,7 +20,7 @@ This section teaches how routing, firewall policy, DHCP, DNS, and segmentation w
 
 Related docs:
 
-- [Homelab DNS and Pi-hole Companion](episodes/dns-pihole.md)
+- [Homelab DNS and Pi-hole Guide](guides/dns-pihole.md)
 - [Network Design](network.md)
 - [Core Infrastructure](core-infrastructure.md)
 - [DNS Flow Diagram](../diagrams/dns-flow.md)
@@ -37,7 +37,7 @@ This is where viewers can see why virtualization is useful in a homelab: isolati
 
 Related docs:
 
-- [Proxmox VM Layout Companion](episodes/proxmox-vm-layout.md)
+- [Proxmox VM Layout Guide](guides/proxmox-vm-layout.md)
 - [Proxmox](../services/proxmox/README.md)
 - [Core Infrastructure](core-infrastructure.md)
 
@@ -66,7 +66,7 @@ Viewers can learn how VM backups, app-aware backups, NAS targets, ZFS snapshots,
 
 Related docs:
 
-- [Homelab Backups and Restore Testing Companion](episodes/backups-restore.md)
+- [Homelab Backups and Restore Testing Guide](guides/backups-restore.md)
 - [Proxmox Backup Server](../services/proxmox-backup-server/README.md)
 - [Backup Flow Diagram](../diagrams/backup-flow.md)
 - [Storage and Backups](storage-and-backups.md)
@@ -81,7 +81,7 @@ Viewers can learn the difference between metrics, logs, dashboards, and service 
 
 Related docs:
 
-- [Homelab Monitoring with Grafana and Prometheus Companion](episodes/monitoring-grafana.md)
+- [Homelab Monitoring with Grafana and Prometheus Guide](guides/monitoring-grafana.md)
 - [Monitoring](../services/monitoring/README.md)
 - [Monitoring Flow Diagram](../diagrams/monitoring-flow.md)
 
@@ -95,7 +95,7 @@ Viewers can learn the difference between internal reverse proxy access, VPN-styl
 
 Related docs:
 
-- [Homelab Reverse Proxy and Internal HTTPS Companion](episodes/reverse-proxy.md)
+- [Homelab Reverse Proxy and Internal HTTPS Guide](guides/reverse-proxy.md)
 - [Reverse Proxy](../services/reverse-proxy/README.md)
 - [Cloudflare Tunnel](../services/cloudflare-tunnel/README.md)
 - [Reverse Proxy Flow Diagram](../diagrams/reverse-proxy-flow.md)
@@ -124,7 +124,7 @@ Viewers can learn how a local AI service can support private experimentation wit
 
 Related docs:
 
-- [Local AI on Linux Companion](episodes/local-ai.md)
+- [Local AI on Linux Guide](guides/local-ai.md)
 - [Local AI](../services/local-ai/README.md)
 - [Local AI Flow Diagram](../diagrams/local-ai-flow.md)
 
@@ -185,7 +185,7 @@ Related docs:
 ## Where to Go Next
 
 1. [Viewer Guide](viewer-guide.md)
-2. [Full Homelab Tour Companion](episodes/full-homelab-tour.md)
+2. [Full Homelab Tour Guide](guides/full-homelab-tour.md)
 3. [Build Your Own Homelab](build-your-own.md)
 4. [Glossary](glossary.md)
 5. [Hardware](hardware.md)
