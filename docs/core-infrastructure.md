@@ -12,7 +12,7 @@ For visual references, start with the [homelab overview diagram](../diagrams/hom
 |---|---|---|
 | 1 | [pfSense](../services/pfsense/README.md) | Understand routing, firewall policy, DHCP, and network boundaries |
 | 2 | [Pi-hole](../services/pihole/README.md) | Understand internal DNS, local service names, and DNS filtering |
-| 3 | [Proxmox](../services/proxmox/README.md) | Understand where the VMs and containers run |
+| 3 | [Proxmox](../services/proxmox/README.md) and [Proxmox VM Layout Companion](episodes/proxmox-vm-layout.md) | Understand where the VMs and containers run |
 | 4 | [Proxmox Backup Server](../services/proxmox-backup-server/README.md) | Understand how VM recovery is planned |
 | 5 | [Reverse Proxy](../services/reverse-proxy/README.md) | Understand internal HTTPS and service identities |
 | 6 | [Cloudflare Tunnel](../services/cloudflare-tunnel/README.md) | Understand selected public access and why most admin tools stay private |
@@ -73,6 +73,7 @@ Do not document:
 
 - [Storage and Monitoring](storage-monitoring.md)
 - [Apps and AI](apps-and-ai.md)
+- [Proxmox VM Layout Companion](episodes/proxmox-vm-layout.md)
 - [Glossary](glossary.md)
 - [How To Read Service Pages](how-to-read-service-pages.md)
 - [Public-Safe Diagrams](../diagrams/README.md)
