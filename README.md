@@ -117,6 +117,7 @@ This repo is designed to support KeepItTechie videos. The companion plan is here
 
 - [Episode Companion Pages](docs/episodes/README.md)
 - [Full Homelab Tour Companion](docs/episodes/full-homelab-tour.md)
+- [Homelab DNS and Pi-hole Companion](docs/episodes/dns-pihole.md)
 - [YouTube Companion Series](docs/youtube-series.md)
 - [Content Map](docs/content-map.md)
 

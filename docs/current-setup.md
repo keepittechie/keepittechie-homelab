@@ -20,6 +20,7 @@ This section teaches how routing, firewall policy, DHCP, DNS, and segmentation w
 
 Related docs:
 
+- [Homelab DNS and Pi-hole Companion](episodes/dns-pihole.md)
 - [Network Design](network.md)
 - [Core Infrastructure](core-infrastructure.md)
 - [DNS Flow Diagram](../diagrams/dns-flow.md)

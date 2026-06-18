@@ -108,4 +108,5 @@ Use this page when the README is too high-level and a more complete map of the r
 | [YouTube Companion Series](youtube-series.md) | Video topic plan tied to repo docs |
 | [Episode Companion Pages](episodes/README.md) | Viewer-facing pages tied to KeepItTechie videos |
 | [Full Homelab Tour Companion](episodes/full-homelab-tour.md) | First episode guide for the broad lab tour |
+| [Homelab DNS and Pi-hole Companion](episodes/dns-pihole.md) | Episode guide for local DNS, filtering, and service names |
 | [Content Map](content-map.md) | Repo-to-content mapping |
