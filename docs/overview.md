@@ -86,7 +86,7 @@ This keeps the idea visible without publishing the live DNS zone.
 | Wiki or portfolio-style content | Public or partial, depending on namespace |
 | Personal apps | Private only unless explicitly hardened |
 
-The simplest rule: admin tools stay private, viewer-facing or intentionally shared apps can be routed through controlled public access.
+The simplest rule: admin tools stay private, reader-facing or intentionally shared apps can be routed through controlled public access.
 
 ## Related Docs
 

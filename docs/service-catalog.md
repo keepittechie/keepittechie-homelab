@@ -16,7 +16,7 @@ It is a public-safe learning map, not a live service export. The repo intentiona
 ### Pi-hole
 
 - **Purpose:** Internal DNS, local records, and DNS filtering with primary and secondary resolvers.
-- **Why it matters:** Viewers can learn why names such as `grafana.home.example.com` are easier to manage than raw addresses.
+- **Why it matters:** Readers can learn why names such as `grafana.home.example.com` are easier to manage than raw addresses.
 - **Access:** Private LAN.
 - **Learn more:** [Pi-hole](../services/pihole/README.md)
 

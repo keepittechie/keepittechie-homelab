@@ -1,6 +1,6 @@
 # Viewer Guide
 
-This guide explains how viewers can use the KeepItTechie homelab repo without getting lost in the number of docs. Pick the path that matches what you want to learn.
+This guide explains how readers can use the KeepItTechie homelab repo without getting lost in the number of docs. Pick the path that matches what you want to learn.
 
 ## Choose a Path
 

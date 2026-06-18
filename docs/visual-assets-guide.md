@@ -4,7 +4,7 @@ This page explains how visual assets should be planned, reviewed, and added to t
 
 ## Why Visuals Matter
 
-Visuals help viewers understand the lab faster. A clear diagram, demo dashboard, flow chart, or service layout can make a concept easier to follow than a long paragraph.
+Visuals help readers understand the lab faster. A clear diagram, demo dashboard, flow chart, or service layout can make a concept easier to follow than a long paragraph.
 
 The tradeoff is risk. Images can leak private details that are easy to miss in a quick review, such as browser bookmarks, internal URLs, usernames, terminal paths, dashboard labels, app data, or API details. Treat every image like a config snippet: review it before publishing.
 

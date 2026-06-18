@@ -51,7 +51,7 @@ Suggested commit style:
 
 ```text
 docs: add public-safe monitoring diagram
-docs: polish viewer navigation
+docs: polish reader navigation
 docs: add sanitized reverse proxy example
 ```
 
@@ -73,7 +73,7 @@ The Docs Quality workflow runs:
 - Use a release-focused pull request when documenting meaningful milestones.
 - Squash merge release PRs to keep history readable.
 - Tag meaningful documentation milestones after merge, such as `v0.1.0`.
-- Keep release notes public-safe and viewer-facing.
+- Keep release notes public-safe and reader-facing.
 - Do not attach archives that include private configs, screenshots, logs, raw exports, or runtime files.
 
 ## Public Repo Safety Note

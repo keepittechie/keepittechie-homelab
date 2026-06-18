@@ -99,7 +99,7 @@ Example operational checklist:
 - Exposing the admin interface without strong controls.
 - Forgetting background jobs and maintenance settings.
 
-## What Viewers Can Learn
+## What Readers Can Learn
 
 - Why user-facing cloud apps need careful backups.
 - How file data, app data, and databases differ.

@@ -1,6 +1,6 @@
 # Contributing
 
-This is a public documentation repo for the KeepItTechie homelab. Contributions are welcome when they make the material clearer, safer, or easier for viewers to learn from.
+This is a public documentation repo for the KeepItTechie homelab. Contributions are welcome when they make the material clearer, safer, or easier for readers to learn from.
 
 ## Good Contributions
 
@@ -38,7 +38,7 @@ grafana.home.example.com
 
 ## Pull Request Checklist
 
-- [ ] The change is documentation-first and viewer-friendly.
+- [ ] The change is documentation-first and reader-friendly.
 - [ ] Examples are sanitized.
 - [ ] No real credentials or private exports are included.
 - [ ] Links were checked where practical.

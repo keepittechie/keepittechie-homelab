@@ -2,7 +2,7 @@
 
 This page summarizes the homelab by role without publishing live host details.
 
-It is a public-safe tour, not a live inventory dump. The goal is to show how the lab is organized so viewers can learn the pattern and explore related docs.
+It is a public-safe tour, not a live inventory dump. The goal is to show how the lab is organized so readers can learn the pattern and explore related docs.
 
 ## Inventory Philosophy
 
@@ -53,7 +53,7 @@ Public examples use sanitized names such as `home.example.com`, `proxy.home.exam
 
 ## Learning Value
 
-| Area | What Viewers Can Learn |
+| Area | What Readers Can Learn |
 |---|---|
 | Network | How routing, DNS, firewall policy, and segmentation fit together |
 | Virtualization | Why VMs and containers help organize a homelab |

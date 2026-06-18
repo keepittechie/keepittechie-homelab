@@ -6,7 +6,7 @@ The Synology NAS provides shared storage for the homelab. It is used for file sh
 
 ## Why This Matters
 
-A NAS is one of the most practical additions to a homelab because it gives multiple systems a common place to store and retrieve data. It also gives viewers a clear way to understand the difference between app runtime disks, shared files, media libraries, snapshots, and backups.
+A NAS is one of the most practical additions to a homelab because it gives multiple systems a common place to store and retrieve data. It also gives readers a clear way to understand the difference between app runtime disks, shared files, media libraries, snapshots, and backups.
 
 The NAS is not the same thing as Proxmox VM storage. VM storage runs operating systems and services. NAS storage is shared storage that apps and clients can mount or use as a backup destination.
 
@@ -99,7 +99,7 @@ Example storage usage map:
 - Publishing real share exports.
 - Forgetting that NAS availability can affect media, backups, and apps at the same time.
 
-## What Viewers Can Learn
+## What Readers Can Learn
 
 - How shared storage supports a homelab.
 - Why NAS storage and VM storage solve different problems.

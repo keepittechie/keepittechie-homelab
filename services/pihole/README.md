@@ -6,7 +6,7 @@ Pi-hole provides DNS filtering, local DNS records, and visibility into what devi
 
 ## Why This Matters
 
-DNS is one of the first services viewers should understand in a homelab. Clean DNS lets users reach `grafana.home.example.com` instead of memorizing IP addresses, and DNS filtering gives useful visibility into client behavior.
+DNS is one of the first services readers should understand in a homelab. Clean DNS lets users reach `grafana.home.example.com` instead of memorizing IP addresses, and DNS filtering gives useful visibility into client behavior.
 
 Pi-hole also makes it easier to teach the difference between:
 
@@ -104,7 +104,7 @@ pfSense DHCP options
 - Publishing a raw local DNS export.
 - Forgetting that DNS failure can make working services look broken.
 
-## What Viewers Can Learn
+## What Readers Can Learn
 
 - Why local DNS is a quality-of-life upgrade.
 - Why primary and secondary DNS matter.

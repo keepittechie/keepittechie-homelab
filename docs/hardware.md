@@ -4,7 +4,7 @@
 
 This page describes the KeepItTechie homelab hardware at a public-safe level. It focuses on hardware categories, roles, and learning value rather than exact serial numbers, MAC addresses, full drive details, or private management information.
 
-The goal is to help viewers understand why different kinds of hardware exist in the lab and how those roles support the services documented in this repo.
+The goal is to help readers understand why different kinds of hardware exist in the lab and how those roles support the services documented in this repo.
 
 | Hardware Area | Role | Why It Matters | Public-Safe Notes |
 |---|---|---|---|
@@ -22,7 +22,7 @@ The compute layer is centered on Proxmox and supporting Linux hosts. Proxmox pro
 
 Public-safe compute examples:
 
-| Compute Role | Typical Workloads | Viewer Lesson |
+| Compute Role | Typical Workloads | Reader Lesson |
 |---|---|---|
 | Proxmox host | DNS, proxy, monitoring, app VMs, automation | Virtualization helps separate services by role |
 | Docker / app host | Wiki.js, dashboard, monitoring, personal apps | Containers are useful when app state and config are managed carefully |
@@ -36,7 +36,7 @@ The network hardware supports routing, segmentation, DNS, and access control. pf
 
 Public-safe network examples:
 
-| Network Role | Purpose | Viewer Lesson |
+| Network Role | Purpose | Reader Lesson |
 |---|---|---|
 | pfSense firewall/router | Routing, DHCP, firewall policy, VPN, segmentation | Network policy should have a clear control point |
 | Pi-hole primary and secondary | Internal DNS and filtering | DNS redundancy keeps service names available |
@@ -49,7 +49,7 @@ Storage is split by job. The Synology NAS provides appliance-style shared storag
 
 Public-safe storage examples:
 
-| Storage Role | Purpose | Viewer Lesson |
+| Storage Role | Purpose | Reader Lesson |
 |---|---|---|
 | Synology NAS | Shared files, media libraries, selected backup targets | A NAS is useful, but it is not automatically a backup |
 | Linux ZFS storage server | Datasets, snapshots, scrubs, Linux storage practice | ZFS adds data integrity concepts beyond a basic filesystem |
@@ -61,7 +61,7 @@ Backup storage exists to make recovery possible, not just to create files called
 
 Public-safe backup examples:
 
-| Backup Role | Purpose | Viewer Lesson |
+| Backup Role | Purpose | Reader Lesson |
 |---|---|---|
 | Proxmox Backup Server | VM and container backups | Backups should have retention and restore tests |
 | NAS backup target | File and app backup landing area | A backup target should not be the only copy of important data |
@@ -73,7 +73,7 @@ Media and GPU workloads are separated from core infrastructure where possible be
 
 Public-safe workload examples:
 
-| Workload Area | Hardware Need | Viewer Lesson |
+| Workload Area | Hardware Need | Reader Lesson |
 |---|---|---|
 | Plex and media services | Storage access and possible hardware acceleration | Media stacks need careful paths, permissions, and privacy |
 | Tdarr / transcode jobs | CPU or GPU resources | Processing jobs should not starve core infrastructure |

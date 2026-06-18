@@ -6,7 +6,7 @@ AWX provides a web interface for Ansible automation. It helps run playbooks, man
 
 ## Why This Matters
 
-Automation is where a homelab starts becoming repeatable. AWX can teach viewers how to turn manual tasks into controlled workflows, but it also handles sensitive material such as inventories, credentials, and job output.
+Automation is where a homelab starts becoming repeatable. AWX can teach readers how to turn manual tasks into controlled workflows, but it also handles sensitive material such as inventories, credentials, and job output.
 
 The public repo should teach the pattern without publishing real automation secrets or host inventories.
 
@@ -102,7 +102,7 @@ Sanitized automation table:
 - Treating job output as safe to share.
 - Giving AWX more network reach than it needs.
 
-## What Viewers Can Learn
+## What Readers Can Learn
 
 - How automation fits into a homelab.
 - Why inventories and credentials need boundaries.

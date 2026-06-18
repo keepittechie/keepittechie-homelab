@@ -95,7 +95,7 @@ Sanitized service exposure table:
 - Copying tunnel config into a public repo.
 - Exposing services that were designed only for trusted LAN access.
 
-## What Viewers Can Learn
+## What Readers Can Learn
 
 - How selected public access can work without broad inbound port forwards.
 - Why exposure decisions should be documented.

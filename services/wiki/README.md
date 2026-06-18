@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Wiki.js is the documentation hub for the homelab. It can hold public learning pages, private runbooks, troubleshooting notes, content planning, and operational references.
+Wiki.js is the documentation hub for the homelab. It can hold public learning pages, private runbooks, troubleshooting notes, and operational references.
 
 ## Why This Matters
 
@@ -22,7 +22,7 @@ Reverse proxy
 Wiki.js app, database, and uploads
 ```
 
-Wiki.js complements this repository. This repo is public-safe and viewer-facing. Wiki.js can contain deeper private operational notes.
+Wiki.js complements this repository. This repo is public-safe and reader-facing. Wiki.js can contain deeper private operational notes.
 
 ## Host / Runtime
 
@@ -60,7 +60,7 @@ Private admin pages should require authentication. Public pages should be review
 - Host homelab documentation.
 - Separate public and private content.
 - Preserve runbooks and troubleshooting notes.
-- Support content planning for KeepItTechie.
+- Support organized homelab documentation for KeepItTechie.
 - Keep private operational details out of public repos.
 - Provide a searchable knowledge base for the lab.
 
@@ -70,10 +70,10 @@ Sanitized namespace model:
 
 | Namespace | Audience | Access Level | Notes |
 |---|---|---|---|
-| `/public` | Viewers and public readers | Limited Public | Review before publishing |
+| `/public` | Public readers | Limited Public | Review before publishing |
 | `/homelab` | Internal learning notes | Private LAN | Sanitize before copying to GitHub |
 | `/admin` | Operator runbooks | Private LAN or VPN | Never publish raw admin notes |
-| `/content` | Video planning | Private | May include unpublished ideas |
+| `/drafts` | Private documentation drafts | Private | Review and sanitize before publishing |
 
 ## Backup and Restore Notes
 
@@ -99,7 +99,7 @@ Sanitized namespace model:
 - Treating the wiki as a replacement for Git when versioned docs are needed.
 - Letting stale runbooks stay unmarked.
 
-## What Viewers Can Learn
+## What Readers Can Learn
 
 - Why documentation is part of operations.
 - How public docs and private runbooks can coexist.

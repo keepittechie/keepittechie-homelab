@@ -1,6 +1,6 @@
 # How To Read Service Pages
 
-Each service README follows a similar structure so viewers can compare services without learning a new format every time.
+Each service README follows a similar structure so readers can compare services without learning a new format every time.
 
 Service pages are educational and sanitized. They explain how a service fits into the KeepItTechie homelab, but they are not live production runbooks or raw config exports.
 
@@ -18,8 +18,8 @@ Service pages are educational and sanitized. They explain how a service fits int
 | Example Public-Safe Configuration | Sanitized examples that teach the pattern without exposing private config |
 | Backup and Restore Notes | What should be backed up and how recovery should be proven |
 | Security Notes | Practical safety boundaries and exposure warnings |
-| Common Mistakes to Avoid | Issues viewers are likely to hit while learning |
-| What Viewers Can Learn | The practical lesson the service teaches |
+| Common Mistakes to Avoid | Issues readers are likely to hit while learning |
+| What Readers Can Learn | The practical lesson the service teaches |
 | Future Improvements | Public-safe ideas that may be documented later |
 
 ## How To Use A Service Page

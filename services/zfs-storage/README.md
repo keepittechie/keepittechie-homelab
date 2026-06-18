@@ -103,7 +103,7 @@ Do not include real command output in the public repo if it exposes disk serials
 - Publishing exact pool layout or disk identifiers.
 - Forgetting that app-consistent backups may still be needed.
 
-## What Viewers Can Learn
+## What Readers Can Learn
 
 - How pools, datasets, snapshots, and scrubs fit together.
 - Why ZFS is useful for storage learning.

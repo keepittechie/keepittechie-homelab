@@ -110,7 +110,7 @@ These are teaching examples. They are not a full firewall ruleset.
 - Forgetting to document why a rule exists.
 - Treating port forwards as harmless convenience settings.
 
-## What Viewers Can Learn
+## What Readers Can Learn
 
 - How a firewall anchors the rest of the lab.
 - Why default-deny thinking makes networks easier to reason about.

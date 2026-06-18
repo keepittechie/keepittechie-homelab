@@ -58,7 +58,7 @@ Before committing, run `git status` and a sensitive-string scan for private key 
 
 A match is not always a leak, but it deserves review before publishing.
 
-## What Viewers Should Take Away
+## What Readers Should Take Away
 
 Security in a homelab is mostly about good boundaries:
 

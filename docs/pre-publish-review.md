@@ -33,7 +33,7 @@ Use this checklist before publishing, merging, or sharing updates from the publi
 - [ ] Diagrams are sanitized.
 - [ ] License section is present.
 - [ ] Public-facing language review is complete.
-- [ ] Viewer-facing navigation links to the [Viewer Guide](viewer-guide.md) and examples.
+- [ ] Reader-facing navigation links to the [Viewer Guide](viewer-guide.md) and examples.
 
 ## GitHub Review
 

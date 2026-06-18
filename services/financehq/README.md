@@ -98,7 +98,7 @@ Public-safe boundary table:
 - Publishing logs that contain imported descriptions.
 - Putting personal app routes behind public access for convenience.
 
-## What Viewers Can Learn
+## What Readers Can Learn
 
 - How to host a private personal app.
 - Why local-first apps need clear data boundaries.

@@ -6,7 +6,7 @@ The reverse proxy provides clean internal HTTPS routing for homelab services. In
 
 ## Why This Matters
 
-A reverse proxy makes a self-hosted lab easier to use and easier to explain. It separates the service name viewers type from the backend machine or container that runs the app.
+A reverse proxy makes a self-hosted lab easier to use and easier to explain. It separates the service name readers type from the backend machine or container that runs the app.
 
 It also creates an important teaching boundary: internal HTTPS routing is not the same as public exposure.
 
@@ -102,7 +102,7 @@ This is a placeholder. Do not copy live certificate paths, real backend names, o
 - Reloading NGINX without testing configuration.
 - Committing real certificate paths or app hostnames.
 
-## What Viewers Can Learn
+## What Readers Can Learn
 
 - How internal HTTPS improves homelab usability.
 - How DNS aliases and upstream routing work together.

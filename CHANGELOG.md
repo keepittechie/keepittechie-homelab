@@ -16,7 +16,7 @@ This project uses documentation-focused versioning. Releases mark meaningful doc
 
 ### Added
 
-- Public-safe README and beginner navigation for KeepItTechie viewers.
+- Public-safe README and beginner navigation for KeepItTechie readers.
 - Documentation index, viewer guide, glossary, and service-page reading guide.
 - Service matrix for comparing service purpose, access level, host role, and backup priority.
 - Core infrastructure docs for pfSense, Pi-hole, Proxmox, Proxmox Backup Server, reverse proxy, and Cloudflare Tunnel.
