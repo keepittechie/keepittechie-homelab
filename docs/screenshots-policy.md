@@ -2,6 +2,8 @@
 
 Screenshots can make the repo easier to understand, but they also carry a high risk of leaking private infrastructure details. Do not add real screenshots until they have been reviewed carefully.
 
+This page focuses on screenshot safety rules. For broader planning, file organization, and future visual ideas, see the [Visual Assets Guide](visual-assets-guide.md).
+
 ## Screenshot Safety Checklist
 
 - [ ] Hide browser bookmarks.
@@ -41,3 +43,8 @@ Screenshots can make the repo easier to understand, but they also carry a high r
 ## Public Repo Rule
 
 If a screenshot is needed, create a sanitized demo view, crop aggressively, and review it with the [Pre-Publish Review Checklist](pre-publish-review.md) before merging.
+
+Related docs:
+
+- [Visual Assets Guide](visual-assets-guide.md)
+- [Assets Index](../assets/README.md)

@@ -22,6 +22,8 @@ Use this page when the README is too high-level and a more complete map of the r
 | Page | Purpose |
 |---|---|
 | [Diagram Index](../diagrams/README.md) | Public-safe Mermaid diagrams |
+| [Visual Assets Guide](visual-assets-guide.md) | Planning and review guide for future public-safe visuals |
+| [Assets Index](../assets/README.md) | Placeholder folder map for future reviewed assets |
 | [Homelab Overview Diagram](../diagrams/homelab-overview.md) | High-level architecture flow |
 | [DNS Flow](../diagrams/dns-flow.md) | Internal DNS and Pi-hole flow |
 | [Backup Flow](../diagrams/backup-flow.md) | Backup and restore test flow |
@@ -86,6 +88,7 @@ Use this page when the README is too high-level and a more complete map of the r
 | [Security Notes](security-notes.md) | What stays private and how examples are sanitized |
 | [Pre-Publish Review](pre-publish-review.md) | Checklist before publishing or merging |
 | [Screenshot Policy](screenshots-policy.md) | Screenshot review rules |
+| [Visual Assets Guide](visual-assets-guide.md) | Visual review rules and asset planning |
 | [Contributing](../CONTRIBUTING.md) | Contribution guidance |
 | [GitHub Repo Settings](github-repo-settings.md) | Suggested public repo settings |
 

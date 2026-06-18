@@ -9,6 +9,10 @@ Use this checklist before publishing, merging, or sharing updates from the publi
 - [ ] Run private domain scan.
 - [ ] Run private IP scan.
 - [ ] Review screenshots with the [Screenshot Policy](screenshots-policy.md).
+- [ ] Review visual assets with the [Visual Assets Guide](visual-assets-guide.md).
+- [ ] Check images at full size before commit.
+- [ ] Confirm browser UI is cropped or blurred if needed.
+- [ ] Confirm no screenshots were added without review.
 - [ ] Review config snippets for secrets.
 - [ ] Confirm files under `examples/` use sanitized placeholders only.
 - [ ] Confirm no private `.env` files are tracked.
@@ -53,4 +57,6 @@ Related docs:
 - [GitHub Repo Settings Guide](github-repo-settings.md)
 - [Release Checklist](release-checklist.md)
 - [Screenshot Policy](screenshots-policy.md)
+- [Visual Assets Guide](visual-assets-guide.md)
+- [Assets Index](../assets/README.md)
 - [Contributing Guide](../CONTRIBUTING.md)
