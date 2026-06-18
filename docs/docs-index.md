@@ -110,4 +110,5 @@ Use this page when the README is too high-level and a more complete map of the r
 | [Full Homelab Tour Companion](episodes/full-homelab-tour.md) | First episode guide for the broad lab tour |
 | [Homelab DNS and Pi-hole Companion](episodes/dns-pihole.md) | Episode guide for local DNS, filtering, and service names |
 | [Proxmox VM Layout Companion](episodes/proxmox-vm-layout.md) | Episode guide for virtualization and VM organization |
+| [Homelab Backups and Restore Testing Companion](episodes/backups-restore.md) | Episode guide for backup strategy, PBS, and restore verification |
 | [Content Map](content-map.md) | Repo-to-content mapping |

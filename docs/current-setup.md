@@ -66,6 +66,7 @@ Viewers can learn how VM backups, app-aware backups, NAS targets, ZFS snapshots,
 
 Related docs:
 
+- [Homelab Backups and Restore Testing Companion](episodes/backups-restore.md)
 - [Proxmox Backup Server](../services/proxmox-backup-server/README.md)
 - [Backup Flow Diagram](../diagrams/backup-flow.md)
 - [Storage and Backups](storage-and-backups.md)
