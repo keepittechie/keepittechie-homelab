@@ -111,4 +111,5 @@ Use this page when the README is too high-level and a more complete map of the r
 | [Homelab DNS and Pi-hole Companion](episodes/dns-pihole.md) | Episode guide for local DNS, filtering, and service names |
 | [Proxmox VM Layout Companion](episodes/proxmox-vm-layout.md) | Episode guide for virtualization and VM organization |
 | [Homelab Backups and Restore Testing Companion](episodes/backups-restore.md) | Episode guide for backup strategy, PBS, and restore verification |
+| [Homelab Monitoring with Grafana and Prometheus Companion](episodes/monitoring-grafana.md) | Episode guide covering metrics, logs, uptime checks, and dashboards |
 | [Content Map](content-map.md) | Repo-to-content mapping |

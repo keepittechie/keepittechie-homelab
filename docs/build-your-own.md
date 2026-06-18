@@ -155,6 +155,7 @@ Monitoring is useful when it helps answer: what changed, what is unhealthy, and 
 
 Related docs:
 
+- [Homelab Monitoring with Grafana and Prometheus Companion](episodes/monitoring-grafana.md)
 - [Monitoring](../services/monitoring/README.md)
 - [Monitoring Flow Diagram](../diagrams/monitoring-flow.md)
 
@@ -263,7 +264,7 @@ Related docs:
 | 4 | Virtualization | [Proxmox](../services/proxmox/README.md), [Core Infrastructure](core-infrastructure.md) |
 | 5 | Storage | [Storage and Monitoring](storage-monitoring.md), [Synology NAS](../services/synology/README.md), [ZFS Storage](../services/zfs-storage/README.md) |
 | 6 | Backups | [Storage and Backups](storage-and-backups.md), [Backup Flow Diagram](../diagrams/backup-flow.md) |
-| 7 | Monitoring | [Monitoring](../services/monitoring/README.md), [Monitoring Flow Diagram](../diagrams/monitoring-flow.md) |
+| 7 | Monitoring | [Monitoring](../services/monitoring/README.md), [Monitoring Companion](episodes/monitoring-grafana.md), [Monitoring Flow Diagram](../diagrams/monitoring-flow.md) |
 | 8 | Reverse proxying | [Reverse Proxy](../services/reverse-proxy/README.md), [NGINX Example](../examples/nginx/README.md) |
 | 9 | Self-hosted apps | [Apps and AI](apps-and-ai.md), [Service Catalog](service-catalog.md) |
 | 10 | Local AI | [Local AI](../services/local-ai/README.md), [Local AI Flow Diagram](../diagrams/local-ai-flow.md) |
