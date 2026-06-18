@@ -67,4 +67,4 @@ Use the issue templates for documentation improvements, safety reviews, and sani
 
 ## Tone
 
-Keep the writing practical and approachable. This repo should feel like a companion to a KeepItTechie video: useful, clear, and grounded in real homelab learning without exposing private operational details.
+Keep the writing practical and approachable. This repo should feel like a useful KeepItTechie homelab guide: clear, grounded in real learning, and careful about private operational details.

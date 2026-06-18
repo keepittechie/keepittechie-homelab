@@ -104,7 +104,7 @@ Sanitized service exposure table:
 
 ## Related Sanitized Examples
 
-- [Homelab Reverse Proxy and Internal HTTPS Companion](../../docs/episodes/reverse-proxy.md)
+- [Homelab Reverse Proxy and Internal HTTPS Guide](../../docs/guides/reverse-proxy.md)
 - [Cloudflare Tunnel config shape](../../examples/cloudflare-tunnel/config.example.yml)
 - [Cloudflare Tunnel example notes](../../examples/cloudflare-tunnel/README.md)
 - [Reverse proxy flow diagram](../../diagrams/reverse-proxy-flow.md)

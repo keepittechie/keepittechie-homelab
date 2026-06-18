@@ -1,21 +1,21 @@
 # Full Homelab Tour
 
-This page is a public-safe companion guide for a KeepItTechie homelab tour video.
+This guide gives a public-safe tour of the KeepItTechie homelab setup.
 
-## Episode Goal
+## Guide Goal
 
-The goal of this episode is to introduce the major layers of the KeepItTechie homelab without turning the tour into a private inventory dump.
+This guide introduces the major layers of the KeepItTechie homelab without turning the tour into a private inventory dump.
 
-A full tour can show how the network, DNS, virtualization, storage, backups, monitoring, reverse proxy, media services, local AI, documentation, automation, and personal apps fit together. For beginners, the key takeaway is that a homelab becomes easier to understand when every service has a role.
+A full repo tour shows how the network, DNS, virtualization, storage, backups, monitoring, reverse proxy, media services, local AI, documentation, automation, and personal apps fit together. For beginners, the key takeaway is that a homelab becomes easier to understand when every service has a role.
 
-## What Viewers Will Learn
+## What Readers Will Learn
 
 - Why a homelab is useful for learning Linux, networking, storage, automation, and self-hosting.
 - How services are grouped by role instead of treated as one giant stack.
 - Why DNS matters once more than a few services exist.
 - Why backups should come before adding too much complexity.
 - Why not every service should be exposed publicly.
-- How diagrams and sanitized examples help viewers learn safely.
+- How diagrams and sanitized examples help readers learn safely.
 - How this repo separates public teaching docs from private config.
 
 ## Lab Areas Covered
@@ -35,20 +35,20 @@ A full tour can show how the network, DNS, virtualization, storage, backups, mon
 | Documentation | Keeps public teaching docs separate from private runbooks | [Wiki.js](../../services/wiki/README.md), [Documentation Index](../docs-index.md) |
 | Automation | Uses AWX and Ansible concepts to make admin tasks repeatable | [AWX / Ansible](../../services/automation-awx/README.md) |
 
-## Suggested Video Flow
+## Suggested Reading Flow
 
-1. A tour video can start with what this repo is and is not: a public-safe learning map, not a private config dump.
-2. Viewers can follow the high-level diagram to see the whole lab before opening individual service docs.
-3. The network and DNS section can explain pfSense, Pi-hole, service names, and why internal DNS matters.
-4. The virtualization section can show how Proxmox groups workloads by role.
-5. The storage and backups section can explain NAS storage, ZFS learning, Proxmox Backup Server, and restore testing.
-6. The monitoring section can explain Grafana, Prometheus, exporters, Loki, logs, and service checks.
-7. The apps and media section can show how user-facing apps depend on storage, DNS, proxying, and backups.
-8. The local AI section can explain Open WebUI, a local OpenAI-compatible endpoint, and why AI endpoints stay protected.
-9. The automation and documentation section can connect AWX, Ansible, Wiki.js, and this repo.
-10. The close can point viewers to the build-your-own path so they can start small instead of copying the whole lab.
+1. Start with what this repo is and is not: a public-safe learning map, not a private config dump.
+2. Follow the high-level diagram to see the whole lab before opening individual service docs.
+3. Read the network and DNS sections to understand pfSense, Pi-hole, service names, and why internal DNS matters.
+4. Use the virtualization section to see how Proxmox groups workloads by role.
+5. Study storage and backups to connect NAS storage, ZFS learning, Proxmox Backup Server, and restore testing.
+6. Review monitoring to understand Grafana, Prometheus, exporters, Loki, logs, and service checks.
+7. Move into apps and media to see how user-facing apps depend on storage, DNS, proxying, and backups.
+8. Read the local AI section to understand Open WebUI, a local OpenAI-compatible endpoint, and why AI endpoints stay protected.
+9. Connect automation and documentation through AWX, Ansible, Wiki.js, and this repo.
+10. Continue with the build-your-own path to start small instead of copying the whole lab.
 
-## Repo Files to Follow Along
+## Repo Files to Start With
 
 - [README](../../README.md)
 - [Current Setup](../current-setup.md)
@@ -60,15 +60,15 @@ A full tour can show how the network, DNS, virtualization, storage, backups, mon
 - [Diagrams](../../diagrams/README.md)
 - [Sanitized Examples](../../examples/README.md)
 
-## Public-Safe Demo Ideas
+## Public-Safe Examples
 
 - Walk through the Mermaid homelab overview diagram.
 - Open the sanitized DNS flow and explain how service names replace raw addresses.
-- Use the service catalog to show services grouped by role.
+- Use the service catalog to see services grouped by role.
 - Open the sanitized NGINX example and explain the reverse proxy pattern.
 - Open the Docker Compose template and point out placeholder values.
-- Show how to read a service README: purpose, placement, network, backup, and security notes.
-- Show examples of what not to publish, such as raw firewall exports, private dashboards, and live config.
+- Review how to read a service README: purpose, placement, network, backup, and security notes.
+- Review examples of what not to publish, such as raw firewall exports, private dashboards, and live config.
 
 Avoid live dashboards unless the view is sanitized or uses fake demo data.
 
@@ -88,7 +88,7 @@ Avoid live dashboards unless the view is sanitized or uses fake demo data.
 
 ## Commands and Examples
 
-Viewers can clone the public repo and run the lightweight docs checks locally:
+Readers can clone the public repo and run the lightweight docs checks locally:
 
 ```bash
 git clone https://github.com/keepittechie/keepittechie-homelab.git
@@ -101,7 +101,7 @@ python3 scripts/public_safety_scan.py
 
 These commands check documentation links, diagram structure, and obvious public-safety issues. They do not replace manual review.
 
-## After Watching
+## Next Steps
 
 - Read the [Current Setup](../current-setup.md) page.
 - Follow the [Build Your Own Homelab](../build-your-own.md) learning path.

@@ -1,12 +1,12 @@
-# Episode Companion Pages
+# Homelab Guides
 
-This folder collects public-safe companion pages for KeepItTechie homelab videos. Each page gives viewers the repo links, safe demo ideas, and follow-up reading needed to continue learning after a video.
+This folder collects public-safe topic guides for the KeepItTechie homelab. Each guide explains a core pattern, links to supporting docs, and shows how to study the setup without exposing private infrastructure.
 
-These pages are not private scripts or production notes. They are viewer-facing guides that use sanitized examples and avoid live infrastructure details.
+These pages are not scripts, show notes, or private runbooks. They are repo-focused learning guides that use sanitized examples and avoid live infrastructure details.
 
-## Episode Index
+## Guide Index
 
-| Episode | Topic | Companion Page |
+| Guide | Topic | Page |
 |---|---|---|
 | Full Homelab Tour | High-level lab walkthrough | [Full Homelab Tour](full-homelab-tour.md) |
 | Homelab DNS and Pi-hole | Local DNS, filtering, and service names | [Homelab DNS and Pi-hole](dns-pihole.md) |
@@ -16,11 +16,11 @@ These pages are not private scripts or production notes. They are viewer-facing 
 | Homelab Reverse Proxy and Internal HTTPS | Reverse proxy, TLS, and selected public access | [Homelab Reverse Proxy and Internal HTTPS](reverse-proxy.md) |
 | Local AI on Linux | Local AI services, endpoints, and privacy boundaries | [Local AI on Linux](local-ai.md) |
 
-Future companion pages can cover dashboards, self-hosted apps, and automation.
+Future guides can cover dashboards, self-hosted apps, and automation.
 
 ## Related Docs
 
-- [YouTube Companion Series](../youtube-series.md)
+- [Learning Paths](../learning-paths.md)
 - [Current Setup](../current-setup.md)
 - [Build Your Own Homelab](../build-your-own.md)
 - [Documentation Index](../docs-index.md)

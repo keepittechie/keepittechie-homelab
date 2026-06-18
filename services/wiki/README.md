@@ -53,7 +53,7 @@ Example:
 wiki.home.example.com -> proxy.home.example.com
 ```
 
-Private admin pages should require authentication. Public pages should be reviewed before publishing or linking from videos.
+Private admin pages should require authentication. Public pages should be reviewed before publishing or linking from public docs.
 
 ## Key Responsibilities
 

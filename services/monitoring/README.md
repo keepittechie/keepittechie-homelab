@@ -128,7 +128,7 @@ Public-safe dashboard ideas:
 
 ## Related Sanitized Examples
 
-- [Homelab Monitoring with Grafana and Prometheus Companion](../../docs/episodes/monitoring-grafana.md)
+- [Homelab Monitoring with Grafana and Prometheus Guide](../../docs/guides/monitoring-grafana.md)
 - [Prometheus scrape config](../../examples/prometheus/prometheus.yml)
 - [Prometheus example notes](../../examples/prometheus/README.md)
 - [Monitoring flow diagram](../../diagrams/monitoring-flow.md)

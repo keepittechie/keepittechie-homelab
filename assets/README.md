@@ -10,7 +10,7 @@ No real screenshots or dashboard images are included yet. Any future image added
 |---|---|
 | `assets/diagrams/` | Exported public-safe diagrams |
 | `assets/screenshots/` | Reviewed screenshots or demo screenshots |
-| `assets/thumbnails/` | YouTube, GitHub, or social preview images |
+| `assets/thumbnails/` | GitHub or social preview images |
 | `assets/mockups/` | Recreated UI mockups and fake-data visuals |
 
 ## Rules Before Adding Images

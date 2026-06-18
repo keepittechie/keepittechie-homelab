@@ -14,7 +14,7 @@ For a guided reading path, start with the [Viewer Guide](viewer-guide.md). To to
 | Keep critical services local-first | Private apps stay behind LAN, VPN, or internal DNS |
 | Make services easy to find | Use readable names such as `grafana.home.example.com` |
 | Separate roles | Firewall, DNS, storage, virtualization, monitoring, and apps each have clear ownership |
-| Teach from the lab | Keep notes simple enough to explain in videos and rebuild later |
+| Teach from the lab | Keep notes simple enough to explain clearly and rebuild later |
 | Stay public-safe | Publish architecture, not secrets or raw exports |
 
 ## High-Level Layout
@@ -107,4 +107,4 @@ The simplest rule: admin tools stay private, viewer-facing or intentionally shar
 - [Maintenance Checklist](maintenance-checklist.md)
 - [Pre-Publish Review Checklist](pre-publish-review.md)
 - [Screenshot Policy](screenshots-policy.md)
-- [YouTube Companion Series](youtube-series.md)
+- [Learning Paths](learning-paths.md)

@@ -2,7 +2,7 @@
 
 Storage in the homelab has two jobs: support daily services and make recovery possible when something breaks. This page explains the public-safe architecture without publishing private shares, keys, raw exports, or live backup details.
 
-For the storage and monitoring reading path, see [Storage and Monitoring](storage-monitoring.md). For the episode companion, see [Homelab Backups and Restore Testing](episodes/backups-restore.md). For the visual version of the backup model, see the [backup flow diagram](../diagrams/backup-flow.md). For terms such as NAS, ZFS, dataset, snapshot, scrub, backup, and restore test, use the [Glossary](glossary.md).
+For the storage and monitoring reading path, see [Storage and Monitoring](storage-monitoring.md). For the guide, see [Homelab Backups and Restore Testing](guides/backups-restore.md). For the visual version of the backup model, see the [backup flow diagram](../diagrams/backup-flow.md). For terms such as NAS, ZFS, dataset, snapshot, scrub, backup, and restore test, use the [Glossary](glossary.md).
 
 ## Storage Layers
 

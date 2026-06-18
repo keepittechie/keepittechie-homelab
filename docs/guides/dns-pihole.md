@@ -1,14 +1,14 @@
 # Homelab DNS and Pi-hole
 
-This page is a public-safe companion guide for a KeepItTechie video about DNS, Pi-hole, and local service names in a homelab.
+This guide explains how DNS, Pi-hole, and local service names fit into a homelab.
 
-## Episode Goal
+## Guide Goal
 
-The goal of this episode is to show why DNS makes a homelab easier to use. Instead of memorizing raw addresses, viewers can use readable service names such as `grafana.home.example.com`, `proxy.home.example.com`, and `nas.home.example.com`.
+This guide shows why DNS makes a homelab easier to use. Instead of memorizing raw addresses, readers can use readable service names such as `grafana.home.example.com`, `proxy.home.example.com`, and `nas.home.example.com`.
 
 For beginners, the key idea is simple: DNS is the phone book for the lab. Pi-hole can answer local names, filter unwanted domains, and forward everything else upstream.
 
-## What Viewers Will Learn
+## What Readers Will Learn
 
 - What DNS does.
 - Why local DNS matters in a homelab.
@@ -31,7 +31,7 @@ Local DNS helps with:
 - Fewer hardcoded addresses in notes and bookmarks.
 - Clear separation between service identity and machine identity.
 
-DNS also makes the lab easier to teach. Viewers can understand what a service does by its name before learning which VM, container, or host runs it.
+DNS also makes the lab easier to explain. Readers can understand what a service does by its name before learning which VM, container, or host runs it.
 
 ## Where Pi-hole Fits
 
@@ -66,7 +66,7 @@ Both resolvers should be documented, backed up, and kept private.
 
 Local DNS records map names to internal services. This is where service identity and machine identity become useful.
 
-- **Service identity:** The name viewers or users type, such as `grafana.home.example.com`.
+- **Service identity:** The name readers or users type, such as `grafana.home.example.com`.
 - **Machine identity:** The VM, container host, or physical machine that runs the workload.
 
 Keeping those separate makes services easier to move later. Public docs use sanitized examples so the pattern is visible without publishing the real DNS zone.
@@ -85,15 +85,15 @@ Client joins network
 
 This keeps clients pointed at the intended DNS path. If clients are pointed at random public DNS servers, local names may fail and DNS filtering visibility becomes incomplete.
 
-## Public-Safe Demo Ideas
+## Public-Safe Examples
 
-- Show the [DNS flow diagram](../../diagrams/dns-flow.md).
-- Show the [sanitized Pi-hole CSV example](../../examples/pihole/local-dns-records.example.csv).
+- Open the [DNS flow diagram](../../diagrams/dns-flow.md).
+- Open the [sanitized Pi-hole CSV example](../../examples/pihole/local-dns-records.example.csv).
 - Explain service names such as `proxy.home.example.com`, `grafana.home.example.com`, and `nas.home.example.com`.
-- Show how DNS reduces raw address memorization.
-- Explain what not to publish: live records, admin screenshots, raw exports, and private domains.
+- Explain how DNS reduces raw address memorization.
+- Review what not to publish: live records, admin screenshots, raw exports, and private domains.
 
-Do not show a real Pi-hole admin page unless it is sanitized or uses demo data.
+Do not include a real Pi-hole admin page unless it is sanitized or uses demo data.
 
 ## Example Local DNS Records
 
@@ -144,7 +144,7 @@ Related safe examples:
 - [Pi-hole example notes](../../examples/pihole/README.md)
 - [Sanitized local DNS CSV](../../examples/pihole/local-dns-records.example.csv)
 
-## After Watching
+## Next Steps
 
 - Read the [Pi-hole service doc](../../services/pihole/README.md).
 - Study the [DNS flow diagram](../../diagrams/dns-flow.md).

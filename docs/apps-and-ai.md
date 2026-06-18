@@ -4,13 +4,13 @@ This page is the beginner-friendly entry point for the application, media, dashb
 
 These services sit on top of the core infrastructure, storage, backups, monitoring, and reverse proxy layers. They are the part viewers are most likely to recognize from daily use, but they also carry the most private data.
 
-For a visual reference, see the [local AI flow diagram](../diagrams/local-ai-flow.md). For the episode companion, see [Local AI on Linux](episodes/local-ai.md). For unfamiliar app, endpoint, and public-safe documentation terms, use the [Glossary](glossary.md).
+For a visual reference, see the [local AI flow diagram](../diagrams/local-ai-flow.md). For the guide, see [Local AI on Linux](guides/local-ai.md). For unfamiliar app, endpoint, and public-safe documentation terms, use the [Glossary](glossary.md).
 
 ## Recommended Reading Order
 
 | Step | Topic | Link | Why Start Here |
 |---|---|---|---|
-| 1 | Local AI | [Local AI Stack](../services/local-ai/README.md), [Local AI Companion](episodes/local-ai.md) | Learn the GPU, endpoint, model, and Open WebUI pattern |
+| 1 | Local AI | [Local AI Stack](../services/local-ai/README.md), [Local AI Guide](guides/local-ai.md) | Learn the GPU, endpoint, model, and Open WebUI pattern |
 | 2 | Dashboard | [Glance / Homepage Dashboard](../services/glance/README.md) | See how services are grouped for daily use |
 | 3 | Documentation | [Wiki.js](../services/wiki/README.md) | Learn public/private documentation boundaries |
 | 4 | Media | [Media Stack](../services/media-stack/README.md) | Understand storage-heavy multi-app workflows |
@@ -65,7 +65,7 @@ Do not document:
 
 - [Core Infrastructure](core-infrastructure.md)
 - [Storage and Monitoring](storage-monitoring.md)
-- [Local AI on Linux Companion](episodes/local-ai.md)
+- [Local AI on Linux Guide](guides/local-ai.md)
 - [Glossary](glossary.md)
 - [How To Read Service Pages](how-to-read-service-pages.md)
 - [Public-Safe Diagrams](../diagrams/README.md)

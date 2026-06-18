@@ -1,14 +1,14 @@
 # Homelab Monitoring with Grafana and Prometheus
 
-This page is a public-safe companion guide for a KeepItTechie video about monitoring a homelab with Grafana, Prometheus, exporters, and logs.
+This guide explains monitoring a homelab with Grafana, Prometheus, exporters, and logs.
 
-## Episode Goal
+## Guide Goal
 
-This episode teaches how monitoring gives visibility into the homelab: what is up, what is slow, what is failing, and what needs attention.
+This guide teaches how monitoring gives visibility into the homelab: what is up, what is slow, what is failing, and what needs attention.
 
 The practical goal is not to build the biggest dashboard possible. The goal is to start with useful signals, understand what each monitoring component does, and avoid noisy alerts or public dashboards that reveal private infrastructure.
 
-## What Viewers Will Learn
+## What Readers Will Learn
 
 - Why monitoring matters in a homelab.
 - The difference between metrics, logs, and uptime checks.
@@ -22,7 +22,7 @@ The practical goal is not to build the biggest dashboard possible. The goal is t
 
 Services fail. Disks fill up. Containers restart. Backups can fail. DNS can break.
 
-Without monitoring, troubleshooting starts with guessing. With basic monitoring, viewers can answer better questions:
+Without monitoring, troubleshooting starts with guessing. With basic monitoring, readers can answer better questions:
 
 - Is the service down or only slow?
 - Is the host overloaded?
@@ -91,16 +91,16 @@ Uptime checks are often the easiest place to start because they answer a direct 
 
 Checking a service does not mean publishing its real URL. Public docs should use sanitized names such as `grafana.home.example.com` and `prometheus.home.example.com`.
 
-## Public-Safe Demo Ideas
+## Public-Safe Examples
 
-- Show the [monitoring flow diagram](../../diagrams/monitoring-flow.md).
+- Open the [monitoring flow diagram](../../diagrams/monitoring-flow.md).
 - Walk through the [sanitized Prometheus example config](../../examples/prometheus/prometheus.yml).
-- Show example dashboard categories instead of live dashboards.
+- Use example dashboard categories instead of live dashboards.
 - Explain metrics vs logs vs uptime checks.
-- Show what should not be published.
+- Review what should not be published.
 - Use fake or demo dashboard panels if screenshots are ever added.
 
-Do not show a live Grafana dashboard unless it is sanitized or recreated with demo data.
+Do not include a live Grafana dashboard unless it is sanitized or recreated with demo data.
 
 ## Example Monitoring Plan
 
@@ -168,7 +168,7 @@ Related examples:
 - [Prometheus Example Notes](../../examples/prometheus/README.md)
 - [Sanitized Prometheus Config](../../examples/prometheus/prometheus.yml)
 
-## After Watching
+## Next Steps
 
 - Read the [Monitoring](../../services/monitoring/README.md) service doc.
 - Study the [monitoring flow diagram](../../diagrams/monitoring-flow.md).

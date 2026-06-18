@@ -1,14 +1,14 @@
 # Homelab Reverse Proxy and Internal HTTPS
 
-This page is a public-safe companion guide for a KeepItTechie video about reverse proxies, internal HTTPS, and carefully selected public access.
+This guide explains reverse proxies, internal HTTPS, and carefully selected public access in a homelab.
 
-## Episode Goal
+## Guide Goal
 
-This episode teaches how a reverse proxy gives clean service URLs, how internal HTTPS improves the homelab experience, and why public access should be limited to selected services.
+This guide teaches how a reverse proxy gives clean service URLs, how internal HTTPS improves the homelab experience, and why public access should be limited to selected services.
 
 The goal is to make the web side of the lab easier to use without turning every internal dashboard into an internet-facing service.
 
-## What Viewers Will Learn
+## What Readers Will Learn
 
 - What a reverse proxy does.
 - Why friendly service names help.
@@ -20,7 +20,7 @@ The goal is to make the web side of the lab easier to use without turning every 
 
 ## Why a Reverse Proxy Matters
 
-A reverse proxy gives one clean entry point for multiple web services. Instead of remembering ports and backend hosts, viewers can use names such as `wiki.home.example.com`, `grafana.home.example.com`, or `app.home.example.com`.
+A reverse proxy gives one clean entry point for multiple web services. Instead of remembering ports and backend hosts, readers can use names such as `wiki.home.example.com`, `grafana.home.example.com`, or `app.home.example.com`.
 
 This helps with:
 
@@ -61,7 +61,7 @@ wiki.home.example.com
   -> proxy forwards traffic to the wiki backend
 ```
 
-This separates service identity from backend host identity. The service name is what viewers or users type. The backend host is where the app happens to run.
+This separates service identity from backend host identity. The service name is what readers or users type. The backend host is where the app happens to run.
 
 ## Private Access vs Public Access
 
@@ -90,13 +90,13 @@ A tunnel should answer a few questions before anything is published:
 
 Tunnel credentials, connector config from the live lab, and access policy details that reveal private infrastructure should stay out of public docs.
 
-## Public-Safe Demo Ideas
+## Public-Safe Examples
 
-- Show the [reverse proxy flow diagram](../../diagrams/reverse-proxy-flow.md).
+- Open the [reverse proxy flow diagram](../../diagrams/reverse-proxy-flow.md).
 - Walk through the [sanitized NGINX example](../../examples/nginx/reverse-proxy-site.conf).
 - Walk through the [sanitized Cloudflare Tunnel example](../../examples/cloudflare-tunnel/config.example.yml).
 - Explain a service exposure decision table.
-- Show what should not be published.
+- Review what should not be published.
 - Avoid live dashboards unless they are sanitized or recreated with demo data.
 
 ## Example Reverse Proxy Flow
@@ -159,7 +159,7 @@ dig wiki.home.example.com
 cat examples/nginx/reverse-proxy-site.conf
 ```
 
-## After Watching
+## Next Steps
 
 - Read the [Reverse Proxy](../../services/reverse-proxy/README.md) service doc.
 - Study the [reverse proxy flow diagram](../../diagrams/reverse-proxy-flow.md).

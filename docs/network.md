@@ -2,7 +2,7 @@
 
 The network is built around pfSense, internal DNS, readable service names, and conservative exposure. The public examples in this repo use `10.10.0.0/24` and `home.example.com`.
 
-For visual references, see the [DNS flow diagram](../diagrams/dns-flow.md), [reverse proxy flow diagram](../diagrams/reverse-proxy-flow.md), and [Homelab DNS and Pi-hole companion](episodes/dns-pihole.md). For terms such as LAN, VLAN, DNS, DHCP, service identity, and machine identity, use the [Glossary](glossary.md).
+For visual references, see the [DNS flow diagram](../diagrams/dns-flow.md), [reverse proxy flow diagram](../diagrams/reverse-proxy-flow.md), and [Homelab DNS and Pi-hole guide](guides/dns-pihole.md). For terms such as LAN, VLAN, DNS, DHCP, service identity, and machine identity, use the [Glossary](glossary.md).
 
 ## Core Flow
 

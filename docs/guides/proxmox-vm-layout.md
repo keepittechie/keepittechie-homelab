@@ -1,14 +1,14 @@
 # Proxmox VM Layout
 
-This page is a public-safe companion guide for a KeepItTechie video about Proxmox, virtualization, and organizing homelab VMs by role.
+This guide explains how Proxmox, virtualization, and VM role planning fit into a homelab.
 
-## Episode Goal
+## Guide Goal
 
-The goal of this episode is to show how Proxmox acts as the virtualization layer for the lab and why organizing VMs by role makes a homelab easier to understand, back up, and rebuild.
+This guide shows how Proxmox acts as the virtualization layer for the lab and why organizing VMs by role makes a homelab easier to understand, back up, and rebuild.
 
-The episode should help viewers see Proxmox as more than a place to create random VMs. It is the compute layer that supports DNS, app hosting, monitoring, media, documentation, automation, and other workloads.
+The guide helps readers see Proxmox as more than a place to create random VMs. It is the compute layer that supports DNS, app hosting, monitoring, media, documentation, automation, and other workloads.
 
-## What Viewers Will Learn
+## What Readers Will Learn
 
 - What Proxmox does in a homelab.
 - Why VMs are useful for learning and isolation.
@@ -50,7 +50,7 @@ In a public repo, the important thing is to explain the role of each workload wi
 
 ## Grouping VMs by Role
 
-Grouping VMs by role makes the lab easier to reason about. Viewers do not need the live inventory to understand the design.
+Grouping VMs by role makes the lab easier to reason about. Readers do not need the live inventory to understand the design.
 
 Useful role groups include:
 
@@ -78,7 +78,7 @@ docker1.home.example.com
   -> app.home.example.com
 ```
 
-In that example, `docker1.home.example.com` is the machine identity. The dashboard, wiki, and app names are service identities. This keeps documentation clearer because a service can move later without changing the name viewers or users remember.
+In that example, `docker1.home.example.com` is the machine identity. The dashboard, wiki, and app names are service identities. This keeps documentation clearer because a service can move later without changing the name readers or users remember.
 
 ## Backups and Restore Thinking
 
@@ -95,16 +95,16 @@ Proxmox VM
 
 The important lesson is not just "backup completed." The important lesson is whether the VM or service can be restored when needed.
 
-## Public-Safe Demo Ideas
+## Public-Safe Examples
 
-- Show the sanitized homelab overview diagram.
-- Show the service catalog grouped by role.
-- Show a sanitized VM role table.
+- Open the sanitized homelab overview diagram.
+- Open the service catalog grouped by role.
+- Use a sanitized VM role table.
 - Explain how service names differ from VM names.
-- Show the backup flow diagram.
-- Show what not to publish: live VM IDs, exact host addresses, raw exports, screenshots, and private storage paths.
+- Open the backup flow diagram.
+- Review what not to publish: live VM IDs, exact host addresses, raw exports, screenshots, and private storage paths.
 
-Do not show a live Proxmox dashboard unless it is heavily sanitized or recreated with demo data.
+Do not include a live Proxmox dashboard unless it is heavily sanitized or recreated with demo data.
 
 ## Example VM Role Table
 
@@ -143,13 +143,13 @@ These are sanitized examples. They are not live VM names, VM IDs, host addresses
 
 ## Commands and Examples
 
-These commands are examples viewers can adapt in their own lab:
+These commands are examples readers can adapt in their own lab:
 
 ```bash
-# Show VM list on a Proxmox host
+# Show the VM list on a Proxmox host
 qm list
 
-# Show container list if LXC is used
+# Show the container list if LXC is used
 pct list
 
 # Check backup jobs from the Proxmox UI or PBS UI.
@@ -158,7 +158,7 @@ pct list
 
 Review command output before sharing it publicly. VM names, VM IDs, storage names, and notes can reveal more than expected.
 
-## After Watching
+## Next Steps
 
 - Read the [Proxmox service doc](../../services/proxmox/README.md).
 - Study the [Current Setup](../current-setup.md) page.
