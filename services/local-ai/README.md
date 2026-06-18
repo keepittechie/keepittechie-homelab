@@ -124,6 +124,12 @@ The example shows the API pattern only. Do not commit real credentials.
 - How local AI fits into Linux and self-hosting workflows.
 - How to keep AI experiments private and controlled.
 
+## Related Docs
+
+- [Local AI on Linux Companion](../../docs/episodes/local-ai.md)
+- [Local AI flow diagram](../../diagrams/local-ai-flow.md)
+- [Apps and AI](../../docs/apps-and-ai.md)
+
 ## Future Improvements
 
 - Add a sanitized model inventory template.

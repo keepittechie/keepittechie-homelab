@@ -124,6 +124,7 @@ Viewers can learn how a local AI service can support private experimentation wit
 
 Related docs:
 
+- [Local AI on Linux Companion](episodes/local-ai.md)
 - [Local AI](../services/local-ai/README.md)
 - [Local AI Flow Diagram](../diagrams/local-ai-flow.md)
 

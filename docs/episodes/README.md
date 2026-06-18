@@ -14,8 +14,9 @@ These pages are not private scripts or production notes. They are viewer-facing 
 | Homelab Backups and Restore Testing | Backup strategy, PBS, and restore verification | [Homelab Backups and Restore Testing](backups-restore.md) |
 | Homelab Monitoring with Grafana and Prometheus | Metrics, logs, uptime checks, and dashboards | [Homelab Monitoring with Grafana and Prometheus](monitoring-grafana.md) |
 | Homelab Reverse Proxy and Internal HTTPS | Reverse proxy, TLS, and selected public access | [Homelab Reverse Proxy and Internal HTTPS](reverse-proxy.md) |
+| Local AI on Linux | Local AI services, endpoints, and privacy boundaries | [Local AI on Linux](local-ai.md) |
 
-Future companion pages can cover local AI, dashboards, self-hosted apps, and automation.
+Future companion pages can cover dashboards, self-hosted apps, and automation.
 
 ## Related Docs
 

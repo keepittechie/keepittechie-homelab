@@ -221,6 +221,7 @@ A GPU helps with many workloads, but it is not required to learn the architectur
 
 Related docs:
 
+- [Local AI on Linux Companion](episodes/local-ai.md)
 - [Local AI](../services/local-ai/README.md)
 - [Local AI Flow Diagram](../diagrams/local-ai-flow.md)
 
@@ -268,7 +269,7 @@ Related docs:
 | 7 | Monitoring | [Monitoring](../services/monitoring/README.md), [Monitoring Companion](episodes/monitoring-grafana.md), [Monitoring Flow Diagram](../diagrams/monitoring-flow.md) |
 | 8 | Reverse proxying | [Reverse Proxy](../services/reverse-proxy/README.md), [Reverse Proxy Companion](episodes/reverse-proxy.md), [NGINX Example](../examples/nginx/README.md) |
 | 9 | Self-hosted apps | [Apps and AI](apps-and-ai.md), [Service Catalog](service-catalog.md) |
-| 10 | Local AI | [Local AI](../services/local-ai/README.md), [Local AI Flow Diagram](../diagrams/local-ai-flow.md) |
+| 10 | Local AI | [Local AI](../services/local-ai/README.md), [Local AI Companion](episodes/local-ai.md), [Local AI Flow Diagram](../diagrams/local-ai-flow.md) |
 | 11 | Automation | [AWX / Ansible Automation](../services/automation-awx/README.md), [Sanitized Examples](../examples/README.md) |
 
 ## Related Docs
