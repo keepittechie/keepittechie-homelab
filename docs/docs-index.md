@@ -9,6 +9,7 @@ Use this page when the README is too high-level and a more complete map of the r
 | [Viewer Guide](viewer-guide.md) | Beginner-friendly path through the repo |
 | [Current Setup](current-setup.md) | Public-safe tour of what is running and why |
 | [Build Your Own Homelab](build-your-own.md) | Staged path for building a beginner-friendly lab |
+| [Replication Quickstart](replication-quickstart.md) | Practical guide for copying the architecture pattern safely |
 | [Homelab Overview](overview.md) | Big-picture design and service roles |
 | [Hardware](hardware.md) | Public-safe hardware roles and learning value |
 | [Public-Safe Inventory](inventory-public.md) | Sanitized role-based inventory view |
@@ -107,6 +108,7 @@ Use this page when the README is too high-level and a more complete map of the r
 | Page | Purpose |
 |---|---|
 | [Learning Paths](learning-paths.md) | Practical reading paths through the repo |
+| [Replication Quickstart](replication-quickstart.md) | Safe replication path for a similar homelab pattern |
 | [Homelab Guides](guides/README.md) | Public-safe topic guides |
 | [Full Homelab Tour Guide](guides/full-homelab-tour.md) | Broad lab walkthrough |
 | [Homelab DNS and Pi-hole Guide](guides/dns-pihole.md) | Local DNS, filtering, and service names |

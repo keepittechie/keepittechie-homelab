@@ -8,7 +8,7 @@ A homelab does not need to be expensive or complicated. One spare machine, an ol
 
 Start with the hardware already available when possible. The first win is not a perfect rack. The first win is a small service that runs, survives a reboot, has notes, and can be rebuilt.
 
-Use this repo as a guide to understand patterns, not as a checklist to copy line for line. Start small, document what changes, and keep private data and credentials out of GitHub.
+Use this repo as a guide to understand patterns, not as a checklist to copy line for line. Start small, document what changes, and keep private data and credentials out of GitHub. For a shorter architecture-first path, read the [Replication Quickstart](replication-quickstart.md).
 
 Good first rules:
 
@@ -275,6 +275,7 @@ Related docs:
 ## Related Docs
 
 - [Current Setup](current-setup.md)
+- [Replication Quickstart](replication-quickstart.md)
 - [Full Homelab Tour Guide](guides/full-homelab-tour.md)
 - [Viewer Guide](viewer-guide.md)
 - [Documentation Index](docs-index.md)
