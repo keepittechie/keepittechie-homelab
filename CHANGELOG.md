@@ -2,7 +2,7 @@
 
 All notable changes to this public homelab documentation repo will be documented in this file.
 
-This project uses documentation-focused versioning. Releases mark meaningful documentation milestones, not software package releases.
+This project uses documentation-focused versioning. Releases mark meaningful documentation milestones, not deployable app versions.
 
 ## [Unreleased]
 

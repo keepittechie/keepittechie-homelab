@@ -23,12 +23,8 @@ Current documentation baseline: [v0.1.0](docs/releases/v0.1.0.md). See the [chan
 | See the map | [Diagrams](diagrams/README.md) | Follow sanitized architecture and service flows |
 | Study examples | [Sanitized Examples](examples/README.md) | Learn safe config patterns without private values |
 | Browse services | [Service Catalog](docs/service-catalog.md) | Pick a service and learn what it does |
-| Compare services | [Service Matrix](docs/service-matrix.md) | Compare access level, host role, and backup priority |
-| Big picture | [Homelab Overview](docs/overview.md) | Understand the purpose and layout |
-| Core stack | [Core Infrastructure](docs/core-infrastructure.md) | Read the first deep dives in order |
-| Storage and monitoring | [Storage and Monitoring](docs/storage-monitoring.md) | Understand storage, backups, restore proof, and visibility |
-| Apps and AI | [Apps and AI](docs/apps-and-ai.md) | Explore local AI, media, dashboards, docs, personal apps, and automation |
-| Security | [Security Notes](docs/security-notes.md) | Learn what stays private |
+
+The [Documentation Index](docs/docs-index.md) is the deeper table of contents. Use it when you want the service matrix, core infrastructure guide, storage and monitoring guide, apps and AI guide, security notes, release notes, or maintenance docs.
 
 ## Homelab Areas
 
