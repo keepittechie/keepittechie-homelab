@@ -8,6 +8,7 @@ This guide explains how viewers can use the KeepItTechie homelab repo without ge
 |---|---|---|
 | Tour the current lab | [Current Setup](current-setup.md) | See what is running, why it exists, and how the parts connect |
 | Build something similar | [Build Your Own Homelab](build-your-own.md) | Follow a staged path that starts small |
+| Replicate the pattern safely | [Replication Quickstart](replication-quickstart.md) | Learn what to build first and what private details to keep out of GitHub |
 | Learn the big picture | [Homelab Overview](overview.md) | Understand the main roles before opening deep dives |
 | Study one service | [Service Catalog](service-catalog.md) | Pick a service by category and jump to its README |
 | Understand diagrams | [Diagram Index](../diagrams/README.md) | Follow network, DNS, backup, proxy, AI, and monitoring flows |
@@ -18,19 +19,20 @@ This guide explains how viewers can use the KeepItTechie homelab repo without ge
 ## Recommended Path
 
 1. Start with the [Current Setup](current-setup.md).
-2. Read [Build Your Own Homelab](build-your-own.md) if you want to build your own version in stages.
-3. Use the [Homelab Overview](overview.md) to understand the main roles.
-4. Review [Hardware](hardware.md) for hardware roles.
-5. Browse the [Service Catalog](service-catalog.md).
-6. Open the [diagram index](../diagrams/README.md).
-7. Read the [service matrix](service-matrix.md) to understand what runs where.
-8. Keep the [Glossary](glossary.md) open for unfamiliar terms.
-9. Review [How To Read Service Pages](how-to-read-service-pages.md).
-10. Pick one service area to study.
-11. Compare the service README with the matching [sanitized examples](../examples/README.md).
-12. Review the [Visual Assets Guide](visual-assets-guide.md) before adding images or mockups.
-13. Use the [Security Notes](security-notes.md) before adapting any pattern.
-14. Build safely in a lab before using a pattern for important services.
+2. Read [Replication Quickstart](replication-quickstart.md) if you want to adapt the architecture pattern safely.
+3. Read [Build Your Own Homelab](build-your-own.md) if you want to build your own version in stages.
+4. Use the [Homelab Overview](overview.md) to understand the main roles.
+5. Review [Hardware](hardware.md) for hardware roles.
+6. Browse the [Service Catalog](service-catalog.md).
+7. Open the [diagram index](../diagrams/README.md).
+8. Read the [service matrix](service-matrix.md) to understand what runs where.
+9. Keep the [Glossary](glossary.md) open for unfamiliar terms.
+10. Review [How To Read Service Pages](how-to-read-service-pages.md).
+11. Pick one service area to study.
+12. Compare the service README with the matching [sanitized examples](../examples/README.md).
+13. Review the [Visual Assets Guide](visual-assets-guide.md) before adding images or mockups.
+14. Use the [Security Notes](security-notes.md) before adapting any pattern.
+15. Build safely in a lab before using a pattern for important services.
 
 ## Good First Topics
 
@@ -64,6 +66,7 @@ The goal is to learn the pattern, not copy a private deployment line for line.
 
 - [Documentation Index](docs-index.md)
 - [Current Setup](current-setup.md)
+- [Replication Quickstart](replication-quickstart.md)
 - [Build Your Own Homelab](build-your-own.md)
 - [Hardware](hardware.md)
 - [Public-Safe Inventory](inventory-public.md)

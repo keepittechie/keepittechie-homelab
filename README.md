@@ -17,6 +17,7 @@ Current documentation baseline: [v0.1.0](docs/releases/v0.1.0.md). See the [chan
 |---|---|---|
 | Tour the lab | [Current Setup](docs/current-setup.md) | See what is running and why it exists |
 | Build in stages | [Build Your Own Homelab](docs/build-your-own.md) | Start small and add one layer at a time |
+| Replicate safely | [Replication Quickstart](docs/replication-quickstart.md) | Copy the architecture pattern without copying private details |
 | Follow a path | [Viewer Guide](docs/viewer-guide.md) | Choose the best route through the repo |
 | Find everything | [Documentation Index](docs/docs-index.md) | Browse every major guide by topic |
 | Learn the terms | [Glossary](docs/glossary.md) | Look up homelab vocabulary as you read |
@@ -103,12 +104,13 @@ Short version: this repo teaches the lab design. It is not a live backup, invent
 ## How To Use This Repo
 
 1. Tour the [current setup](docs/current-setup.md).
-2. Use [Build Your Own Homelab](docs/build-your-own.md) if you want to build something similar in stages.
-3. Open the [diagram index](diagrams/README.md) to see the flows visually.
-4. Browse the [service catalog](docs/service-catalog.md) or [service matrix](docs/service-matrix.md).
-5. Read the service README for the part of the lab you want to understand.
-6. Compare the docs with the [sanitized examples](examples/README.md).
-7. Check [Security Notes](docs/security-notes.md) before adapting any pattern in a public repo.
+2. Use [Replication Quickstart](docs/replication-quickstart.md) to copy the architecture pattern safely.
+3. Use [Build Your Own Homelab](docs/build-your-own.md) if you want to build something similar in stages.
+4. Open the [diagram index](diagrams/README.md) to see the flows visually.
+5. Browse the [service catalog](docs/service-catalog.md) or [service matrix](docs/service-matrix.md).
+6. Read the service README for the part of the lab you want to understand.
+7. Compare the docs with the [sanitized examples](examples/README.md).
+8. Check [Security Notes](docs/security-notes.md) before adapting any pattern in a public repo.
 
 For a beginner-friendly walkthrough, use the [Viewer Guide](docs/viewer-guide.md). For deeper navigation, use the [Documentation Index](docs/docs-index.md) and [Glossary](docs/glossary.md).
 
@@ -118,6 +120,7 @@ Use these pages when you want a guided path through the repo instead of browsing
 
 - [Homelab Guides](docs/guides/README.md)
 - [Learning Paths](docs/learning-paths.md)
+- [Replication Quickstart](docs/replication-quickstart.md)
 - [Full Homelab Tour Guide](docs/guides/full-homelab-tour.md)
 - [Homelab DNS and Pi-hole Guide](docs/guides/dns-pihole.md)
 - [Proxmox VM Layout Guide](docs/guides/proxmox-vm-layout.md)

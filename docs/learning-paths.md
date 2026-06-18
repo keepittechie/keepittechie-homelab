@@ -10,15 +10,17 @@ Use this path to understand the repo before jumping into individual services.
 
 1. [Current Setup](current-setup.md)
 2. [Viewer Guide](viewer-guide.md)
-3. [Documentation Index](docs-index.md)
-4. [Glossary](glossary.md)
-5. [Homelab Guides](guides/README.md)
+3. [Replication Quickstart](replication-quickstart.md)
+4. [Documentation Index](docs-index.md)
+5. [Glossary](glossary.md)
+6. [Homelab Guides](guides/README.md)
 
 ## Build a Basic Homelab
 
 This path is for readers starting from a small machine, mini PC, old desktop, or spare laptop.
 
 - Read [Build Your Own Homelab](build-your-own.md).
+- Use [Replication Quickstart](replication-quickstart.md) to understand the safe architecture order.
 - Review [How to Read Service Pages](how-to-read-service-pages.md).
 - Start with one Linux host and one simple app.
 - Add DNS, backups, and monitoring before adding too many services.
@@ -91,6 +93,7 @@ This path explains how local AI fits into a Linux homelab without exposing priva
 ## Related Docs
 
 - [Current Setup](current-setup.md)
+- [Replication Quickstart](replication-quickstart.md)
 - [Build Your Own Homelab](build-your-own.md)
 - [Homelab Guides](guides/README.md)
 - [Documentation Index](docs-index.md)
