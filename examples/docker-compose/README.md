@@ -23,8 +23,8 @@ These examples demonstrate safe patterns for documenting self-hosted app layouts
 - Private app URLs.
 - Raw app exports or database dumps.
 
-## What Viewers Can Learn
+## What Readers Can Learn
 
-Viewers can learn the difference between public-safe templates and real runtime config. This connects to the [Glance / Homepage Dashboard service doc](../../services/glance/README.md), the [Apps and AI guide](../../docs/apps-and-ai.md), and the [environment example](../env/README.md).
+Readers can learn the difference between public-safe templates and real runtime config. This connects to the [Glance / Homepage Dashboard service doc](../../services/glance/README.md), the [Apps and AI guide](../../docs/apps-and-ai.md), and the [environment example](../env/README.md).
 
 These are sanitized examples, not production-ready drop-in configs.

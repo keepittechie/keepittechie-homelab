@@ -24,7 +24,7 @@ It includes placeholder scrape jobs for:
 - Alert destination URLs.
 - Raw logs or screenshots that show private hosts.
 
-## What Viewers Can Learn
+## What Readers Can Learn
 
 This shows how Prometheus groups scrape targets by job and how Blackbox Exporter checks service reachability. It connects to the [Monitoring service doc](../../services/monitoring/README.md) and the [monitoring flow diagram](../../diagrams/monitoring-flow.md).
 

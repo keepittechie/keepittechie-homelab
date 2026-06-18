@@ -23,8 +23,8 @@ The included CSV uses intentionally fake host addresses and sanitized names:
 - Exact production host addresses.
 - Pi-hole API keys or admin credentials.
 
-## What Viewers Can Learn
+## What Readers Can Learn
 
-Viewers can learn how internal DNS records make homelab services easier to remember and troubleshoot. This connects to the [Pi-hole service doc](../../services/pihole/README.md), the [network guide](../../docs/network.md), and the [DNS flow diagram](../../diagrams/dns-flow.md).
+Readers can learn how internal DNS records make homelab services easier to remember and troubleshoot. This connects to the [Pi-hole service doc](../../services/pihole/README.md), the [network guide](../../docs/network.md), and the [DNS flow diagram](../../diagrams/dns-flow.md).
 
 This is a sanitized example, not a production-ready drop-in config.

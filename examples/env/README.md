@@ -19,8 +19,8 @@ This example shows how to publish safe placeholders for an app environment file.
 - API keys or service tokens.
 - Private URLs that reveal internal infrastructure.
 
-## What Viewers Can Learn
+## What Readers Can Learn
 
-Viewers can learn why `.env.example` belongs in a public repo and `.env` belongs outside Git. This connects to the [pre-publish review checklist](../../docs/pre-publish-review.md) and the [Docker Compose examples](../docker-compose/README.md).
+Readers can learn why `.env.example` belongs in a public repo and `.env` belongs outside Git. This connects to the [pre-publish review checklist](../../docs/pre-publish-review.md) and the [Docker Compose examples](../docker-compose/README.md).
 
 This is a sanitized example, not a production-ready drop-in config.

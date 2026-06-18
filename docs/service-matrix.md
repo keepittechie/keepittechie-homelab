@@ -1,6 +1,6 @@
 # Service Matrix
 
-This matrix gives viewers a quick way to understand what each service does, where it runs, how it should be accessed, and how carefully it should be backed up. It is intentionally sanitized for public GitHub.
+This matrix gives readers a quick way to understand what each service does, where it runs, how it should be accessed, and how carefully it should be backed up. It is intentionally sanitized for public GitHub.
 
 For the first deep-dive reading path, start with [Core Infrastructure](core-infrastructure.md). For a friendlier grouped list, use the [Service Catalog](service-catalog.md). For a sanitized role view, use [Public-Safe Inventory](inventory-public.md). For storage, backups, and visibility, read [Storage and Monitoring](storage-monitoring.md). For application, media, local AI, dashboard, documentation, and automation services, read [Apps and AI](apps-and-ai.md).
 

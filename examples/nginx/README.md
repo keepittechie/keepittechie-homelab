@@ -24,7 +24,7 @@ It includes:
 - Real upstream hostnames if they expose private infrastructure.
 - Production NGINX exports with secrets or account-specific values.
 
-## What Viewers Can Learn
+## What Readers Can Learn
 
 This shows how DNS aliases, TLS, and upstream routing work together. It connects to the [Reverse Proxy service doc](../../services/reverse-proxy/README.md) and the [reverse proxy flow diagram](../../diagrams/reverse-proxy-flow.md).
 

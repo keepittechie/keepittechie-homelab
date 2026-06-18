@@ -100,7 +100,7 @@ Sanitized service map:
 - Ignoring storage path consistency across apps.
 - Treating GPU acceleration as required before the basic stack is stable.
 
-## What Viewers Can Learn
+## What Readers Can Learn
 
 - How multi-app stacks depend on storage design.
 - Why each media service has a distinct role.

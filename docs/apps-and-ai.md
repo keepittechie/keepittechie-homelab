@@ -2,7 +2,7 @@
 
 This page is the beginner-friendly entry point for the application, media, dashboard, documentation, local AI, and automation services in the KeepItTechie homelab.
 
-These services sit on top of the core infrastructure, storage, backups, monitoring, and reverse proxy layers. They are the part viewers are most likely to recognize from daily use, but they also carry the most private data.
+These services sit on top of the core infrastructure, storage, backups, monitoring, and reverse proxy layers. They are the part readers are most likely to recognize from daily use, but they also carry the most private data.
 
 For a visual reference, see the [local AI flow diagram](../diagrams/local-ai-flow.md). For the guide, see [Local AI on Linux](guides/local-ai.md). For unfamiliar app, endpoint, and public-safe documentation terms, use the [Glossary](glossary.md).
 
@@ -32,7 +32,7 @@ For a visual reference, see the [local AI flow diagram](../diagrams/local-ai-flo
 
 ## Good Learning Projects
 
-| Project | Why It Helps Viewers | Public-Safe Demo |
+| Project | Why It Helps Readers | Public-Safe Demo |
 |---|---|---|
 | Build a dashboard group | Teaches service organization | Use fake `home.example.com` links |
 | Add a Wiki.js public/private namespace model | Teaches documentation hygiene | Use sample namespaces |

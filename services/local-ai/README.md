@@ -6,7 +6,7 @@ The local AI stack provides private, Linux-first AI experimentation using a GPU 
 
 ## Why This Matters
 
-Local AI is useful for privacy, control, learning, and content creation. It lets viewers understand how models run, why GPU memory matters, how local APIs can mimic hosted AI APIs, and where self-hosted AI fits into a practical homelab.
+Local AI is useful for privacy, control, learning, and content creation. It lets readers understand how models run, why GPU memory matters, how local APIs can mimic hosted AI APIs, and where self-hosted AI fits into a practical homelab.
 
 For KeepItTechie, this stack also supports Linux GPU setup notes, local-first tools, automation, and practical AI workflows without treating every prompt as cloud-bound.
 
@@ -116,7 +116,7 @@ The example shows the API pattern only. Do not commit real credentials.
 - Ignoring GPU and memory monitoring.
 - Treating local AI as a magic service instead of a normal app with backups and logs.
 
-## What Viewers Can Learn
+## What Readers Can Learn
 
 - How local inference differs from hosted AI.
 - Why GPU memory and model size matter.

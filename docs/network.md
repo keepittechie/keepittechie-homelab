@@ -63,7 +63,7 @@ These are sanitized examples, not a live zone file.
 | Guest | Visitor devices | Internet-only |
 | VPN | Remote admin access | Treated like admin, with strong auth |
 
-The lab can run with a simple LAN, but documenting the segmentation model helps viewers understand how to grow safely.
+The lab can run with a simple LAN, but documenting the segmentation model helps readers understand how to grow safely.
 
 ## Firewall Principles
 

@@ -1,6 +1,6 @@
 # Current Setup
 
-This page gives a high-level tour of the KeepItTechie homelab as documented in this repo. It is written like a walkthrough: what each part does, why it exists, and what viewers can take into their own lab.
+This page gives a high-level tour of the KeepItTechie homelab as documented in this repo. It is written like a walkthrough: what each part does, why it exists, and what readers can take into their own lab.
 
 ## How to Read This Page
 
@@ -33,7 +33,7 @@ Once the network is in place, Proxmox becomes the compute layer. It runs VMs and
 
 The docs separate service identity from machine identity. A service identity is the name users remember, such as `proxy.home.example.com`. A machine identity is the VM or host that runs the service. This makes it easier to move or rebuild a service without changing how people reach it.
 
-This is where viewers can see why virtualization is useful in a homelab: isolation, snapshots, backup integration, testing, and cleaner rebuilds.
+This is where readers can see why virtualization is useful in a homelab: isolation, snapshots, backup integration, testing, and cleaner rebuilds.
 
 Related docs:
 
@@ -62,7 +62,7 @@ Proxmox Backup Server is the VM and container backup target. It is the part of t
 
 The backup docs focus on recoverability, not just backup creation. Restore test evidence matters because a backup is only useful if the restore path works.
 
-Viewers can learn how VM backups, app-aware backups, NAS targets, ZFS snapshots, and restore testing fit together without pretending that one tool solves every recovery problem.
+Readers can learn how VM backups, app-aware backups, NAS targets, ZFS snapshots, and restore testing fit together without pretending that one tool solves every recovery problem.
 
 Related docs:
 
@@ -77,7 +77,7 @@ Monitoring is built around Grafana, Prometheus, exporters, Loki, and Promtail. N
 
 Monitoring is treated as visibility, not decoration. The goal is to answer three practical questions: what is healthy, what changed, and where should troubleshooting start?
 
-Viewers can learn the difference between metrics, logs, dashboards, and service checks.
+Readers can learn the difference between metrics, logs, dashboards, and service checks.
 
 Related docs:
 
@@ -91,7 +91,7 @@ NGINX provides internal HTTPS routing through the reverse proxy. Internal DNS po
 
 Cloudflare Tunnel is documented as a selected public access path only. It is not a reason to publish every dashboard. Admin tools, monitoring, backup systems, hypervisors, and automation controllers should stay private unless there is a specific hardened access plan.
 
-Viewers can learn the difference between internal reverse proxy access, VPN-style access, and selected public access.
+Readers can learn the difference between internal reverse proxy access, VPN-style access, and selected public access.
 
 Related docs:
 
@@ -108,7 +108,7 @@ The media stack includes Plex, Servarr-style automation, Tautulli, and Tdarr. Pl
 
 Media services depend heavily on storage, metadata, and app state. Automation dashboards should stay private because they can expose libraries, paths, queues, and account details.
 
-Viewers can learn how multi-app workflows depend on DNS, storage, permissions, backups, and private dashboards.
+Readers can learn how multi-app workflows depend on DNS, storage, permissions, backups, and private dashboards.
 
 Related docs:
 
@@ -120,7 +120,7 @@ The local AI stack uses a GPU server concept, a llama.cpp OpenAI-compatible endp
 
 AI endpoints should stay protected. A local endpoint can still expose private prompts, app context, model behavior, or compute resources if it is published carelessly.
 
-Viewers can learn how a local AI service can support private experimentation without depending on a hosted API for every request.
+Readers can learn how a local AI service can support private experimentation without depending on a hosted API for every request.
 
 Related docs:
 
@@ -134,7 +134,7 @@ FinanceHQ and CareerFill are local-first personal apps. The repo documents their
 
 Public examples should use demo or fake data only.
 
-Viewers can learn how personal apps can be documented safely: publish architecture, boundaries, backup thinking, and lessons learned, not private records.
+Readers can learn how personal apps can be documented safely: publish architecture, boundaries, backup thinking, and lessons learned, not private records.
 
 Related docs:
 
@@ -143,9 +143,9 @@ Related docs:
 
 ## Documentation
 
-Documentation lives in this repo and in Wiki.js. The public repo focuses on viewer-friendly architecture, service summaries, diagrams, glossary entries, examples, and safety boundaries. Wiki.js can support deeper internal notes, but public and private documentation should stay separated.
+Documentation lives in this repo and in Wiki.js. The public repo focuses on reader-friendly architecture, service summaries, diagrams, glossary entries, examples, and safety boundaries. Wiki.js can support deeper internal notes, but public and private documentation should stay separated.
 
-Viewers can learn how to turn a real homelab into a teachable system without dumping private notes into GitHub.
+Readers can learn how to turn a real homelab into a teachable system without dumping private notes into GitHub.
 
 Related docs:
 
@@ -161,7 +161,7 @@ AWX and Ansible provide the automation layer. Inventories, playbooks, credential
 
 The repo should teach safe automation patterns using sanitized examples and role-based explanations.
 
-Viewers can learn how automation improves repeatability while still requiring careful boundaries around credentials and inventories.
+Readers can learn how automation improves repeatability while still requiring careful boundaries around credentials and inventories.
 
 Related docs:
 

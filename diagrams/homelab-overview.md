@@ -66,4 +66,4 @@ The lower layers show service categories rather than exact machine details. This
 - DNS names use examples such as `home.example.com`, `proxy.home.example.com`, and `grafana.home.example.com`.
 - Network examples use `10.10.0.0/24` instead of exact host addresses.
 - Real public domains, public IP addresses, account IDs, credentials, certificate paths, and production exports are intentionally omitted.
-- Role labels are used when exact host identity does not help viewers understand the architecture.
+- Role labels are used when exact host identity does not help readers understand the architecture.

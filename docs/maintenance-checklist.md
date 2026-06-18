@@ -37,5 +37,5 @@ Use this checklist for ongoing repo maintenance. For a final review before publi
 
 - [ ] Revisit service README files after major lab changes.
 - [ ] Add restore test evidence for critical services as it becomes available.
-- [ ] Prune stale placeholders that no longer help viewers.
+- [ ] Prune stale placeholders that no longer help readers.
 - [ ] Keep the repo focused on teaching architecture and operations, not dumping private configs.

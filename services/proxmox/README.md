@@ -46,7 +46,7 @@ machine identity: zelus.home.example.com
 service identity: proxy.home.example.com
 ```
 
-This distinction helps viewers understand why moving a service does not always require changing the service identity users remember.
+This distinction helps readers understand why moving a service does not always require changing the service identity users remember.
 
 ## Key Responsibilities
 
@@ -97,7 +97,7 @@ The names are examples for documentation. They should not be treated as a live i
 - Using service identity and machine identity interchangeably.
 - Publishing the full VM inventory when a sanitized role table is enough.
 
-## What Viewers Can Learn
+## What Readers Can Learn
 
 - Why virtualization is useful in a homelab.
 - How to design VM roles around service boundaries.

@@ -58,7 +58,7 @@ Document:
 - Why it exists.
 - How it fits into the lab.
 - What should stay private.
-- Sanitized examples viewers can reuse.
+- Sanitized examples readers can reuse.
 
 Do not document:
 

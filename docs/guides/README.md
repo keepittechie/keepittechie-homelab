@@ -2,7 +2,7 @@
 
 This folder collects public-safe topic guides for the KeepItTechie homelab. Each guide explains a core pattern, links to supporting docs, and shows how to study the setup without exposing private infrastructure.
 
-These pages are not scripts, show notes, or private runbooks. They are repo-focused learning guides that use sanitized examples and avoid live infrastructure details.
+These pages are not scripts, planning docs, or private runbooks. They are repo-focused learning guides that use sanitized examples and avoid live infrastructure details.
 
 ## Guide Index
 

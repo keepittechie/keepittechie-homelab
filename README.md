@@ -93,7 +93,7 @@ All names and networks in public examples use sanitized values such as `home.exa
 
 | This Repo Is | This Repo Is Not |
 |---|---|
-| A public learning resource for KeepItTechie viewers | A dump of private production configs |
+| A public learning resource for KeepItTechie readers | A dump of private production configs |
 | A sanitized architecture guide | A live DNS zone or firewall export |
 | A guide to safe homelab patterns | A credential store |
 | A rebuild and documentation aid | A full backup of the lab |
@@ -157,7 +157,7 @@ Pull requests run lightweight documentation checks for Markdown links, diagram s
 
 | Path | Purpose |
 |---|---|
-| `docs/` | Main viewer-facing documentation |
+| `docs/` | Main reader-facing documentation |
 | `services/` | Per-service breakdowns |
 | `diagrams/` | Public-safe architecture diagrams and placeholders |
 | `assets/` | Placeholder area for reviewed public-safe visual assets |

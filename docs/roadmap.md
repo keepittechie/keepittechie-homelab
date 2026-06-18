@@ -7,7 +7,7 @@ Completed foundation work now covers the public-safe base docs, navigation, arch
 ## Phase 1: Public-Safe Foundation
 
 - [x] Expand the main README.
-- [x] Add top-level docs for overview, hardware, network, services, storage, security, and content planning.
+- [x] Add top-level docs for overview, hardware, network, services, storage, security, and repo navigation.
 - [x] Add service READMEs with consistent sections.
 - [x] Add sanitized inventory and environment examples.
 - [x] Add a basic secret scan.

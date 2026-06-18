@@ -17,8 +17,8 @@ This example demonstrates the shape of a Cloudflare Tunnel config without includ
 - Generated Cloudflare config with account-specific values.
 - Any token or connector secret.
 
-## What Viewers Can Learn
+## What Readers Can Learn
 
-Viewers can learn how tunnel ingress rules map public hostnames to private services while keeping broad inbound firewall ports closed. This connects to the [Cloudflare Tunnel service doc](../../services/cloudflare-tunnel/README.md) and the [reverse proxy flow diagram](../../diagrams/reverse-proxy-flow.md).
+Readers can learn how tunnel ingress rules map public hostnames to private services while keeping broad inbound firewall ports closed. This connects to the [Cloudflare Tunnel service doc](../../services/cloudflare-tunnel/README.md) and the [reverse proxy flow diagram](../../diagrams/reverse-proxy-flow.md).
 
 This is a sanitized example, not a production-ready drop-in config.

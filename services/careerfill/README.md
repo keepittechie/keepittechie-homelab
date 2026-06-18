@@ -98,7 +98,7 @@ Public-safe boundary table:
 - Sending private career context to public tools accidentally.
 - Treating local apps as safe to expose because they are personal.
 
-## What Viewers Can Learn
+## What Readers Can Learn
 
 - How a homelab can support real personal workflows.
 - How to deploy private productivity apps.

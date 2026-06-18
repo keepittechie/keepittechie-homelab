@@ -63,7 +63,7 @@ Each service README should answer:
 - How does DNS and network access work?
 - What needs to be backed up?
 - What should never be exposed?
-- What can viewers learn from it?
+- What can readers learn from it?
 
 ## Exposure Rule Of Thumb
 

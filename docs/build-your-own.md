@@ -1,6 +1,6 @@
 # Build Your Own Homelab
 
-This page gives viewers a beginner-friendly path for building a homelab inspired by the KeepItTechie setup. The goal is not to clone the lab exactly. The goal is to understand the layers and build something useful one step at a time.
+This page gives readers a beginner-friendly path for building a homelab inspired by the KeepItTechie setup. The goal is not to clone the lab exactly. The goal is to understand the layers and build something useful one step at a time.
 
 ## Before You Start
 
@@ -60,7 +60,7 @@ Related docs:
 
 ## Stage 3: Add Local DNS
 
-After the network basics make sense, add local DNS with Pi-hole or a similar DNS service. Local DNS lets viewers use service names such as `grafana.home.example.com` instead of remembering raw IP addresses.
+After the network basics make sense, add local DNS with Pi-hole or a similar DNS service. Local DNS lets readers use service names such as `grafana.home.example.com` instead of remembering raw IP addresses.
 
 Focus on:
 

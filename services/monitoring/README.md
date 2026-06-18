@@ -8,7 +8,7 @@ The monitoring stack provides visibility into host health, container health, ser
 
 Monitoring should start simple. A homelab does not need enterprise complexity on day one, but it does need enough visibility to catch failed services, full disks, overloaded hosts, and broken network paths.
 
-This stack also gives viewers practical exposure to the difference between metrics, logs, dashboards, and service checks.
+This stack also gives readers practical exposure to the difference between metrics, logs, dashboards, and service checks.
 
 ## Where It Fits in the Homelab
 
@@ -86,7 +86,7 @@ Sanitized monitoring target examples:
 
 Public-safe dashboard ideas:
 
-| Dashboard | Purpose | Example Panels | Viewer Lesson |
+| Dashboard | Purpose | Example Panels | Reader Lesson |
 |---|---|---|---|
 | Homelab overview | Daily health check | Up/down, CPU, memory, disk | Start with simple signals |
 | Proxmox health | Hypervisor visibility | VM status, host load, storage | Virtualization needs monitoring |
@@ -118,7 +118,7 @@ Public-safe dashboard ideas:
 - Alerting on too many low-priority events.
 - Forgetting to back up dashboard definitions.
 
-## What Viewers Can Learn
+## What Readers Can Learn
 
 - How metrics, logs, dashboards, and checks differ.
 - Why monitoring should start with simple health signals.

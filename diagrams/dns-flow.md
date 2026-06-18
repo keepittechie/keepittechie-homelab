@@ -30,7 +30,7 @@ flowchart TD
 
 Client devices receive DNS settings from pfSense through DHCP. Instead of each device choosing a random public DNS resolver, the clients ask Pi-hole first. Pi-hole can answer local service names, block unwanted domains, or forward normal internet lookups upstream.
 
-Internal DNS helps viewers avoid memorizing addresses. A service name such as `grafana.home.example.com` is easier to understand, document, and troubleshoot than a raw host address.
+Internal DNS helps readers avoid memorizing addresses. A service name such as `grafana.home.example.com` is easier to understand, document, and troubleshoot than a raw host address.
 
 ## Public-Safe Notes
 

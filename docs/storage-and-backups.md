@@ -120,7 +120,7 @@ Do not publish:
 - Screenshots showing private data.
 - Exact disk serials or full pool status output.
 
-## What Viewers Can Learn
+## What Readers Can Learn
 
 - Why backups should be tested.
 - How PBS, NAS storage, and ZFS snapshots solve different problems.

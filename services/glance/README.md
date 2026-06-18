@@ -60,7 +60,7 @@ Dashboard links should use service identities, not raw backend addresses. Public
 - Link documentation and dashboards.
 - Keep admin workflows easy to find.
 - Avoid exposing sensitive services publicly.
-- Provide a safe pattern viewers can adapt.
+- Provide a safe pattern readers can adapt.
 
 ## Example Public-Safe Configuration
 
@@ -98,7 +98,7 @@ Sanitized dashboard grouping:
 - Storing widget credentials in public examples.
 - Letting stale links hide real service changes.
 
-## What Viewers Can Learn
+## What Readers Can Learn
 
 - How a dashboard improves daily homelab use.
 - How to group services by workflow.
