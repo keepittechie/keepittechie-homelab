@@ -113,4 +113,5 @@ Use this page when the README is too high-level and a more complete map of the r
 | [Homelab Backups and Restore Testing Companion](episodes/backups-restore.md) | Episode guide for backup strategy, PBS, and restore verification |
 | [Homelab Monitoring with Grafana and Prometheus Companion](episodes/monitoring-grafana.md) | Episode guide covering metrics, logs, uptime checks, and dashboards |
 | [Homelab Reverse Proxy and Internal HTTPS Companion](episodes/reverse-proxy.md) | Episode guide covering reverse proxying, TLS, and selected public access |
+| [Local AI on Linux Companion](episodes/local-ai.md) | Episode guide covering local AI services, endpoints, and privacy boundaries |
 | [Content Map](content-map.md) | Repo-to-content mapping |
