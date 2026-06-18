@@ -4,6 +4,8 @@ These examples are public-safe teaching templates for common homelab patterns. T
 
 The examples use sanitized domains, generic paths, placeholder credentials, and role-based hostnames so viewers can learn the pattern without exposing private infrastructure.
 
+Use these after reading the related service doc. The service doc explains why the pattern exists; the example shows what the shape can look like.
+
 ## Example Index
 
 | Example | Purpose | Related Docs | Safety Notes |

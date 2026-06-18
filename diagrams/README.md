@@ -2,6 +2,8 @@
 
 This folder contains public-safe Mermaid diagrams for the KeepItTechie homelab. The diagrams explain architecture patterns without exposing live DNS zones, exact host addresses, public IP addresses, private credentials, screenshots, or raw config exports.
 
+If this is the first stop, start with the homelab overview, then open the diagram for the topic you are studying: DNS, backups, reverse proxying, local AI, or monitoring.
+
 ## Diagram Index
 
 | Diagram | Purpose | Best Starting Point For | File |
